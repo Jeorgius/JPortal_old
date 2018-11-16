@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9d1d328-1934-406c-bc2d-30be5a11e72e" name="Default" comment="" />
+    <list default="true" id="d9d1d328-1934-406c-bc2d-30be5a11e72e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cfg/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/display_content/target/" />
@@ -45,7 +50,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CfgApplication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cfg/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/display_content/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cfg/src/main/resources/database.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="CfgApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/CfgApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="169">
@@ -66,9 +94,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/display_content/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
@@ -109,6 +141,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cfg/pom.xml" />
         <option value="$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/CfgApplication.java" />
+        <option value="$PROJECT_DIR$/cfg/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/display_content/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/display_content/pom.xml" />
       </list>
     </option>
   </component>
@@ -192,6 +227,14 @@
             <path>
               <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="cfg" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
               <item name="display_content" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -214,6 +257,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -247,7 +298,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CfgApplication">
+  <component name="RunManager" selected="Spring Boot.DisplayContent">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -345,7 +396,7 @@
       <updated>1542263892462</updated>
       <workItem from="1542263894161" duration="994000" />
       <workItem from="1542300165059" duration="164000" />
-      <workItem from="1542300529637" duration="1066000" />
+      <workItem from="1542300529637" duration="2558000" />
     </task>
     <servers />
   </component>
@@ -359,9 +410,12 @@
     <history-entry file="UsersRestTest - 2018.11.15 at 19h 44m 34s.xml">
       <configuration name="UsersRestTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UsersRestTest - 2018.11.15 at 21h 05m 50s.xml">
+      <configuration name="UsersRestTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2224000" />
+    <option name="totallyTimeSpent" value="3716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="51" width="1865" height="930" extended-state="0" />
@@ -385,10 +439,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4695291" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4695291" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32825485" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49739584" visible="true" weight="0.24985899" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32825485" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49739584" visible="true" weight="0.24985899" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.32994923" />
       <window_info id="Web" order="2" sideWeight="0.5026042" side_tool="true" weight="0.24985899" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -502,9 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/display_content/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/cfg/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -519,6 +570,30 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfg/src/main/resources/database.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfg/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
         </state>
       </provider>
     </entry>
