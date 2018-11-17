@@ -9,5 +9,6 @@
   <modules>
     <module>cfg</module>
     <module>display_content</module>
+    <module>discovery_server</module>
   </modules>
 </project>
