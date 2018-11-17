@@ -9,8 +9,8 @@ import org.springframework.util.ResourceUtils;
 
 @SpringBootApplication
 @EnableConfigServer
-@ComponentScan(basePackages = "com.jeorgius.cfg")
-@PropertySource(ResourceUtils.CLASSPATH_URL_PREFIX + "database.properties")
+//@ComponentScan(basePackages = "com.jeorgius.cfg")
+//@PropertySource(ResourceUtils.CLASSPATH_URL_PREFIX + "database.properties")
 public class CfgApplication {
 
     public static void main(String[] args) {
