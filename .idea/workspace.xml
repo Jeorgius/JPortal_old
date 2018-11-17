@@ -23,7 +23,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.webservices" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.DiscoveryServerApplication">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -42,6 +42,18 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
+    </configuration>
+    <configuration name="CfgApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cfg" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jeorgius.cfg.CfgApplication" />
+    </configuration>
+    <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="discovery_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jeorgius.discovery_server.DiscoveryServerApplication" />
+    </configuration>
+    <configuration name="DisplayContentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="display_content" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jeorgius.display_content.DisplayContentApplication" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -65,6 +77,11 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.DisplayContentApplication" />
+      <item itemvalue="Spring Boot.DiscoveryServerApplication" />
+      <item itemvalue="Spring Boot.CfgApplication" />
+    </list>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
