@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b05e8c28-485d-4a48-93b0-3242153ec5a3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/main/resources/bootstrap.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/display_content/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,20 +26,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cfg/src/main/resources/application.properties">
+      <file leaf-file-name="bootstrap.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cfg/src/main/resources/bootstrap.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" selection-start-column="18" selection-end-column="18" />
+            <state relative-caret-position="25">
+              <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DisplayContentApplication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/display_content/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DisplayContentApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/DisplayContentApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="125">
               <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/display_content/src/main/resources/bootstrap.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -83,8 +100,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cfg/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/DisplayContentApplication.java" />
+        <option value="$PROJECT_DIR$/display_content/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/cfg/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/display_content/src/main/resources/bootstrap.properties" />
+        <option value="$PROJECT_DIR$/cfg/src/main/resources/bootstrap.properties" />
       </list>
     </option>
   </component>
@@ -210,6 +230,14 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="display_content" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -240,7 +268,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DisplayContentApplication">
+  <component name="RunManager" selected="Spring Boot.CfgApplication">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -308,8 +336,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DisplayContentApplication" />
         <item itemvalue="Spring Boot.CfgApplication" />
+        <item itemvalue="Spring Boot.DisplayContentApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -323,12 +351,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542470415511</updated>
-      <workItem from="1542470417058" duration="3401000" />
+      <workItem from="1542470417058" duration="6038000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3401000" />
+    <option name="totallyTimeSpent" value="6038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="51" width="1865" height="930" extended-state="0" />
@@ -352,7 +380,7 @@
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33933517" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3365651" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" weight="0.32963988" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24985899" />
@@ -375,13 +403,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cfg/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -410,6 +431,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/resources/bootstrap.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfg/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfg/src/main/resources/bootstrap.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
         </state>
       </provider>
     </entry>
