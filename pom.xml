@@ -8,6 +8,7 @@
   <name>JBackend</name>
   <modules>
     <module>cfg</module>
+    <module>config_server</module>
     <module>display_content</module>
     <module>discovery_server</module>
   </modules>
