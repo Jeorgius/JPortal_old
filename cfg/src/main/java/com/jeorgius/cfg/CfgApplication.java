@@ -6,12 +6,12 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.util.ResourceUtils;
 
-//@SpringBootApplication
-//@ComponentScan(basePackages = "com.jeorgius.cfg")
-//@PropertySource(ResourceUtils.CLASSPATH_URL_PREFIX + "database.properties")
-//public class CfgApplication {
-//
-//    public static void main(String[] args) {
-//        SpringApplication.run(CfgApplication.class, args);
-//    }
-//}
+@SpringBootApplication
+@ComponentScan(basePackages = "com.jeorgius.cfg")
+@PropertySource(ResourceUtils.CLASSPATH_URL_PREFIX + "database.properties")
+public class CfgApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(CfgApplication.class, args);
+    }
+}

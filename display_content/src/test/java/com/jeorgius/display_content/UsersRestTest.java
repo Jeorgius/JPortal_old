@@ -33,8 +33,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ComponentScan(basePackages = "com.jeorgius.display_content")
 @WebAppConfiguration
 @Import(DatabaseConfiguration.class)
-//@EnableConfigurationProperties(DatabaseApplication.class)
-//@TestPropertySource(locations = "com/jeorgius/cfg/application/properties")
 public class UsersRestTest {
 
     @Autowired
