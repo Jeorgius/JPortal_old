@@ -24,7 +24,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = RestApplication.class)
+@SpringBootTest(classes = DisplayContentApplication.class)
 @WebAppConfiguration
 @Import(DatabaseConfiguration.class)
 public class NewsRestTest {
