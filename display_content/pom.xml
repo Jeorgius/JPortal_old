@@ -27,7 +27,7 @@
     <dependencies>
         <dependency>
             <groupId>com.jeorgius</groupId>
-            <artifactId>cfg</artifactId>
+            <artifactId>database</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>

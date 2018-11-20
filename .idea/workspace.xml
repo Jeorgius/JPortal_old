@@ -2,105 +2,154 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f87b2310-3eb7-47cf-bdc6-b0aeb41ec4c9" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/database_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/s_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/database.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Configuration/DatabaseConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/GalleryItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/GalleryItemFull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/NewsItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/NewsItemFull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Store/ItemFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Store/StoreGalleryItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Store/StoreItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Store/StoreItemFull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Users/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Users/UserFull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Users/UserPrivate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Repos/GalleryRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Repos/NewsRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Repos/StoreRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Repos/UserPrivateRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Repos/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/CfgApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/src/main/resources/config" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/src/main/resources/config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/src/test/java/com/jeorgius/cfg/CfgApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/META-INF/spring-autoconfigure-metadata.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/DatabaseApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/GalleryItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/GalleryItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/GalleryItemFull.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/GalleryItemFull.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/NewsItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/NewsItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/NewsItemFull.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/NewsItemFull.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Store/ItemFeature.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Store/ItemFeature.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Store/StoreGalleryItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Store/StoreGalleryItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Store/StoreItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Store/StoreItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Store/StoreItemFull.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Store/StoreItemFull.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Users/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Users/UserFull.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Users/UserFull.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Users/UserPrivate.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Users/UserPrivate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Repos/GalleryRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Repos/GalleryRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Repos/NewsRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Repos/NewsRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Repos/StoreRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Repos/StoreRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Repos/UserPrivateRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Repos/UserPrivateRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Repos/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Repos/UserRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Configuration/DatabaseConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/DatabaseApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Entities/GalleryItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Entities/GalleryItemFull.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Entities/NewsItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Entities/NewsItemFull.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Entities/Store/ItemFeature.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Entities/Store/StoreGalleryItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Entities/Store/StoreItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Entities/Store/StoreItemFull.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Entities/Users/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Entities/Users/UserFull.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Entities/Users/UserPrivate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Repos/GalleryRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Repos/NewsRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Repos/StoreRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Repos/UserPrivateRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/database/Repos/UserRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/test-classes/com/jeorgius/cfg/CfgApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/test-classes/com/jeorgius/cfg/DatabaseApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/target/test-classes/com/jeorgius/database/DatabaseApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery_server/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery_server/target/classes/bootstrap.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery_server/target/classes/com/jeorgius/discovery_server/DiscoveryServerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery_server/target/test-classes/com/jeorgius/discovery_server/DiscoveryServerApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/src/main/resources/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/cfg-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/bootstrap.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Configuration/DatabaseConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/GalleryItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/GalleryItemFull.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/NewsItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/NewsItemFull.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Store/ItemFeature.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Store/StoreGalleryItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Store/StoreItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Store/StoreItemFull.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Users/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Users/UserFull.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Entities/Users/UserPrivate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Repos/GalleryRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Repos/NewsRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Repos/StoreRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Repos/UserPrivateRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/classes/com/jeorgius/cfg/Repos/UserRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/surefire-reports/TEST-com.jeorgius.cfg.CfgApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg/target/surefire-reports/com.jeorgius.cfg.CfgApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Configuration/DatabaseConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Entities/GalleryItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Entities/GalleryItemFull.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Entities/NewsItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Entities/NewsItemFull.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Entities/Store/ItemFeature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Entities/Store/StoreGalleryItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Entities/Store/StoreItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Entities/Store/StoreItemFull.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Entities/Users/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Entities/Users/UserFull.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Entities/Users/UserPrivate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Repos/GalleryRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Repos/NewsRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Repos/StoreRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Repos/UserPrivateRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Repos/UserRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/resources/bootstrap.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/resources/config/discovery_server.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/resources/config/display_content.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/resources/database.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/Logic/FullInfoDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/Logic/FullInfoDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/Logic/ValidateInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/Logic/ValidateInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullGallery.java" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullGallery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullNews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullStoreItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullStoreItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullGallery.java" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullGallery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullNews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullStoreItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullStoreItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/DisplayContentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/DisplayContentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/src/test/java/com/jeorgius/display_content/NewsRestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/test/java/com/jeorgius/display_content/NewsRestTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/display_content/src/test/java/com/jeorgius/display_content/UsersRestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/src/test/java/com/jeorgius/display_content/UsersRestTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/Logic/FullInfoDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/Logic/FullInfoDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/Logic/ValidateInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/Logic/ValidateInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/LoginUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/LoginUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/RegisterUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/RegisterUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/Status/Logged.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/Status/Logged.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedAdmin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedModerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedModerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Display/FullGallery.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Display/FullGallery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Display/FullNews.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Display/FullNews.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Display/FullStoreItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Display/FullStoreItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Display/FullUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Display/FullUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/FullGallery.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/FullGallery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/FullNews.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/FullNews.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/FullStoreItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/FullStoreItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/FullUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/FullUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestGet.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestGet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/DisplayContentApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/DisplayContentApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/RestApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/Logic/FullInfoDisplay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/Logic/ValidateInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestEntities/Change/LoginUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestEntities/Change/RegisterUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestEntities/Change/Status/Logged.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestEntities/Change/Status/LoggedAdmin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestEntities/Change/Status/LoggedModerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestEntities/Change/Status/LoggedUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestEntities/Display/FullGallery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestEntities/Display/FullNews.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestEntities/Display/FullStoreItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestEntities/Display/FullUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestEntities/FullGallery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestEntities/FullNews.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestEntities/FullStoreItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestEntities/FullUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestGet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/Controller/RestPost.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/rest/RestApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/test-classes/com/jeorgius/display_content/RestApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/test-classes/com/jeorgius/display_content/UsersRestTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/display_content/target/test-classes/com/jeorgius/display_content/UsersRestTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/test-classes/com/jeorgius/rest/NewsRestTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/test-classes/com/jeorgius/rest/RestApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/display_content/target/test-classes/com/jeorgius/rest/UsersRestTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/bootstrap.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/ConfigGet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/Logic/FullInfoDisplay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/Logic/ValidateInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/LoginUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/RegisterUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/Status/Logged.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedAdmin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedModerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Display/FullGallery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Display/FullNews.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Display/FullStoreItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/Display/FullUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/FullGallery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/FullNews.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/FullStoreItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestEntities/FullUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestGet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/Controller/RestPost.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/classes/com/jeorgius/display_content/DisplayContentApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/surefire-reports/TEST-com.jeorgius.display_content.DisplayContentApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/surefire-reports/TEST-com.jeorgius.display_content.NewsRestTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/surefire-reports/TEST-com.jeorgius.display_content.UsersRestTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/surefire-reports/com.jeorgius.display_content.DisplayContentApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/surefire-reports/com.jeorgius.display_content.NewsRestTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/surefire-reports/com.jeorgius.display_content.UsersRestTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/test-classes/com/jeorgius/display_content/DisplayContentApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/test-classes/com/jeorgius/display_content/NewsRestTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_content/target/test-classes/com/jeorgius/display_content/UsersRestTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/display_content/target/" />
     <ignored path="$PROJECT_DIR$/discovery_server/target/" />
     <ignored path="$PROJECT_DIR$/cfg/target/" />
     <ignored path="$PROJECT_DIR$/config_server/target/" />
+    <ignored path="$PROJECT_DIR$/cfg/.gradle/" />
+    <ignored path="$PROJECT_DIR$/cfg/build/" />
+    <ignored path="$PROJECT_DIR$/cfg/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/display_content/.gradle/" />
+    <ignored path="$PROJECT_DIR$/display_content/build/" />
+    <ignored path="$PROJECT_DIR$/display_content/out/" />
+    <ignored path="$PROJECT_DIR$/database/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,99 +157,131 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="RestGet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestGet.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="DatabaseConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Configuration/DatabaseConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="249">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cfg/pom.xml">
+        <entry file="file://$PROJECT_DIR$/database/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1015">
-              <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+            <state>
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/Configuration/DatabaseConfiguration.java">
+      <file leaf-file-name="UsersRestTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/display_content/src/test/java/com/jeorgius/display_content/UsersRestTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="165">
+              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigGet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/ConfigGet.java">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/display_content/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="333">
+              <caret line="31" column="32" selection-start-line="31" selection-end-line="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ValidateInput.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/Logic/ValidateInput.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="175">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GalleryRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/Repos/GalleryRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/Repos/NewsRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StoreRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/Repos/StoreRepo.java">
+      <file leaf-file-name="NewsRestTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/display_content/src/test/java/com/jeorgius/display_content/NewsRestTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="125">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserPrivateRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/Repos/UserPrivateRepo.java">
+      <file leaf-file-name="DisplayContentApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/DisplayContentApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidateInput.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/Logic/ValidateInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="954">
+              <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoggedUser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedUser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/Repos/UserRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -215,20 +296,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/discovery_server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/discovery_server/src/main/resources/bootstrap.properties" />
         <option value="$PROJECT_DIR$/discovery_server/pom.xml" />
         <option value="$PROJECT_DIR$/config_server/src/main/java/com/jeorgius/config_server/ConfigServerApplication.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/config_server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/display_content/src/main/resources/bootstrap.properties" />
         <option value="$PROJECT_DIR$/config_server/src/main/resources/bootstrap.properties" />
         <option value="$PROJECT_DIR$/cfg/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/cfg/src/main/resources/bootstrap.properties" />
-        <option value="$PROJECT_DIR$/display_content/src/test/java/com/jeorgius/display_content/NewsRestTest.java" />
+        <option value="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Entities/GalleryItem.java" />
+        <option value="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Configuration/DatabaseConfiguration.java" />
         <option value="$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/CfgApplication.java" />
-        <option value="$PROJECT_DIR$/display_content/src/test/java/com/jeorgius/display_content/UsersRestTest.java" />
         <option value="$PROJECT_DIR$/cfg/pom.xml" />
+        <option value="$PROJECT_DIR$/database/src/java/com/jeorgius/cfg/Entities/Store/ItemFeature.java" />
+        <option value="$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/Entities/GalleryItem.java" />
+        <option value="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Entities/Users/UserFull.java" />
+        <option value="$PROJECT_DIR$/database_lib/src/Entities/Store/StoreItemFull.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/GalleryItem.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/GalleryItemFull.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/NewsItem.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/NewsItemFull.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Store/ItemFeature.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Store/StoreGalleryItem.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Store/StoreItem.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Store/StoreItemFull.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Users/User.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Users/UserFull.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Users/UserPrivate.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Repos/GalleryRepo.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Repos/NewsRepo.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Repos/StoreRepo.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Repos/UserPrivateRepo.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Repos/UserRepo.java" />
+        <option value="$PROJECT_DIR$/display_content/src/test/java/com/jeorgius/display_content/NewsRestTest.java" />
+        <option value="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/Logic/FullInfoDisplay.java" />
+        <option value="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/DisplayContentApplication.java" />
+        <option value="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/Logic/ValidateInput.java" />
+        <option value="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullGallery.java" />
+        <option value="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullNews.java" />
+        <option value="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullStoreItem.java" />
+        <option value="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullUser.java" />
+        <option value="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullGallery.java" />
+        <option value="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullNews.java" />
+        <option value="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullStoreItem.java" />
+        <option value="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullUser.java" />
+        <option value="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestGet.java" />
+        <option value="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedUser.java" />
+        <option value="$PROJECT_DIR$/display_content/src/test/java/com/jeorgius/display_content/UsersRestTest.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Configuration/DatabaseConfiguration.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/database/pom.xml" />
+        <option value="$PROJECT_DIR$/display_content/pom.xml" />
       </list>
     </option>
   </component>
@@ -251,11 +369,15 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="JBackend" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="database" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="JBackend" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="display_content" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="display_content" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -266,8 +388,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="49" />
-    <option name="y" value="51" />
+    <option name="x" value="60" />
+    <option name="y" value="112" />
     <option name="width" value="1865" />
     <option name="height" value="930" />
   </component>
@@ -277,6 +399,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -287,37 +410,117 @@
             <path>
               <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="cfg" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="cfg" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="cfg" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="cfg" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="RestEntities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="RestEntities" type="462c0819:PsiDirectoryNode" />
+              <item name="Change" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="RestEntities" type="462c0819:PsiDirectoryNode" />
+              <item name="Display" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="cfg" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cfg" type="462c0819:PsiDirectoryNode" />
+              <item name="display_content" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -325,7 +528,6 @@
       </pane>
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,7 +539,27 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.20404722" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.webservices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming\Angular-Java Website\JBackend\database\src\main" />
+      <recent name="D:\Programming\Angular-Java Website\JBackend\database\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jeorgius.database.Configuration" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programming\Angular-Java Website\JBackend\database\src\main\resources" />
+      <recent name="D:\Programming\Angular-Java Website\JBackend\database" />
+      <recent name="D:\Programming\Angular-Java Website\JBackend\database_lib\src" />
+      <recent name="D:\Programming\Angular-Java Website\JBackend\database\src\main\java\com\jeorgius\database" />
+      <recent name="D:\Programming\Angular-Java Website\JBackend\database\src\java\com\jeorgius\database" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -487,66 +709,82 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542488076568</updated>
-      <workItem from="1542488078192" duration="11241000" />
+      <workItem from="1542488078192" duration="17216000" />
+      <workItem from="1542660019951" duration="632000" />
+      <workItem from="1542660667841" duration="3119000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NewsRestTest - 2018.11.19 at 09h 15m 34s.xml">
-      <configuration name="NewsRestTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UsersRestTest - 2018.11.19 at 09h 16m 41s.xml">
-      <configuration name="UsersRestTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UsersRestTest - 2018.11.19 at 09h 20m 35s.xml">
-      <configuration name="UsersRestTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UsersRestTest - 2018.11.19 at 09h 23m 15s.xml">
       <configuration name="UsersRestTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="UsersRestTest - 2018.11.19 at 09h 31m 13s.xml">
       <configuration name="UsersRestTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UsersRestTest - 2018.11.19 at 09h 42m 18s.xml">
+      <configuration name="UsersRestTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersRestTest - 2018.11.19 at 09h 45m 03s.xml">
+      <configuration name="UsersRestTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersRestTest - 2018.11.19 at 09h 49m 38s.xml">
+      <configuration name="UsersRestTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersRestTest - 2018.11.19 at 18h 48m 39s.xml">
+      <configuration name="UsersRestTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersRestTest - 2018.11.20 at 00h 17m 11s.xml">
+      <configuration name="UsersRestTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersRestTest - 2018.11.20 at 00h 18m 53s.xml">
+      <configuration name="UsersRestTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersRestTest - 2018.11.20 at 00h 28m 21s.xml">
+      <configuration name="UsersRestTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersRestTest - 2018.11.20 at 00h 29m 42s.xml">
+      <configuration name="UsersRestTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11241000" />
+    <option name="totallyTimeSpent" value="20967000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="51" width="1865" height="930" extended-state="0" />
-    <editor active="true" />
+    <frame x="60" y="112" width="1865" height="930" extended-state="0" />
     <layout>
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" weight="0.32994923" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32994923" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32994923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44182825" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32963988" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24985899" />
-      <window_info anchor="right" id="Bean Validation" />
-      <window_info id="Web" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32963988" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44182825" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32963988" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25888324" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,183 +794,268 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/discovery_server/bootstrap.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/discovery_server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/discovery_server/pom.xml">
+    <entry file="file://$PROJECT_DIR$/database_lib/src/Entities/Users/UserFull.java" />
+    <entry file="file://$PROJECT_DIR$/database_lib/src/Entities/Store/StoreItem.java" />
+    <entry file="file://$PROJECT_DIR$/database_lib/src/Entities/Store/StoreItemFull.java" />
+    <entry file="file://$PROJECT_DIR$/database_lib/src/Entities/Store/ItemFeature.java" />
+    <entry file="file://$PROJECT_DIR$/database_lib/src/Entities/Store/StoreGalleryItem.java" />
+    <entry file="file://$PROJECT_DIR$/cfg/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config_server/src/main/java/com/jeorgius/config_server/ConfigServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="9" selection-start-line="8" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cfg/src/main/resources/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/discovery_server/src/main/resources/bootstrap.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_content/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_content/src/main/resources/bootstrap.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="41" selection-start-column="41" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config_server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="15" column="72" lean-forward="true" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cfg/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cfg/src/main/resources/bootstrap.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/DisplayContentApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_content/src/test/java/com/jeorgius/display_content/NewsRestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_content/src/test/java/com/jeorgius/display_content/UsersRestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_content/src/test/java/com/jeorgius/display_content/DisplayContentApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="459">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/CfgApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        <state relative-caret-position="300">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/Entities/GalleryItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/GalleryItemFull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/NewsItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/NewsItemFull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Store/ItemFeature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Store/StoreGalleryItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Store/StoreItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Store/StoreItemFull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Users/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Users/UserFull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Users/UserPrivate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Repos/GalleryRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config_server/src/main/resources/bootstrap.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/Configuration/DatabaseConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/Repos/GalleryRepo.java">
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Repos/NewsRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/Repos/NewsRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/Repos/StoreRepo.java">
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Repos/StoreRepo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
+        <state relative-caret-position="225">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/Repos/UserPrivateRepo.java">
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Repos/UserPrivateRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/Repos/UserRepo.java">
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Repos/UserRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cfg/src/test/java/com/jeorgius/cfg/CfgApplicationTests.java">
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/GalleryItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="50">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cfg/pom.xml">
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/Logic/FullInfoDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1015">
-          <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+        <state relative-caret-position="137">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestGet.java">
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Change/Status/Logged.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="50">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedModerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Change/LoginUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Change/RegisterUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullGallery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullNews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullStoreItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Display/FullUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullGallery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullNews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullStoreItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/FullUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -743,19 +1066,181 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestGet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestPost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/test/java/com/jeorgius/display_content/UsersRestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/Logic/ValidateInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="954">
+          <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/DisplayContentApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/src/test/java/com/jeorgius/display_content/NewsRestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Configuration/DatabaseConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_content/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="31" column="32" selection-start-line="31" selection-end-line="32" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>database:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20404722" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring (database)|Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20404722" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>database</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20404722" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20404722" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

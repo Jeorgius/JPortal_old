@@ -1,0 +1,17 @@
+com\jeorgius\database\Entities\GalleryItemFull.class
+com\jeorgius\database\Entities\Store\StoreItem.class
+com\jeorgius\database\Entities\Store\StoreItemFull.class
+com\jeorgius\database\Entities\Users\UserFull.class
+com\jeorgius\database\Repos\NewsRepo.class
+com\jeorgius\database\Repos\UserRepo.class
+com\jeorgius\database\Entities\Store\StoreGalleryItem.class
+com\jeorgius\database\Repos\GalleryRepo.class
+com\jeorgius\database\Entities\Store\ItemFeature.class
+com\jeorgius\database\Configuration\DatabaseConfiguration.class
+com\jeorgius\database\Repos\UserPrivateRepo.class
+com\jeorgius\database\Entities\NewsItem.class
+com\jeorgius\database\Entities\GalleryItem.class
+com\jeorgius\database\Repos\StoreRepo.class
+com\jeorgius\database\Entities\NewsItemFull.class
+com\jeorgius\database\Entities\Users\UserPrivate.class
+com\jeorgius\database\Entities\Users\User.class

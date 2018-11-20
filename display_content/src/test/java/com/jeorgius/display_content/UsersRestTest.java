@@ -1,11 +1,11 @@
 package com.jeorgius.display_content;
 
 
-import com.jeorgius.cfg.Configuration.DatabaseConfiguration;
-import com.jeorgius.cfg.Entities.Users.User;
-import com.jeorgius.cfg.Entities.Users.UserFull;
-import com.jeorgius.cfg.Entities.Users.UserPrivate;
-import com.jeorgius.cfg.Repos.UserRepo;
+import com.jeorgius.database.Configuration.DatabaseConfiguration;
+import com.jeorgius.database.Entities.Users.User;
+import com.jeorgius.database.Entities.Users.UserFull;
+import com.jeorgius.database.Entities.Users.UserPrivate;
+import com.jeorgius.database.Repos.UserRepo;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -29,7 +29,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = DisplayContentApplication.class)
-@ComponentScan(basePackages = "com.jeorgius.cfg")
+@ComponentScan(basePackages = "com.jeorgius.database")
 @ComponentScan(basePackages = "com.jeorgius.display_content")
 @WebAppConfiguration
 @Import(DatabaseConfiguration.class)
