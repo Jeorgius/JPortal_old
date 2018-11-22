@@ -10,6 +10,8 @@
         <module name="database" />
         <module name="discovery_server" />
         <module name="display_content" />
+        <module name="gateway" />
+        <module name="security_oauth" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

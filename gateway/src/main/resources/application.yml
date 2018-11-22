@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+      - id: security_oauth
+        uri: lb://security_oauth
+        predicates: Path=/security/**
+        filters: RewritePath=/security/(?<path>.*), /$\{path}
