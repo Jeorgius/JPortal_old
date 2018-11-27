@@ -1,5 +1,11 @@
-#server:
-#  port: 8007
+server:
+  port: 8007
+  ssl:
+    keyStorePassword: '!Keypass1'
+    keyStoreType: PKCS12
+    keyStore: classpath:keystore.p12
+    keyAlias: JBackend
+
 #
 #facebook:
 #  client:
@@ -7,8 +13,8 @@
 security:
   oauth2:
     client:
-      clientId: 233668646673605
-      clientSecret: 33b17e044ee6a4fa383f46ec6e28ea1d
+      clientId: 1124212834409853
+      clientSecret: 95da02df0862ede4094e48ccde7dad27
       accessTokenUri: https://graph.facebook.com/oauth/access_token
       userAuthorizationUri: https://www.facebook.com/dialog/oauth
       tokenName: oauth_token
