@@ -11,11 +11,9 @@
         <module name="discovery_server" />
         <module name="display_content" />
         <module name="gateway" />
+        <module name="maven-archiver" />
         <module name="security_oauth" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="cfg" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
