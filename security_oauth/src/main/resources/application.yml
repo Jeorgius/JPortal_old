@@ -5,6 +5,7 @@ server:
     keyStoreType: PKCS12
     keyStore: classpath:keystore.p12
     keyAlias: JBackend
+#    keyStore: classpath:rootKey.key
 
 #
 #facebook:

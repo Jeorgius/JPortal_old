@@ -21,5 +21,7 @@ public class Cfg extends WebSecurityConfigurerAdapter {
                 .permitAll()
             .anyRequest()
             .authenticated();
+//            .and()
+//            .csrf().disable();
     }
 }

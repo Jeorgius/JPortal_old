@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f87b2310-3eb7-47cf-bdc6-b0aeb41ec4c9" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/cfg/Routings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/cfg/URIs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security_oauth/src/main/resources/rootKey.key" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery_server/src/main/java/com/jeorgius/discovery_server/cfg/Routings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/GatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/SecurityOauthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/SecurityOauthApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/cfg/Cfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/cfg/Cfg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/rest/Rest.java" beforeDir="false" afterPath="$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/rest/Rest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security_oauth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/security_oauth/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,13 +53,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="SecurityOauthApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/SecurityOauthApplication.java">
+      <file leaf-file-name="Routings.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/cfg/Routings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+            <state relative-caret-position="205">
+              <caret line="11" selection-start-line="11" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GatewayApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/GatewayApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="49" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="URIs.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/cfg/URIs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+              <folding>
+                <element signature="e#268#269#0" expanded="true" />
+                <element signature="e#310#311#0" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,8 +103,8 @@
       <file leaf-file-name="Cfg.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/cfg/Cfg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-36">
-              <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+            <state relative-caret-position="93">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,8 +115,8 @@
       <file leaf-file-name="Rest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/rest/Rest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
-              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            <state relative-caret-position="105">
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,10 +125,28 @@
         </entry>
       </file>
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/security_oauth/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/bootstrap.properties">
+          <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-start-column="1" selection-end-line="10" selection-end-column="62" />
+              <caret column="31" selection-start-column="31" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -116,10 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cfg/src/main/java/com/jeorgius/cfg/Entities/GalleryItem.java" />
-        <option value="$PROJECT_DIR$/database/src/java/com/jeorgius/database/Entities/Users/UserFull.java" />
-        <option value="$PROJECT_DIR$/database_lib/src/Entities/Store/StoreItemFull.java" />
-        <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/GalleryItem.java" />
         <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/GalleryItemFull.java" />
         <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/NewsItem.java" />
         <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/NewsItemFull.java" />
@@ -152,9 +206,7 @@
         <option value="$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Configuration/DatabaseConfiguration.java" />
         <option value="$PROJECT_DIR$/database/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/display_content/pom.xml" />
-        <option value="$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/GatewayApplication.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/resources/gateway.properties" />
         <option value="$PROJECT_DIR$/gateway/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/DisplayContentApplication.java" />
@@ -162,11 +214,17 @@
         <option value="$PROJECT_DIR$/security_oauth/pom.xml" />
         <option value="$PROJECT_DIR$/security_oauth/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/security_oauth/src/main/resources/bootstrap.properties" />
-        <option value="$PROJECT_DIR$/security_oauth/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/cfg/Cfg.java" />
         <option value="$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/SecurityOauthApplication.java" />
         <option value="$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/rest/Rest.java" />
+        <option value="$PROJECT_DIR$/discovery_server/src/main/java/com/jeorgius/discovery_server/cfg/Routings.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/cfg/URIs.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/cfg/Routings.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.properties" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/GatewayApplication.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/cfg/Cfg.java" />
+        <option value="$PROJECT_DIR$/security_oauth/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -213,8 +271,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="55" />
-    <option name="y" value="89" />
+    <option name="x" value="89" />
+    <option name="y" value="57" />
     <option name="width" value="1865" />
     <option name="height" value="929" />
   </component>
@@ -272,51 +330,25 @@
             <path>
               <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="discovery_server" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="discovery_server" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="discovery_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="discovery_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="display_content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="display_content" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -324,22 +356,11 @@
             <path>
               <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="display_content" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="display_content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
               <item name="gateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
@@ -347,6 +368,9 @@
               <item name="gateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="cfg" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
@@ -434,7 +458,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.20404722" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -468,7 +492,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="Spring Boot.SecurityOauthApplication">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -616,7 +640,7 @@
       <workItem from="1542816306407" duration="3830000" />
       <workItem from="1542902514914" duration="2149000" />
       <workItem from="1542980882435" duration="1944000" />
-      <workItem from="1543077676952" duration="28431000" />
+      <workItem from="1543077676952" duration="41045000" />
     </task>
     <servers />
   </component>
@@ -653,11 +677,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62995000" />
+    <option name="totallyTimeSpent" value="75609000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="89" width="1865" height="929" extended-state="0" />
-    <editor active="true" />
+    <frame x="89" y="57" width="1865" height="929" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -671,16 +694,16 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32963988" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32871014" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32827586" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.56171983" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.56171983" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32963988" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32871014" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2679075" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2679075" />
       <window_info anchor="right" id="Bean Validation" order="7" weight="0.32994923" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -704,41 +727,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/Logic/FullInfoDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Change/Status/Logged.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Change/Status/LoggedModerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Change/LoginUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/display_content/src/main/java/com/jeorgius/display_content/Controller/RestEntities/Change/RegisterUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -884,20 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/GatewayApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/gateway.properties" />
     <entry file="file://$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/rest/RestController.java" />
     <entry file="file://$PROJECT_DIR$/database/src/main/java/com/jeorgius/database/Entities/Users/UserPrivate.java">
@@ -959,54 +933,10 @@
     <entry file="file://$PROJECT_DIR$/discovery_server/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/discovery_server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security_oauth/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-226">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config_server/src/main/java/com/jeorgius/config_server/ConfigServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security_oauth/src/main/resources/bootstrap.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/cfg/Cfg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/SecurityOauthApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security_oauth/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-237">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1033,10 +963,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/discovery_server/src/main/java/com/jeorgius/discovery_server/cfg/Routings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security_oauth/src/main/resources/bootstrap.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/bootstrap.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/rest/Rest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        <state relative-caret-position="105">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/SecurityOauthApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discovery_server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-752" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security_oauth/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="49" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/GatewayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1045,8 +1038,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-start-column="1" selection-end-line="10" selection-end-column="62" />
+        <state relative-caret-position="175">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/cfg/Routings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="11" selection-start-line="11" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/cfg/URIs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/cfg/Cfg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security_oauth/src/main/resources/rootKey.key">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security_oauth/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1096,7 +1131,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.20404722" />
               </list>
             </option>
           </splitter-proportions>
