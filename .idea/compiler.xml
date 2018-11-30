@@ -11,9 +11,11 @@
         <module name="discovery_server" />
         <module name="display_content" />
         <module name="gateway" />
-        <module name="maven-archiver" />
         <module name="security_oauth" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="maven-archiver" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
