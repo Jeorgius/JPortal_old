@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c425f56c-653d-47ca-83c2-2610acf3744d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/database-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/database-0.0.1-SNAPSHOT.jar" afterDir="false" />
-    </list>
+    <list default="true" id="c425f56c-653d-47ca-83c2-2610acf3744d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/discovery_server/target/" />
     <ignored path="$PROJECT_DIR$/database/target/" />
@@ -269,19 +266,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543559166058</updated>
-      <workItem from="1543559169923" duration="1177000" />
+      <workItem from="1543559169923" duration="1265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1177000" />
+    <option name="totallyTimeSpent" value="1265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="55" width="1865" height="929" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info active="true" anchor="right" id="Maven Projects" visible="true" weight="0.32994923" />
+      <window_info anchor="right" id="Maven Projects" visible="true" weight="0.32994923" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
@@ -296,10 +293,10 @@
       <window_info id="Image Layers" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.51317614" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.51317614" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32871014" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32871014" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24985899" />
       <window_info anchor="right" id="Bean Validation" />
       <window_info id="Web" side_tool="true" />
