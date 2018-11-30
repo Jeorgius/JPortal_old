@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f87b2310-3eb7-47cf-bdc6-b0aeb41ec4c9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/cfg/Routings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/cfg/URIs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security_oauth/src/main/resources/rootKey.key" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery_server/src/main/java/com/jeorgius/discovery_server/cfg/Routings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/jeorgius/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/cfg/Cfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/security_oauth/src/main/java/com/jeorgius/security_oauth/cfg/Cfg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security_oauth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/security_oauth/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/display_content/target/" />
@@ -127,8 +117,8 @@
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/security_oauth/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="225">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -640,7 +630,7 @@
       <workItem from="1542816306407" duration="3830000" />
       <workItem from="1542902514914" duration="2149000" />
       <workItem from="1542980882435" duration="1944000" />
-      <workItem from="1543077676952" duration="41045000" />
+      <workItem from="1543077676952" duration="43593000" />
     </task>
     <servers />
   </component>
@@ -677,7 +667,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75609000" />
+    <option name="totallyTimeSpent" value="78157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="89" y="57" width="1865" height="929" extended-state="0" />
@@ -700,9 +690,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32827586" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.56171983" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.56171983" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32963988" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32871014" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32871014" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2679075" />
       <window_info anchor="right" id="Bean Validation" order="7" weight="0.32994923" />
       <window_info id="Web" order="2" side_tool="true" />
@@ -1080,8 +1070,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/security_oauth/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="225">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
