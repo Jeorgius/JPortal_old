@@ -4,7 +4,7 @@ server:
     keyStorePassword: '!Keypass1'
     keyStoreType: PKCS12
     keyStore: classpath:keystore.p12
-    keyAlias: JBackend
+    keyAlias: localhost
 #    keyStore: classpath:rootKey.key
 
 #

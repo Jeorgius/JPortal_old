@@ -6,9 +6,17 @@ import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.net.ssl.HttpsURLConnection;
+
 @Configuration
 @EnableConfigurationProperties(URIs.class)
 public class Routings {
+
+    public Routings(){
+        HttpsURLConnection.setDefaultHostnameVerifier(
+                (hostname, sslSession) -> hostname.equals("localhost")
+        );
+    }
 
     @Bean
     public RouteLocator rerouting(RouteLocatorBuilder builder, URIs uris){

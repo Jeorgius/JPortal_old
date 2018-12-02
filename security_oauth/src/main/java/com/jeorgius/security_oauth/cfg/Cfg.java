@@ -7,11 +7,21 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLSession;
+
 @EnableWebSecurity
 @Configuration
 @EnableConfigurationProperties
 @Order(101)
 public class Cfg extends WebSecurityConfigurerAdapter {
+
+    public Cfg(){
+        HttpsURLConnection.setDefaultHostnameVerifier(
+                (hostname, sslSession) -> hostname.equals("localhost")
+        );
+    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -24,4 +34,6 @@ public class Cfg extends WebSecurityConfigurerAdapter {
 //            .and()
 //            .csrf().disable();
     }
+
+
 }
