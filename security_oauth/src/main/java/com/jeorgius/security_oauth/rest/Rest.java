@@ -26,11 +26,4 @@ public class Rest {
         user.setName(principal.getName());
         return user;
     }
-
-    @RequestMapping("/")
-    public User login(Principal principal){
-        User user = new User();
-        user.setName(principal.getName());
-        return user;
-    }
 }
