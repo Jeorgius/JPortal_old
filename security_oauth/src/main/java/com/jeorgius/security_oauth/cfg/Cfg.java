@@ -7,9 +7,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
-import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLSession;
 
 @EnableWebSecurity
 @Configuration
@@ -27,7 +25,7 @@ public class Cfg extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.antMatcher("/**")
                 .authorizeRequests()
-                .antMatchers("/", "/login**", "/webjars**", "/error**")
+                .antMatchers("/","/user", "/login**", "/webjars**", "/error**")
                 .permitAll()
             .anyRequest()
             .authenticated();

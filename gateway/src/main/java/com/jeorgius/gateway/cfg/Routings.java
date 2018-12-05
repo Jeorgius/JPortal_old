@@ -18,14 +18,14 @@ public class Routings {
         );
     }
 
-    @Bean
-    public RouteLocator rerouting(RouteLocatorBuilder builder, URIs uris){
-        return builder.routes().
-                route(j ->
-                        j.path("/login/fb")
-                                .filters(f -> f.rewritePath("/login/fb", "/login"))
-                                .uri(uris.getOauth())
-                )
-                .build();
-    }
+//    @Bean
+//    public RouteLocator rerouting(RouteLocatorBuilder builder, URIs uris){
+//        return builder.routes().
+//                route(j ->
+//                        j.path("/login/fb")
+//                                .filters(f -> f.rewritePath("/login/fb", "/user"))
+//                                .uri(uris.getOauth())
+//                )
+//                .build();
+//    }
 }
