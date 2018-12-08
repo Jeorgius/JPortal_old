@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { StoreService } from '../../services/store.service';
+import {DisplayService} from "../../services/display.service";
 
 @Component({
   selector: 'app-store',
@@ -8,7 +8,7 @@ import { StoreService } from '../../services/store.service';
 })
 export class StoreComponent implements OnInit {
 
-  constructor( private ProductsComing: StoreService) { }
+  constructor( private ProductsComing: DisplayService) { }
 
   public Products = [];
 

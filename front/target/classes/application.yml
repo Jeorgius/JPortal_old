@@ -2,4 +2,3 @@ spring:
   mvc:
     view:
       suffix: .html
-      prefix: /view/

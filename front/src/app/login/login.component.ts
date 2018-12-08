@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from "../../services/login.service"
+import {DisplayService} from "../../services/display.service";
 
 
 @Component({
@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
 
   private JavaSocial = 'http://localhost:8777/login/fb';
 
-  constructor(private LoginUser : LoginService) { }
+  constructor(private LoginUser : DisplayService) { }
   ngOnInit() {}
 
   submitLogin(){
