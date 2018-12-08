@@ -12,5 +12,6 @@
     <module>display_content</module>
     <module>discovery_server</module>
     <module>gateway</module>
+    <module>front</module>
   </modules>
 </project>
