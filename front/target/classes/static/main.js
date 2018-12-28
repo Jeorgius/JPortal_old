@@ -332,7 +332,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form #loginForm=\"ngForm\">\r\n  <div><input class=\"Login_forms\" id=\"login\" type=\"text\" name=\"login\" value=\"Login\" ngModel/></div>\r\n  <div><input class=\"Login_forms\" id=\"pw\" type=\"password\" name=\"pw\" value=\"Pass\" ngModel/></div>\r\n  <button class=\"Login_forms\" id=\"LoginButton\" type=\"submit\">Send</button>\r\n</form>\r\n<ul class=\"navigation\">\r\n  <li class=\"marker\" id=\"register\" routerLink=\"/register\">register</li>\r\n</ul>\r\n\r\n<div class=\"SocialNetworksBar\">\r\n  <div>\r\n    <img (click)=\"submitSocialLogin()\" class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />\r\n    <!-- <a href=\"http://localhost:8777/login/fb\" target=\"_blank\">\r\n      <img class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />\r\n    </a> -->\r\n  </div>\r\n</div>"
+module.exports = "<form #loginForm=\"ngForm\">\r\n  <div><input class=\"Login_forms\" id=\"login\" type=\"text\" name=\"login\" value=\"Login\" ngModel/></div>\r\n  <div><input class=\"Login_forms\" id=\"pw\" type=\"password\" name=\"pw\" value=\"Pass\" ngModel/></div>\r\n  <button class=\"Login_forms\" id=\"LoginButton\" type=\"submit\">Send</button>\r\n</form>\r\n<ul class=\"navigation\">\r\n  <li class=\"marker\" id=\"register\" routerLink=\"/register\">register</li>\r\n</ul>\r\n\r\n<div class=\"SocialNetworksBar\">\r\n  <div>\r\n    <!--<img (click)=\"submitSocialLogin()\" class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />-->\r\n    <a href=\"https://localhost:8007/login/fb\" target=\"_blank\">\r\n      <img class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />\r\n    </a>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -358,7 +358,7 @@ module.exports = ".Login_forms {\n  width: 60%;\n  color: whitesmoke;\n  /*margi
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _services_display_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/display.service */ "./src/services/display.service.ts");
+/* harmony import */ var _services_login_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/login.service */ "./src/services/login.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -381,7 +381,7 @@ var LoginComponent = /** @class */ (function () {
     };
     LoginComponent.prototype.submitSocialLogin = function () {
         console.log("yes");
-        this.LoginUser.loginUser().subscribe(function (data) { return console.log(data); });
+        this.LoginUser.loginFB().subscribe(function (data) { return console.log(data); });
     };
     LoginComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -389,7 +389,7 @@ var LoginComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./login.component.html */ "./src/app/login/login.component.html"),
             styles: [__webpack_require__(/*! ./login.component.scss */ "./src/app/login/login.component.scss")]
         }),
-        __metadata("design:paramtypes", [_services_display_service__WEBPACK_IMPORTED_MODULE_1__["DisplayService"]])
+        __metadata("design:paramtypes", [_services_login_service__WEBPACK_IMPORTED_MODULE_1__["LoginService"]])
     ], LoginComponent);
     return LoginComponent;
 }());
@@ -1002,9 +1002,6 @@ var DisplayService = /** @class */ (function () {
     DisplayService.prototype.getMusic = function () {
         return this.HTML.get(this.dataSource + 'music.json');
     };
-    DisplayService.prototype.loginUser = function () {
-        return this.HTML.get(this.dataSource);
-    };
     DisplayService.prototype.getUsers = function () {
         return this.HTML.get(this.dataSource + 'users.json');
     };
@@ -1027,6 +1024,50 @@ var DisplayService = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
     ], DisplayService);
     return DisplayService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/services/login.service.ts":
+/*!***************************************!*\
+  !*** ./src/services/login.service.ts ***!
+  \***************************************/
+/*! exports provided: LoginService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginService", function() { return LoginService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var LoginService = /** @class */ (function () {
+    function LoginService(HTML) {
+        this.HTML = HTML;
+        this.dataSource = "https://localhost:8007/login/";
+    }
+    LoginService.prototype.loginFB = function () {
+        return this.HTML.get(this.dataSource + "fb");
+    };
+    LoginService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], LoginService);
+    return LoginService;
 }());
 
 

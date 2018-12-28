@@ -15,9 +15,6 @@ export class DisplayService {
   getMusic() {
     return this.HTML.get<musicList[]>(this.dataSource+'music.json');
   }
-  loginUser(){
-    return this.HTML.get<any>(this.dataSource);
-  }
   getUsers(){
     return this.HTML.get<userList[]>(this.dataSource+'users.json');
   }

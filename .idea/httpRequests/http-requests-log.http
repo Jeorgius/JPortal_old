@@ -1,0 +1,16 @@
+GET https://localhost:8007/{%20/userinfo}
+
+###
+
+GET https://localhost:8007/{GET%20/login/vk}
+
+###
+
+GET https://localhost:8007/{GET%20/login/vk}
+
+###
+
+GET https://localhost:8007/{GET%20/login/vk}
+
+###
+
