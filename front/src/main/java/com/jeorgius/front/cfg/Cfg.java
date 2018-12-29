@@ -127,12 +127,12 @@ public class Cfg extends WebSecurityConfigurerAdapter {
     filters.add(fbFilter);
 
     VkFilter vkFilter = new VkFilter("/login/vk");
-    vkFilter.setVkUserInfoUri(vkUserInfoUri);
-    vkFilter.setOpenApi_v(vkOpenApi_v);
-    vkFilter.setScope(vkClientScope);
+    //vkFilter.setVkUserInfoUri(vkUserInfoUri);
+    //vkFilter.setOpenApi_v(vkOpenApi_v);
+    //vkFilter.setScope(vkClientScope);
     OAuth2RestTemplate vkTemplate = new OAuth2RestTemplate(vk(), oAuth2ClientContext);
     vkFilter.setRestTemplate(vkTemplate);
-    VkTokenService vkTokenServices = new VkTokenService(vkResource().getUserInfoUri(),vk().getClientId());
+    VkTokenService vkTokenServices = new VkTokenService();//new VkTokenService(vkResource().getUserInfoUri(),vk().getClientId());
     vkTokenServices.setRestTemplate(vkTemplate);
     vkFilter.setTokenService(vkTokenServices);
     filters.add(vkFilter);

@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.security.oauth2.resource.Authoriti
 import org.springframework.boot.autoconfigure.security.oauth2.resource.FixedAuthoritiesExtractor;
 import org.springframework.boot.autoconfigure.security.oauth2.resource.FixedPrincipalExtractor;
 import org.springframework.boot.autoconfigure.security.oauth2.resource.PrincipalExtractor;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
@@ -19,13 +20,26 @@ import org.springframework.security.oauth2.common.exceptions.InvalidTokenExcepti
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.OAuth2Request;
 import org.springframework.security.oauth2.provider.token.ResourceServerTokenServices;
+import org.springframework.stereotype.Service;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
+@Configuration
 public class VkTokenService implements ResourceServerTokenServices {
+
+  @Value("${vk.resource.userInfoUri}")
+  String vkUserInfoUri;
+  @Value("${vk.openApi.version}")
+  String vkOpenApi_v;
+  @Value("${vk.client.scope}")
+  String vkClientScope;
+  @Value("${vk.client.redirectUri}")
+  String vkRedirectUri;
+  @Value("${vk.client.clientId}")
   private String clientId;
+
   private String userInfoEndpointUrl;
   private OAuth2RestOperations restTemplate;
   private String tokenType = DefaultOAuth2AccessToken.BEARER_TYPE;
@@ -33,9 +47,11 @@ public class VkTokenService implements ResourceServerTokenServices {
   private PrincipalExtractor principalExtractor = new FixedPrincipalExtractor();
   protected final Log log = LogFactory.getLog(getClass());
 
+
   @Override
   public OAuth2Authentication loadAuthentication(String accessToken) throws AuthenticationException, InvalidTokenException {
     Map<String, Object> map = getMap(this.userInfoEndpointUrl,accessToken);
+    //map.put("email",accessToken)
     if(map.containsKey("error")){
       this.log.info("userinfo returned error: "+map.get("error"));
       throw new InvalidTokenException(accessToken);
@@ -78,9 +94,26 @@ public class VkTokenService implements ResourceServerTokenServices {
       return Collections.singletonMap("error", "Could not fetch user details");
     }
   }
-  public VkTokenService(String clientId, String userInfoEndpointUrl) {
-    this.clientId = clientId;
-    this.userInfoEndpointUrl = userInfoEndpointUrl;
+//  public VkTokenService(String clientId, String userInfoEndpointUrl) {
+//    this.clientId = clientId;
+//    this.userInfoEndpointUrl = userInfoEndpointUrl;
+//  }
+  public OAuth2Authentication exchangeTokenWithInfo(OAuth2AccessToken accessToken) throws AuthenticationException, InvalidTokenException{
+    String userInfoEndpointUrl = vkUserInfoUri
+      +"?client_id"+clientId
+      +"&uids="+accessToken.getAdditionalInformation().get("user_id").toString()
+      +"&redirect_uri="+vkRedirectUri
+      +"&access_token="+accessToken
+      +"&v="+vkOpenApi_v
+      +"&scope="+vkClientScope;
+
+    Map<String, Object> map = getMap(userInfoEndpointUrl,accessToken.getValue());
+    if(map.containsKey("error")){
+      this.log.info("userinfo returned error: "+map.get("error"));
+      throw new InvalidTokenException(accessToken.getValue());
+    }
+    if(accessToken.getAdditionalInformation().get("email")!=null) map.put("email",accessToken.getAdditionalInformation().get("email"));
+    return extractAuth(map);
   }
   public String getUserInfoEndpointUrl() {
     return userInfoEndpointUrl;
