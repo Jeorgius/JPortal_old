@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/database/target/maven-archiver/pom.properties" />
         <option value="$PROJECT_DIR$/security_oauth/pom.xml" />
         <option value="$PROJECT_DIR$/front/pom.xml" />
+        <option value="$PROJECT_DIR$/front_ts/pom.xml" />
       </list>
     </option>
   </component>

@@ -89,7 +89,7 @@ var AppComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h3>Welcome!</h3>\r\n<p>Hello there! And welcome to Jeorgius website! Enjoy your stay! Here you can\r\n    find my videos, listen to my music absolutely for free and reach orgasm watching\r\n    my guitars. <br />\r\n    Also you can send a request for me to make a video! Choose two styles among those:</p>\r\n<p> Blues<br/>\r\n    Country<br/>\r\n    Metal<br/>\r\n    Funk<br/>\r\n    Jazz<br/>\r\n    Pop</p>\r\n<p>Also there is a variaty of different moods! Want jazzy pop to feel yourself among\r\n    the dragons? Sure, why not! </p>"
+module.exports = "<h3>Welcome!</h3>\r\n<p>Hello there! And welcome to Jeorgius website! Enjoy your stay! Here you can\r\n    find my videos, listen to my music absolutely for free and reach orgasm watching\r\n    my guitars. <br />\r\n    Also you can send a request for me to make a video! Choose two styles among those:</p>\r\n<p> Blues<br/>\r\n    Country<br/>\r\n    Metal<br/>\r\n    Funk<br/>\r\n    Jazz<br/>\r\n    Pop</p>\r\n<p>Also there is a variaty of different moods! Want jazzy pop to feel yourself among\r\n    the dragons? Sure, why not! Try out the new tools to place an order </p>\r\n"
 
 /***/ }),
 
@@ -1081,7 +1081,7 @@ var LoginService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Programming\Angular-Java Website\JBackend\front\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\Programming\Angular-Java Website\JBackend\front_ts\src\main.ts */"./src/main.ts");
 
 
 /***/ })
