@@ -2,116 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c425f56c-653d-47ca-83c2-2610acf3744d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/e2e/protractor.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/e2e/src/app.po.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/e2e/tsconfig.e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/e2e/tsconfig.e2e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/proxy.conf.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/proxy.conf.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/AppComponent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/AppComponent.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/about/about.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/about/about.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/about/about.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/about/about.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/about/about.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/about/about.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/about/about.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/about/about.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/login/login.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/login/login.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/login/loginInterface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/login/loginInterface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/music/music.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/music/music.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/music/music.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/music/music.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/music/music.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/music/music.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/music/music.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/music/music.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/news/news.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/news/news.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/news/news.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/news/news.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/news/news.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/news/news.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/news/news.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/news/news.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/photos/photos.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/photos/photos.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/photos/photos.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/photos/photos.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/photos/photos.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/photos/photos.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/photos/photos.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/photos/photos.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/register/register.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/register/register.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/register/register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/register/register.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/store/store.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/store/store.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/store/store.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/store/store.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/store/store.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/store/store.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/store/store.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/store/store.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/user-detail/user-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/user-detail/user-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/user-detail/user-detail.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/user-detail/user-detail.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/user-detail/user-detail.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/user-detail/user-detail.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/user-detail/user-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/user-detail/user-detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/user-detail/userReg.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/user-detail/userReg.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/users/users.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/users/users.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/users/users.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/users/users.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/users/users.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/users/users.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/users/users.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/app/users/users.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/icons/fb_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/icons/fb_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/icons/vk_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/icons/vk_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/music.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/music.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/news.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/news.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/news/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/news/0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/news/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/news/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/news/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/news/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/news/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/news/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/photos.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/photos.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/photos/Land1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/photos/Land1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/photos/Land2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/photos/Land2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/photos/Land3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/photos/Land3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/photos/Land4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/photos/Land4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/photos/Land5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/photos/Land5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/photos/Land6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/photos/Land6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/products/_0000001/g0.png" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/products/_0000001/g0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/store.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/store.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/users/_Jeorgius/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/users/_Jeorgius/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/users/_Natashenka/Natashenka.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/users/_Natashenka/Natashenka.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/data/users/userpic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/assets/data/users/userpic.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/browserslist" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/browserslist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/interfaces/displayContent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/interfaces/displayContent.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/Cfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/Cfg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/main/resources/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/main/resources/static/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/main/resources/static/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/main/resources/static/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/main/resources/static/polyfills.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/main/resources/static/polyfills.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/main/resources/static/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/main/resources/static/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/polyfills.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/services/display.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/services/display.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/services/display.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/services/display.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/services/login.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/services/login.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/services/login.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/services/login.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/tsconfig.spec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/src/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/target/classes/com/jeorgius/front/cfg/Cfg.class" beforeDir="false" afterPath="$PROJECT_DIR$/front/target/classes/com/jeorgius/front/cfg/Cfg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/target/classes/static/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/front/target/classes/static/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_ts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/front_ts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_ts/src/main/java/com/jeorgius/front_ts/FrontTsApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/discovery_server/target/" />
@@ -389,6 +280,28 @@
               <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="JBackend" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="front_ts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="front_ts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -563,7 +476,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203241000" />
+    <option name="totallyTimeSpent" value="204744000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
