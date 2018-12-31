@@ -16,5 +16,8 @@
         <module name="security_oauth" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="front_ts" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

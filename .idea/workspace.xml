@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c425f56c-653d-47ca-83c2-2610acf3744d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/Cfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/Cfg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkTokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkTokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/front/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/discovery_server/target/" />
@@ -49,33 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="VkFilter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1546063600510" expanded="true" signature="1738:1931" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Cfg.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/Cfg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="131" column="6" selection-start-line="131" selection-start-column="6" selection-end-line="131" selection-end-column="6" />
+            <state relative-caret-position="3075">
+              <caret line="136" column="41" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#filterRegistration#0;class#Cfg#0" />
@@ -84,34 +61,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Auth.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/rest/Auth.java">
+      <file leaf-file-name="VkTokenService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkTokenService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="108">
+              <caret line="100" column="3" selection-start-line="100" selection-start-column="3" selection-end-line="100" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#VkTokenService#0;class#VkTokenService#0" />
+                <element signature="method#loadAuthentication#0;class#VkTokenService#0" />
+                <element signature="method#readAccessToken#0;class#VkTokenService#0" />
+                <element signature="method#setAuthoritiesExtractor#0;class#VkTokenService#0" />
+                <element signature="method#setPrincipalExtractor#0;class#VkTokenService#0" />
+                <element signature="method#getPrincipal#0;class#VkTokenService#0" />
+                <marker date="1546097867380" expanded="true" signature="4093:4300" ph="{...}" />
+                <marker date="1546097867380" expanded="true" signature="4475:4685" ph="{...}" />
+                <marker date="1546097867380" expanded="true" signature="5505:5642" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VkTokenService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkTokenService.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1764">
-              <caret line="101" selection-start-line="101" selection-end-line="101" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#readAccessToken#0;class#VkTokenService#0" />
-                <element signature="method#setAuthoritiesExtractor#0;class#VkTokenService#0" />
-                <element signature="method#setPrincipalExtractor#0;class#VkTokenService#0" />
-                <element signature="method#getPrincipal#0;class#VkTokenService#0" />
-                <marker date="1546063814835" expanded="true" signature="3741:3948" ph="{...}" />
-                <marker date="1546063814835" expanded="true" signature="4123:4333" ph="{...}" />
-                <marker date="1546063814835" expanded="false" signature="5317:5454" ph="{...}" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="168" column="17" selection-start-line="167" selection-start-column="18" selection-end-line="168" selection-end-column="17" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-123" />
           </provider>
         </entry>
       </file>
@@ -178,7 +161,6 @@
         <option value="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/VkRequest.java" />
         <option value="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkUserData.java" />
         <option value="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkRequest.java" />
-        <option value="$PROJECT_DIR$/front/pom.xml" />
         <option value="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/Vk.java" />
         <option value="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkInitializer.java" />
         <option value="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkEntity.java" />
@@ -200,6 +182,7 @@
         <option value="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/Cfg.java" />
         <option value="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkFilter.java" />
         <option value="$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkTokenService.java" />
+        <option value="$PROJECT_DIR$/front/pom.xml" />
       </list>
     </option>
   </component>
@@ -233,9 +216,6 @@
       <select />
     </treeState>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/front/node_modules" />
-  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/front/package.json" />
@@ -253,9 +233,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,84 +241,12 @@
               <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="JBackend" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="cfg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="cfg" type="462c0819:PsiDirectoryNode" />
-              <item name="vkSecurity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="rest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -501,7 +407,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198511000" />
+    <option name="totallyTimeSpent" value="199242000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -513,7 +419,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="111" y="26" width="1724" height="874" extended-state="0" />
+    <frame x="98" y="79" width="1724" height="871" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
@@ -526,7 +432,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" side_tool="true" weight="0.24938725" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3858859" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3858859" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32777777" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32676518" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -534,22 +440,48 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4437781" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3338346" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32871014" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3538231" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26960784" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3499246" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27328432" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.3290441" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4437781" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26960784" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="7" side_tool="true" weight="0.24938725" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.3290441" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3538231" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Maven Projects" order="1" weight="0.32965687" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32871014" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32965687" />
+      <window_info anchor="right" id="Database" order="9" weight="0.32965687" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32777777" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3858859" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32676518" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info id="Designer" order="2" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +496,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkFilter.java</url>
           <line>33</line>
-          <properties class="com.jeorgius.front.cfg.vkSecurity.VkFilter" method="attemptAuthentication">
+          <properties class="com.jeorgius.front.cfg.vkSecurity.VkFilter">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="30" />
@@ -572,7 +504,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkTokenService.java</url>
           <line>75</line>
-          <properties class="com.jeorgius.front.cfg.vkSecurity.VkTokenService" method="getMap">
+          <properties class="com.jeorgius.front.cfg.vkSecurity.VkTokenService">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="32" />
@@ -580,7 +512,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkTokenService.java</url>
           <line>135</line>
-          <properties class="com.jeorgius.front.cfg.vkSecurity.VkTokenService" method="getPrincipal">
+          <properties class="com.jeorgius.front.cfg.vkSecurity.VkTokenService">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="37" />
@@ -588,7 +520,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkTokenService.java</url>
           <line>100</line>
-          <properties class="com.jeorgius.front.cfg.vkSecurity.VkTokenService" method="exchangeTokenWithInfo">
+          <properties class="com.jeorgius.front.cfg.vkSecurity.VkTokenService">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="39" />
@@ -668,13 +600,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/Vk.java" />
-    <entry file="file://$PROJECT_DIR$/front/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkUserData.java" />
     <entry file="file://$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkRequest.java" />
     <entry file="file://$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkAdapter.java" />
@@ -818,10 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -872,8 +793,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/Cfg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="131" column="6" selection-start-line="131" selection-start-column="6" selection-end-line="131" selection-end-column="6" />
+        <state relative-caret-position="3075">
+          <caret line="136" column="41" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#filterRegistration#0;class#Cfg#0" />
@@ -883,17 +804,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front/src/main/java/com/jeorgius/front/cfg/vkSecurity/VkTokenService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1764">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        <state relative-caret-position="108">
+          <caret line="100" column="3" selection-start-line="100" selection-start-column="3" selection-end-line="100" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#VkTokenService#0;class#VkTokenService#0" />
+            <element signature="method#loadAuthentication#0;class#VkTokenService#0" />
             <element signature="method#readAccessToken#0;class#VkTokenService#0" />
             <element signature="method#setAuthoritiesExtractor#0;class#VkTokenService#0" />
             <element signature="method#setPrincipalExtractor#0;class#VkTokenService#0" />
             <element signature="method#getPrincipal#0;class#VkTokenService#0" />
-            <marker date="1546063814835" expanded="true" signature="3741:3948" ph="{...}" />
-            <marker date="1546063814835" expanded="true" signature="4123:4333" ph="{...}" />
-            <marker date="1546063814835" expanded="false" signature="5317:5454" ph="{...}" />
+            <marker date="1546097867380" expanded="true" signature="4093:4300" ph="{...}" />
+            <marker date="1546097867380" expanded="true" signature="4475:4685" ph="{...}" />
+            <marker date="1546097867380" expanded="true" signature="5505:5642" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -904,8 +827,14 @@
           <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1546063600510" expanded="true" signature="1738:1931" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="168" column="17" selection-start-line="167" selection-start-column="18" selection-end-line="168" selection-end-column="17" />
         </state>
       </provider>
     </entry>

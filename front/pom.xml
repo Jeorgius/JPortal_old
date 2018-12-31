@@ -23,10 +23,6 @@
     </properties>
 
     <dependencies>
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-security</artifactId>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -36,36 +32,21 @@
         <artifactId>spring-boot-devtools</artifactId>
         <optional>true</optional>
       </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-starter-config</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-starter-netflix-zuul</artifactId>-->
-        <!--</dependency>-->
-      <!-- https://mvnrepository.com/artifact/org.springframework.social/spring-social-core -->
-      <dependency>
-        <groupId>org.springframework.social</groupId>
-        <artifactId>spring-social-core</artifactId>
-        <version>1.1.6.RELEASE</version>
-      </dependency>
-      <!-- https://mvnrepository.com/artifact/org.springframework.social/spring-social-config -->
-      <dependency>
-        <groupId>org.springframework.social</groupId>
-        <artifactId>spring-social-config</artifactId>
-        <version>1.1.6.RELEASE</version>
-      </dependency>
-      <!-- https://mvnrepository.com/artifact/org.springframework.social/spring-social-security -->
-      <dependency>
-        <groupId>org.springframework.social</groupId>
-        <artifactId>spring-social-security</artifactId>
-        <version>1.1.6.RELEASE</version>
-      </dependency>
+      <!--<dependency>-->
+        <!--<groupId>org.springframework.social</groupId>-->
+        <!--<artifactId>spring-social-core</artifactId>-->
+        <!--<version>1.1.6.RELEASE</version>-->
+      <!--</dependency>-->
+      <!--<dependency>-->
+        <!--<groupId>org.springframework.social</groupId>-->
+        <!--<artifactId>spring-social-config</artifactId>-->
+        <!--<version>1.1.6.RELEASE</version>-->
+      <!--</dependency>-->
+      <!--<dependency>-->
+        <!--<groupId>org.springframework.social</groupId>-->
+        <!--<artifactId>spring-social-security</artifactId>-->
+        <!--<version>1.1.6.RELEASE</version>-->
+      <!--</dependency>-->
 
       <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -187,6 +168,4 @@
       </snapshots>
     </repository>
   </repositories>
-
-
 </project>
