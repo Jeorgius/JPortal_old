@@ -43,10 +43,12 @@ public class Cfg extends WebSecurityConfigurerAdapter {
 //    );
 //  }
   private OAuth2ClientContext oAuth2ClientContext;
+  private VkTokenService vkTokenService;
 
   @Autowired
-  public Cfg(OAuth2ClientContext oAuth2ClientContext){
+  public Cfg(OAuth2ClientContext oAuth2ClientContext, VkTokenService vkTokenService){
     this.oAuth2ClientContext = oAuth2ClientContext;
+    this.vkTokenService = vkTokenService;
   }
 
   @Bean
@@ -79,6 +81,10 @@ public class Cfg extends WebSecurityConfigurerAdapter {
   String vkOpenApi_v;
   @Value("${vk.client.scope}")
   String vkClientScope;
+  @Value("${vk.client.redirectUri}")
+  String vkRedirectUri;
+  @Value("${vk.client.clientId}")
+  private String clientId;
 
   @Bean
   public FilterRegistrationBean filterRegistration(OAuth2ClientContextFilter filter){
@@ -127,14 +133,10 @@ public class Cfg extends WebSecurityConfigurerAdapter {
     filters.add(fbFilter);
 
     VkFilter vkFilter = new VkFilter("/login/vk");
-    //vkFilter.setVkUserInfoUri(vkUserInfoUri);
-    //vkFilter.setOpenApi_v(vkOpenApi_v);
-    //vkFilter.setScope(vkClientScope);
     OAuth2RestTemplate vkTemplate = new OAuth2RestTemplate(vk(), oAuth2ClientContext);
     vkFilter.setRestTemplate(vkTemplate);
-    VkTokenService vkTokenServices = new VkTokenService();//new VkTokenService(vkResource().getUserInfoUri(),vk().getClientId());
-    vkTokenServices.setRestTemplate(vkTemplate);
-    vkFilter.setTokenService(vkTokenServices);
+    vkTokenService.setRestTemplate(vkTemplate);
+    vkFilter.setTokenService(vkTokenService);
     filters.add(vkFilter);
 
     filter.setFilters(filters);

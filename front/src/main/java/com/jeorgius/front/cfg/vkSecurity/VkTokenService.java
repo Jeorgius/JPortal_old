@@ -2,11 +2,13 @@ package com.jeorgius.front.cfg.vkSecurity;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.security.oauth2.resource.AuthoritiesExtractor;
 import org.springframework.boot.autoconfigure.security.oauth2.resource.FixedAuthoritiesExtractor;
 import org.springframework.boot.autoconfigure.security.oauth2.resource.FixedPrincipalExtractor;
 import org.springframework.boot.autoconfigure.security.oauth2.resource.PrincipalExtractor;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.AuthenticationException;
@@ -23,22 +25,31 @@ import org.springframework.security.oauth2.provider.token.ResourceServerTokenSer
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Configuration
+@Service
 public class VkTokenService implements ResourceServerTokenServices {
 
-  @Value("${vk.resource.userInfoUri}")
-  String vkUserInfoUri;
-  @Value("${vk.openApi.version}")
-  String vkOpenApi_v;
-  @Value("${vk.client.scope}")
-  String vkClientScope;
-  @Value("${vk.client.redirectUri}")
-  String vkRedirectUri;
-  @Value("${vk.client.clientId}")
+  private String vkUserInfoUri;
+  private String vkOpenApi_v;
+  private String vkClientScope;
+  private String vkRedirectUri;
   private String clientId;
+
+  @Autowired
+  public VkTokenService(@Value("${vk.resource.userInfoUri}") String vkUserInfoUri,
+                        @Value("${vk.openApi.version}") String vkOpenApi_v,
+                        @Value("${vk.client.scope}") String vkClientScope,
+                        @Value("${vk.client.redirectUri}") String vkRedirectUri,
+                        @Value("${vk.client.clientId}") String clientId) {
+    this.vkUserInfoUri = vkUserInfoUri;
+    this.vkOpenApi_v = vkOpenApi_v;
+    this.vkClientScope = vkClientScope;
+    this.vkRedirectUri = vkRedirectUri;
+    this.clientId = clientId;
+  }
 
   private String userInfoEndpointUrl;
   private OAuth2RestOperations restTemplate;
@@ -50,13 +61,7 @@ public class VkTokenService implements ResourceServerTokenServices {
 
   @Override
   public OAuth2Authentication loadAuthentication(String accessToken) throws AuthenticationException, InvalidTokenException {
-    Map<String, Object> map = getMap(this.userInfoEndpointUrl,accessToken);
-    //map.put("email",accessToken)
-    if(map.containsKey("error")){
-      this.log.info("userinfo returned error: "+map.get("error"));
-      throw new InvalidTokenException(accessToken);
-    }
-    return extractAuth(map);
+    return extractAuth(new HashMap<>());
   }
 
   @Override
@@ -94,10 +99,7 @@ public class VkTokenService implements ResourceServerTokenServices {
       return Collections.singletonMap("error", "Could not fetch user details");
     }
   }
-//  public VkTokenService(String clientId, String userInfoEndpointUrl) {
-//    this.clientId = clientId;
-//    this.userInfoEndpointUrl = userInfoEndpointUrl;
-//  }
+
   public OAuth2Authentication exchangeTokenWithInfo(OAuth2AccessToken accessToken) throws AuthenticationException, InvalidTokenException{
     String userInfoEndpointUrl = vkUserInfoUri
       +"?client_id"+clientId
@@ -114,12 +116,6 @@ public class VkTokenService implements ResourceServerTokenServices {
     }
     if(accessToken.getAdditionalInformation().get("email")!=null) map.put("email",accessToken.getAdditionalInformation().get("email"));
     return extractAuth(map);
-  }
-  public String getUserInfoEndpointUrl() {
-    return userInfoEndpointUrl;
-  }
-  public void setUserInfoEndpointUrl(String userInfoEndpointUrl) {
-    this.userInfoEndpointUrl = userInfoEndpointUrl;
   }
   public void setRestTemplate(OAuth2RestOperations restTemplate) {
     this.restTemplate = restTemplate;

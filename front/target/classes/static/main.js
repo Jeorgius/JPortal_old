@@ -332,7 +332,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form #loginForm=\"ngForm\">\r\n  <div><input class=\"Login_forms\" id=\"login\" type=\"text\" name=\"login\" value=\"Login\" ngModel/></div>\r\n  <div><input class=\"Login_forms\" id=\"pw\" type=\"password\" name=\"pw\" value=\"Pass\" ngModel/></div>\r\n  <button class=\"Login_forms\" id=\"LoginButton\" type=\"submit\">Send</button>\r\n</form>\r\n<ul class=\"navigation\">\r\n  <li class=\"marker\" id=\"register\" routerLink=\"/register\">register</li>\r\n</ul>\r\n\r\n<div class=\"SocialNetworksBar\">\r\n  <div>\r\n    <!--<img (click)=\"submitSocialLogin()\" class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />-->\r\n    <a href=\"https://localhost:8007/login/fb\" target=\"_blank\">\r\n      <img class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />\r\n    </a>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<form #loginForm=\"ngForm\">\r\n  <div><input class=\"Login_forms\" id=\"login\" type=\"text\" name=\"login\" value=\"Login\" ngModel/></div>\r\n  <div><input class=\"Login_forms\" id=\"pw\" type=\"password\" name=\"pw\" value=\"Pass\" ngModel/></div>\r\n  <button class=\"Login_forms\" id=\"LoginButton\" type=\"submit\">Send</button>\r\n</form>\r\n<ul class=\"navigation\">\r\n  <li class=\"marker\" id=\"register\" routerLink=\"/register\">register</li>\r\n</ul>\r\n\r\n<div class=\"SocialNetworksBar\">\r\n  <div>\r\n    <!--<img (click)=\"submitSocialLogin()\" class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />-->\r\n    <a href=\"https://localhost:8007/login/fb\" target=\"_blank\">\r\n      <img class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />\r\n    </a>\r\n    <a href=\"https://localhost:8007/login/vk\" target=\"_blank\">\r\n      <img class=\"SocialNetwork\" src=\"../../assets/data/icons/vk_logo.png\" />\r\n    </a>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -343,7 +343,7 @@ module.exports = "<form #loginForm=\"ngForm\">\r\n  <div><input class=\"Login_fo
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".Login_forms {\n  width: 60%;\n  color: whitesmoke;\n  /*margin: 0 10px 5px 5px;*/\n  background: transparent;\n  border-color: whitesmoke;\n  border-radius: 5px;\n  padding-left: inherit;\n  margin-top: 5px; }\n\nul, .SocialNetworksBar {\n  padding-left: 30px; }\n\nli {\n  font-size: 24px;\n  font-weight: bolder;\n  /*margin-top: 5px;*/\n  cursor: pointer; }\n\n#register {\n  text-align: left; }\n\n.Login_forms#LoginButton {\n  cursor: pointer; }\n\n#MyProfile {\n  cursor: pointer; }\n\n#MyProfile:hover {\n  box-shadow: 0 1px 0 white; }\n\n.SocialNetworksBar {\n  display: flex; }\n\n.SocialNetwork {\n  max-width: 70px;\n  max-height: 70px; }\n"
+module.exports = ".Login_forms {\n  width: 60%;\n  color: whitesmoke;\n  /*margin: 0 10px 5px 5px;*/\n  background: transparent;\n  border-color: whitesmoke;\n  border-radius: 5px;\n  padding-left: inherit;\n  margin-top: 5px; }\n\nul, .SocialNetworksBar {\n  padding-left: 30px; }\n\nli {\n  font-size: 24px;\n  font-weight: bolder;\n  /*margin-top: 5px;*/\n  cursor: pointer; }\n\n#register {\n  text-align: left; }\n\n.Login_forms#LoginButton {\n  cursor: pointer; }\n\n#MyProfile {\n  cursor: pointer; }\n\n#MyProfile:hover {\n  box-shadow: 0 1px 0 white; }\n\n.SocialNetworksBar {\n  display: flex; }\n\n.SocialNetwork {\n  max-width: 30px;\n  max-height: 30px;\n  margin: 5px; }\n"
 
 /***/ }),
 
