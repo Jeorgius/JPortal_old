@@ -1,20 +1,29 @@
-<form #loginForm="ngForm">
-  <div><input class="Login_forms" id="login" type="text" name="login" value="Login" ngModel/></div>
-  <div><input class="Login_forms" id="pw" type="password" name="pw" value="Pass" ngModel/></div>
-  <button class="Login_forms" id="LoginButton" type="submit">Send</button>
-</form>
-<ul class="navigation">
-  <li class="marker" id="register" routerLink="/register">register</li>
-</ul>
-
-<div class="SocialNetworksBar">
-  <div>
-    <!--<img (click)="submitSocialLogin()" class="SocialNetwork" src="../../assets/data/icons/fb_logo.png" />-->
-    <a href="https://localhost:8007/login/fb" target="_blank">
-      <img class="SocialNetwork" src="../../assets/data/icons/fb_logo.png" />
-    </a>
-    <a href="https://localhost:8007/login/vk" target="_blank">
-      <img class="SocialNetwork" src="../../assets/data/icons/vk_logo.png" />
-    </a>
-  </div>
+<div *ngIf="isLoggedIn; else unLogged">
+  <p>Hello, <span id="nicknameL">USER</span><br />
+    <span id="MyProfile">My Profile</span></p>
+  <form method="POST">
+    <input class="Login_forms" type="button" id="LogOutButton" value="Sign Out">
+  </form>
 </div>
+<ng-template #unLogged>
+  <form #loginForm="ngForm">
+    <div><input class="Login_forms" id="login" type="text" name="login" value="Login" ngModel/></div>
+    <div><input class="Login_forms" id="pw" type="password" name="pw" value="Pass" ngModel/></div>
+    <button class="Login_forms" id="LoginButton" type="submit">Send</button>
+  </form>
+  <ul class="navigation">
+    <li class="marker" id="register" routerLink="/register">register</li>
+  </ul>
+
+  <div class="SocialNetworksBar">
+    <div>
+      <!--<img (click)="submitSocialLogin()" class="SocialNetwork" src="../../assets/data/icons/fb_logo.png" />-->
+      <a href="https://localhost:8007/login/fb" target="_blank">
+        <img class="SocialNetwork" src="../../assets/data/icons/fb_logo.png" />
+      </a>
+      <a href="https://localhost:8007/login/vk" target="_blank">
+        <img class="SocialNetwork" src="../../assets/data/icons/vk_logo.png" />
+      </a>
+    </div>
+  </div>
+</ng-template>

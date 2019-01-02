@@ -9,11 +9,15 @@ import {LoginService} from "../../services/login.service";
 })
 export class LoginComponent implements OnInit {
 
-  private JavaSocial = 'http://localhost:8777/login/fb';
+  private JavaRest = 'https://localhost:8007/login/';
+  public isLoggedIn: boolean;
 
   constructor(private LoginUser : LoginService) { }
   ngOnInit() {}
 
+  isLogged(){
+    return this.LoginUser.checkIfLogged().subscribe(data => this.isLoggedIn = data.isLogged);
+  }
   submitLogin(){
       console.log("yes");
   }
