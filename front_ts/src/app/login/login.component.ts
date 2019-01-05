@@ -12,12 +12,16 @@ export class LoginComponent implements OnInit {
   private JavaRest = 'https://localhost:8007/login/';
   public isLoggedIn: boolean;
 
-  constructor(private LoginUser : LoginService) { }
-  ngOnInit() {}
+  constructor(private LoginUser : LoginService) {}
+
+  ngOnInit() {
+    this.isLogged();
+  }
 
   isLogged(){
-    return this.LoginUser.checkIfLogged().subscribe(data => this.isLoggedIn = data.isLogged);
+    return this.LoginUser.checkIfLogged().subscribe(data => this.isLoggedIn = data);
   }
+
   submitLogin(){
       console.log("yes");
   }

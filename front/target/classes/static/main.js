@@ -89,7 +89,7 @@ var AppComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h3>Welcome!</h3>\r\n<p>Hello there! And welcome to Jeorgius website! Enjoy your stay! Here you can\r\n    find my videos, listen to my music absolutely for free and reach orgasm watching\r\n    my guitars. <br />\r\n    Also you can send a request for me to make a video! Choose two styles among those:</p>\r\n<p> Blues<br/>\r\n    Country<br/>\r\n    Metal<br/>\r\n    Funk<br/>\r\n    Jazz<br/>\r\n    Pop</p>\r\n<p>Also there is a variaty of different moods! Want jazzy pop to feel yourself among\r\n    the dragons? Sure, why not! </p>"
+module.exports = "<h3>Welcome!</h3>\r\n<p>Hello there! And welcome to Jeorgius website! Enjoy your stay! Here you can\r\n    find my videos, listen to my music absolutely for free and reach orgasm watching\r\n    my guitars. <br />\r\n    Also you can send a request for me to make a video! Choose two styles among those:</p>\r\n<p> Blues<br/>\r\n    Country<br/>\r\n    Metal<br/>\r\n    Funk<br/>\r\n    Jazz<br/>\r\n    Pop</p>\r\n<p>Also there is a variaty of different moods! Want jazzy pop to feel yourself among\r\n    the dragons? Sure, why not! Try out the new tools to place an order </p>\r\n"
 
 /***/ }),
 
@@ -332,7 +332,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form #loginForm=\"ngForm\">\r\n  <div><input class=\"Login_forms\" id=\"login\" type=\"text\" name=\"login\" value=\"Login\" ngModel/></div>\r\n  <div><input class=\"Login_forms\" id=\"pw\" type=\"password\" name=\"pw\" value=\"Pass\" ngModel/></div>\r\n  <button class=\"Login_forms\" id=\"LoginButton\" type=\"submit\">Send</button>\r\n</form>\r\n<ul class=\"navigation\">\r\n  <li class=\"marker\" id=\"register\" routerLink=\"/register\">register</li>\r\n</ul>\r\n\r\n<div class=\"SocialNetworksBar\">\r\n  <div>\r\n    <!--<img (click)=\"submitSocialLogin()\" class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />-->\r\n    <a href=\"https://localhost:8007/login/fb\" target=\"_blank\">\r\n      <img class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />\r\n    </a>\r\n    <a href=\"https://localhost:8007/login/vk\" target=\"_blank\">\r\n      <img class=\"SocialNetwork\" src=\"../../assets/data/icons/vk_logo.png\" />\r\n    </a>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div *ngIf=\"isLoggedIn; else unLogged\">\r\n  <p>Hello, <span id=\"nicknameL\">USER</span><br />\r\n    <span id=\"MyProfile\">My Profile</span></p>\r\n  <form method=\"POST\">\r\n    <input class=\"Login_forms\" type=\"button\" id=\"LogOutButton\" value=\"Sign Out\">\r\n  </form>\r\n</div>\r\n<ng-template #unLogged>\r\n  <form #loginForm=\"ngForm\">\r\n    <div><input class=\"Login_forms\" id=\"login\" type=\"text\" name=\"login\" value=\"Login\" ngModel/></div>\r\n    <div><input class=\"Login_forms\" id=\"pw\" type=\"password\" name=\"pw\" value=\"Pass\" ngModel/></div>\r\n    <button class=\"Login_forms\" id=\"LoginButton\" type=\"submit\">Send</button>\r\n  </form>\r\n  <ul class=\"navigation\">\r\n    <li class=\"marker\" id=\"register\" routerLink=\"/register\">register</li>\r\n  </ul>\r\n\r\n  <div class=\"SocialNetworksBar\">\r\n    <div>\r\n      <!--<img (click)=\"submitSocialLogin()\" class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />-->\r\n      <a href=\"https://localhost:8007/login/fb\" target=\"_blank\">\r\n        <img class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />\r\n      </a>\r\n      <a href=\"https://localhost:8007/login/vk\" target=\"_blank\">\r\n        <img class=\"SocialNetwork\" src=\"../../assets/data/icons/vk_logo.png\" />\r\n      </a>\r\n    </div>\r\n  </div>\r\n</ng-template>\r\n"
 
 /***/ }),
 
@@ -373,9 +373,15 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var LoginComponent = /** @class */ (function () {
     function LoginComponent(LoginUser) {
         this.LoginUser = LoginUser;
-        this.JavaSocial = 'http://localhost:8777/login/fb';
+        this.JavaRest = 'https://localhost:8007/login/';
     }
-    LoginComponent.prototype.ngOnInit = function () { };
+    LoginComponent.prototype.ngOnInit = function () {
+        this.isLogged();
+    };
+    LoginComponent.prototype.isLogged = function () {
+        var _this = this;
+        return this.LoginUser.checkIfLogged().subscribe(function (data) { return _this.isLoggedIn = data; });
+    };
     LoginComponent.prototype.submitLogin = function () {
         console.log("yes");
     };
@@ -1061,6 +1067,9 @@ var LoginService = /** @class */ (function () {
     LoginService.prototype.loginFB = function () {
         return this.HTML.get(this.dataSource + "fb");
     };
+    LoginService.prototype.checkIfLogged = function () {
+        return this.HTML.get(this.dataSource + "islogged");
+    };
     LoginService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
             providedIn: 'root'
@@ -1081,7 +1090,7 @@ var LoginService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Programming\Angular-Java Website\JBackend\front\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\Programming\Angular-Java Website\JBackend\front_ts\src\main.ts */"./src/main.ts");
 
 
 /***/ })

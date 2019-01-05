@@ -14,6 +14,6 @@ export class LoginService {
   }
 
   checkIfLogged(){
-    return this.HTML.get<isLoggedIn>(this.dataSource+"islogged");
+    return this.HTML.get<boolean>(this.dataSource+"islogged");
   }
 }

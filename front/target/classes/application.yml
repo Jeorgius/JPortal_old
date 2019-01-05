@@ -5,12 +5,7 @@ server:
     keyStoreType: PKCS12
     keyStore: classpath:keystore.p12
     keyAlias: localhost
-#    keyStore: classpath:rootKey.key
 
-#
-#facebook:
-#  client:
-#    cliendId: 1124212834409853
 facebook:
   client:
     clientId: 1124212834409853
@@ -20,6 +15,7 @@ facebook:
     tokenName: oauth_token
     authenticationScheme: query
     clientAuthenticationScheme: form
+    scope: email, public_profile
   resource:
     userInfoUri: https://graph.facebook.com/me?fields=id,name,email,picture
 

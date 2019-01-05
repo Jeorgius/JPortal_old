@@ -539,7 +539,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Programming\Angular-Java Website\JBackend\front\src\styles.scss */"./src/styles.scss");
+module.exports = __webpack_require__(/*! D:\Programming\Angular-Java Website\JBackend\front_ts\src\styles.scss */"./src/styles.scss");
 
 
 /***/ })

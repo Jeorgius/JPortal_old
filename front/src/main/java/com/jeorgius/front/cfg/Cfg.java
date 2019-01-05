@@ -3,7 +3,6 @@ package com.jeorgius.front.cfg;
 import com.jeorgius.front.cfg.vkSecurity.VkFilter;
 import com.jeorgius.front.cfg.vkSecurity.VkTokenService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties;
 import org.springframework.boot.autoconfigure.security.oauth2.resource.UserInfoTokenServices;
@@ -73,17 +72,6 @@ public class Cfg extends WebSecurityConfigurerAdapter {
     return new ResourceServerProperties();
   }
 
-  @Value("${vk.resource.userInfoUri}")
-  String vkUserInfoUri;
-  @Value("${vk.openApi.version}")
-  String vkOpenApi_v;
-  @Value("${vk.client.scope}")
-  String vkClientScope;
-  @Value("${vk.client.redirectUri}")
-  String vkRedirectUri;
-  @Value("${vk.client.clientId}")
-  private String clientId;
-
   @Bean
   public FilterRegistrationBean filterRegistration(OAuth2ClientContextFilter filter){
     FilterRegistrationBean reg = new FilterRegistrationBean();
@@ -99,18 +87,22 @@ public class Cfg extends WebSecurityConfigurerAdapter {
         .authorizeRequests()
         .antMatchers(
           "/", "/news/**","/**.js","/index.html", "/assets/**",
-          "/photos/**","/about", "/users/**","/register","/store/**","/music/**"
+          "/photos/**","/about", "/users/**","/register","/store/**","/music/**","/**.ico"
         ).permitAll()
         .antMatchers("/login/fb").permitAll()
-        .antMatchers("//test**").permitAll()
+        .antMatchers("/test**").permitAll()
         .antMatchers("/login/vk","/login/vk?**").permitAll()
+        .antMatchers("/login/islogged").permitAll()
         .antMatchers("/userinfo").authenticated()
         .anyRequest().authenticated()
       .and()
         .addFilterBefore(ssoRedirectFilter(), BasicAuthenticationFilter.class)
         .csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
       .and()
-      .logout().logoutSuccessUrl("/").permitAll();
+      .logout().logoutUrl("/login/logout")
+        .invalidateHttpSession(true)
+        .deleteCookies("JSESSIONID")
+      .logoutSuccessUrl("/").permitAll();
   }
 
   private CsrfTokenRepository csrfTokenRepository(){
