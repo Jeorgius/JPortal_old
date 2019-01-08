@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from "@angular/common/http";
-import {isLoggedIn} from "../interfaces/Authentication";
+import {LoggedIn} from "../interfaces/Authentication";
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +12,11 @@ export class LoginService {
   loginFB(){
     return this.HTML.get<any>(this.dataSource+"fb");
   }
-
   checkIfLogged(){
-    return this.HTML.get<boolean>(this.dataSource+"islogged");
+    return this.HTML.get<LoggedIn>(this.dataSource+"islogged");
+  }
+
+  logout(){
+    return this.HTML.post(this.dataSource+"logout",{});
   }
 }

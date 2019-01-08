@@ -1,3 +1,6 @@
-export interface isLoggedIn {
-  isLogged: boolean;
+export interface LoggedIn {
+  id: number,
+  name: string,
+  surname: string,
+  email: string
 }

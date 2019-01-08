@@ -9,8 +9,9 @@ import {LoginService} from "../../services/login.service";
 })
 export class LoginComponent implements OnInit {
 
-  private JavaRest = 'https://localhost:8007/login/';
+  //private JavaRest = 'https://localhost:8007/login/';
   public isLoggedIn: boolean;
+  public userName: string;
 
   constructor(private LoginUser : LoginService) {}
 
@@ -19,16 +20,26 @@ export class LoginComponent implements OnInit {
   }
 
   isLogged(){
-    return this.LoginUser.checkIfLogged().subscribe(data => this.isLoggedIn = data);
+    return this.LoginUser
+      .checkIfLogged()
+      .subscribe(data => {
+        if(data.name){
+          this.isLoggedIn = true;
+          this.userName = data.name+ " " + data.surname;
+        } else {
+          this.isLoggedIn = false;
+          this.userName = "";
+        }
+      });
+  }
+
+  logout(){
+    this.LoginUser.logout().subscribe();
+    this.isLoggedIn = false;
   }
 
   submitLogin(){
       console.log("yes");
-  }
-
-  submitSocialLogin(){
-    console.log("yes");
-    this.LoginUser.loginFB().subscribe(data => console.log(data));
   }
 
 
