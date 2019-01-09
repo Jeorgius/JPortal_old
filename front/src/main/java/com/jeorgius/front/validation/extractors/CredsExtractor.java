@@ -1,5 +1,8 @@
 package com.jeorgius.front.validation.extractors;
 
+import com.jeorgius.front.validation.extractors.impl.FbCredsExtractor;
+import com.jeorgius.front.validation.extractors.impl.SocialExtractor;
+import com.jeorgius.front.validation.extractors.impl.VkCredsExtractor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

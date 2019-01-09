@@ -2,6 +2,7 @@ package com.jeorgius.front.validation.extractors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.OAuth2Request;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +22,7 @@ public class AuthDeterminator {
     }
 
     public String determineAuthMethod(Principal principal){
-        String clientId = ((OAuth2Request) principal).getClientId();
+        String clientId = ((OAuth2Authentication) principal).getOAuth2Request().getClientId();
 
         if(clientId.equals(vkClientId)) return "vk";
         else if(clientId.equals(fbClientId)) return "fb";

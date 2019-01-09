@@ -267,12 +267,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _user_detail_user_detail_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./user-detail/user-detail.component */ "./src/app/user-detail/user-detail.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
 /* harmony import */ var _services_display_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../services/display.service */ "./src/services/display.service.ts");
+/* harmony import */ var _services_login_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../services/login.service */ "./src/services/login.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -313,7 +315,8 @@ var AppModule = /** @class */ (function () {
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"]
             ],
             providers: [
-                _services_display_service__WEBPACK_IMPORTED_MODULE_15__["DisplayService"]
+                _services_display_service__WEBPACK_IMPORTED_MODULE_15__["DisplayService"],
+                _services_login_service__WEBPACK_IMPORTED_MODULE_16__["LoginService"]
             ],
             bootstrap: [_AppComponent__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         })
@@ -332,7 +335,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"isLoggedIn; else unLogged\">\r\n  <p>Hello, <span id=\"nicknameL\">USER</span><br />\r\n    <span id=\"MyProfile\">My Profile</span></p>\r\n  <form method=\"POST\">\r\n    <input class=\"Login_forms\" type=\"button\" id=\"LogOutButton\" value=\"Sign Out\">\r\n  </form>\r\n</div>\r\n<ng-template #unLogged>\r\n  <form #loginForm=\"ngForm\">\r\n    <div><input class=\"Login_forms\" id=\"login\" type=\"text\" name=\"login\" value=\"Login\" ngModel/></div>\r\n    <div><input class=\"Login_forms\" id=\"pw\" type=\"password\" name=\"pw\" value=\"Pass\" ngModel/></div>\r\n    <button class=\"Login_forms\" id=\"LoginButton\" type=\"submit\">Send</button>\r\n  </form>\r\n  <ul class=\"navigation\">\r\n    <li class=\"marker\" id=\"register\" routerLink=\"/register\">register</li>\r\n  </ul>\r\n\r\n  <div class=\"SocialNetworksBar\">\r\n    <div>\r\n      <!--<img (click)=\"submitSocialLogin()\" class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />-->\r\n      <a href=\"https://localhost:8007/login/fb\" target=\"_blank\">\r\n        <img class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />\r\n      </a>\r\n      <a href=\"https://localhost:8007/login/vk\" target=\"_blank\">\r\n        <img class=\"SocialNetwork\" src=\"../../assets/data/icons/vk_logo.png\" />\r\n      </a>\r\n    </div>\r\n  </div>\r\n</ng-template>\r\n"
+module.exports = "<div *ngIf=\"isLoggedIn; else unLogged\">\r\n  <p>Hello, <span id=\"nicknameL\">{{userName}}</span><br />\r\n    <span id=\"MyProfile\">My Profile</span></p>\r\n  <!--<form method=\"POST\" action=\"{{logout()}}\">-->\r\n    <input (click)=\"logout()\" class=\"Login_forms\" type=\"button\" id=\"LogOutButton\" value=\"Sign Out\">\r\n  <!--</form>-->\r\n</div>\r\n<ng-template #unLogged>\r\n  <form #loginForm=\"ngForm\">\r\n    <div><input class=\"Login_forms\" id=\"login\" type=\"text\" name=\"login\" value=\"Login\" ngModel/></div>\r\n    <div><input class=\"Login_forms\" id=\"pw\" type=\"password\" name=\"pw\" value=\"Pass\" ngModel/></div>\r\n    <button class=\"Login_forms\" id=\"LoginButton\" type=\"submit\">Send</button>\r\n  </form>\r\n  <ul class=\"navigation\">\r\n    <li class=\"marker\" id=\"register\" routerLink=\"/register\">register</li>\r\n  </ul>\r\n\r\n  <div class=\"SocialNetworksBar\">\r\n    <div>\r\n      <!--<img (click)=\"submitSocialLogin()\" class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />-->\r\n      <a href=\"https://localhost:8007/login/fb\" target=\"_blank\">\r\n        <img class=\"SocialNetwork\" src=\"../../assets/data/icons/fb_logo.png\" />\r\n      </a>\r\n      <a href=\"https://localhost:8007/login/vk\" target=\"_blank\">\r\n        <img class=\"SocialNetwork\" src=\"../../assets/data/icons/vk_logo.png\" />\r\n      </a>\r\n    </div>\r\n  </div>\r\n</ng-template>\r\n"
 
 /***/ }),
 
@@ -373,21 +376,31 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var LoginComponent = /** @class */ (function () {
     function LoginComponent(LoginUser) {
         this.LoginUser = LoginUser;
-        this.JavaRest = 'https://localhost:8007/login/';
     }
     LoginComponent.prototype.ngOnInit = function () {
         this.isLogged();
     };
     LoginComponent.prototype.isLogged = function () {
         var _this = this;
-        return this.LoginUser.checkIfLogged().subscribe(function (data) { return _this.isLoggedIn = data; });
+        return this.LoginUser
+            .checkIfLogged()
+            .subscribe(function (data) {
+            if (data.name) {
+                _this.isLoggedIn = true;
+                _this.userName = data.name + " " + data.surname;
+            }
+            else {
+                _this.isLoggedIn = false;
+                _this.userName = "";
+            }
+        });
+    };
+    LoginComponent.prototype.logout = function () {
+        this.LoginUser.logout().subscribe();
+        this.isLoggedIn = false;
     };
     LoginComponent.prototype.submitLogin = function () {
         console.log("yes");
-    };
-    LoginComponent.prototype.submitSocialLogin = function () {
-        console.log("yes");
-        this.LoginUser.loginFB().subscribe(function (data) { return console.log(data); });
     };
     LoginComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -1069,6 +1082,9 @@ var LoginService = /** @class */ (function () {
     };
     LoginService.prototype.checkIfLogged = function () {
         return this.HTML.get(this.dataSource + "islogged");
+    };
+    LoginService.prototype.logout = function () {
+        return this.HTML.post(this.dataSource + "logout", {});
     };
     LoginService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({

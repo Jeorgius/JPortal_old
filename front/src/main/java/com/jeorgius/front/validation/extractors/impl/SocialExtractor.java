@@ -1,4 +1,4 @@
-package com.jeorgius.front.validation.extractors;
+package com.jeorgius.front.validation.extractors.impl;
 
 import java.security.Principal;
 import java.util.Map;

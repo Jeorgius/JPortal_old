@@ -1,5 +1,6 @@
-package com.jeorgius.front.validation.extractors;
+package com.jeorgius.front.validation.extractors.impl;
 
+import com.jeorgius.front.validation.extractors.impl.SocialExtractor;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 
 import java.security.Principal;

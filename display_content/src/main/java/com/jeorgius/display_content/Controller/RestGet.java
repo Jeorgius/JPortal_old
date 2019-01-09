@@ -30,8 +30,7 @@ public class RestGet {
     private StoreRepo storeRepo;
     private FullInfoDisplay fullInfoDisplay;
 
-    public RestGet() {
-    }
+    public RestGet() {}
 
     @Autowired
     public RestGet(NewsRepo newsRepo, GalleryRepo galleryRepo, UserRepo userRepo, StoreRepo storeRepo, FullInfoDisplay fullInfoDisplay) {
