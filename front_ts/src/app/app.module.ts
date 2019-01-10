@@ -13,10 +13,9 @@ import { AboutComponent } from './about/about.component';
 import { RegisterComponent } from './register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserDetailComponent } from './user-detail/user-detail.component';
-import { LoginComponent } from './login/login.component';
 
 import {DisplayService} from "../services/display.service";
-import {LoginService} from "../services/login.service";
+import {LoginModule} from "./login/login.module";
 
 @NgModule({
   declarations: [
@@ -28,18 +27,17 @@ import {LoginService} from "../services/login.service";
     UsersComponent,
     AboutComponent,
     RegisterComponent,
-    UserDetailComponent,
-    LoginComponent
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    LoginModule
   ],
   providers: [
-    DisplayService,
-    LoginService
+    DisplayService
   ],
   bootstrap: [AppComponent]
 })
