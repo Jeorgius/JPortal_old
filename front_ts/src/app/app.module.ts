@@ -16,6 +16,7 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
 
 import {DisplayService} from "../services/display.service";
 import {LoginModule} from "./login/login.module";
+import { LeftbarComponent } from './leftbar/leftbar.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {LoginModule} from "./login/login.module";
     UsersComponent,
     AboutComponent,
     RegisterComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    LeftbarComponent
   ],
   imports: [
     BrowserModule,

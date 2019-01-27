@@ -3,7 +3,6 @@ package com.jeorgius.front.validation.extractors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
-import org.springframework.security.oauth2.provider.OAuth2Request;
 import org.springframework.stereotype.Service;
 
 import java.security.Principal;
@@ -22,6 +21,8 @@ public class AuthDeterminator {
     }
 
     public String determineAuthMethod(Principal principal){
+        //Determines which map should CredsExtractor return based on configuration and incoming
+        //principal
         String clientId = ((OAuth2Authentication) principal).getOAuth2Request().getClientId();
 
         if(clientId.equals(vkClientId)) return "vk";

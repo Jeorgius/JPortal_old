@@ -24,9 +24,7 @@ public class Auth {
 
   @RequestMapping("/login/islogged")
   public Map isLogged(Principal principal){
-    if (principal!=null) {
-      return credsExtractor.extractCreds(principal);
-    }
+    if (principal!=null) return credsExtractor.extractCreds(principal);
     return new HashMap();
   }
 

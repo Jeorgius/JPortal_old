@@ -226,7 +226,7 @@ var routeComponents = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div class=\"header\"><h2>Jeorgius</h2></div>\r\n<div class=\"whole\">\r\n    <div class=\"leftbar\">\r\n        <ul class=\"navigation\">\r\n            <li class=\"marker\" routerLink=\"/news\">main page</li>\r\n            <li class=\"marker\" routerLink=\"/music\">music</li>\r\n            <li class=\"marker\" routerLink=\"/photos\">photos</li>\r\n            <li class=\"marker\" routerLink=\"/store\">store</li>\r\n            <li class=\"marker\" routerLink=\"/users\">users</li>\r\n            <li class=\"marker\" routerLink=\"/about\">about</li>\r\n            <li id=\"YourAction\" class=\"marker\">your action</li>\r\n        </ul>\r\n        <div class=\"login\"><app-login></app-login></div>\r\n      </div>\r\n\r\n    <div class=\"content\"><router-outlet></router-outlet></div>\r\n</div>\r\n\r\n\r\n"
+module.exports = "\r\n<div class=\"header\"><h2>Jeorgius</h2></div>\r\n<div class=\"whole\">\r\n    <app-leftbar></app-leftbar>\r\n    <div class=\"content\"><router-outlet></router-outlet></div>\r\n</div>\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -267,12 +267,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _user_detail_user_detail_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./user-detail/user-detail.component */ "./src/app/user-detail/user-detail.component.ts");
 /* harmony import */ var _services_display_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../services/display.service */ "./src/services/display.service.ts");
 /* harmony import */ var _login_login_module__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./login/login.module */ "./src/app/login/login.module.ts");
+/* harmony import */ var _leftbar_leftbar_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./leftbar/leftbar.component */ "./src/app/leftbar/leftbar.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -303,7 +305,8 @@ var AppModule = /** @class */ (function () {
                 _users_users_component__WEBPACK_IMPORTED_MODULE_9__["UsersComponent"],
                 _about_about_component__WEBPACK_IMPORTED_MODULE_10__["AboutComponent"],
                 _register_register_component__WEBPACK_IMPORTED_MODULE_11__["RegisterComponent"],
-                _user_detail_user_detail_component__WEBPACK_IMPORTED_MODULE_13__["UserDetailComponent"]
+                _user_detail_user_detail_component__WEBPACK_IMPORTED_MODULE_13__["UserDetailComponent"],
+                _leftbar_leftbar_component__WEBPACK_IMPORTED_MODULE_16__["LeftbarComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -319,6 +322,69 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/leftbar/leftbar.component.html":
+/*!************************************************!*\
+  !*** ./src/app/leftbar/leftbar.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"leftbar\">\r\n  <ul class=\"navigation\">\r\n    <li class=\"marker\" routerLink=\"/news\">main page</li>\r\n    <li class=\"marker\" routerLink=\"/music\">music</li>\r\n    <li class=\"marker\" routerLink=\"/photos\">photos</li>\r\n    <li class=\"marker\" routerLink=\"/store\">store</li>\r\n    <li class=\"marker\" routerLink=\"/users\">users</li>\r\n    <li class=\"marker\" routerLink=\"/about\">about</li>\r\n    <li id=\"YourAction\" class=\"marker\">your action</li>\r\n  </ul>\r\n  <div class=\"login\"><app-login></app-login></div>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/leftbar/leftbar.component.scss":
+/*!************************************************!*\
+  !*** ./src/app/leftbar/leftbar.component.scss ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/leftbar/leftbar.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/leftbar/leftbar.component.ts ***!
+  \**********************************************/
+/*! exports provided: LeftbarComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LeftbarComponent", function() { return LeftbarComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var LeftbarComponent = /** @class */ (function () {
+    function LeftbarComponent() {
+    }
+    LeftbarComponent.prototype.ngOnInit = function () {
+    };
+    LeftbarComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-leftbar',
+            template: __webpack_require__(/*! ./leftbar.component.html */ "./src/app/leftbar/leftbar.component.html"),
+            styles: [__webpack_require__(/*! ./leftbar.component.scss */ "./src/app/leftbar/leftbar.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], LeftbarComponent);
+    return LeftbarComponent;
 }());
 
 

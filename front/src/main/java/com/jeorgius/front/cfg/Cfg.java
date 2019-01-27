@@ -96,6 +96,7 @@ public class Cfg extends WebSecurityConfigurerAdapter {
         //.antMatchers("/login/logout").permitAll()
         .antMatchers("/userinfo").authenticated()
         .anyRequest().authenticated()
+        .antMatchers("/admin/").hasRole("ADMIN")
       .and()
         .addFilterBefore(ssoRedirectFilter(), BasicAuthenticationFilter.class)
         .csrf()
