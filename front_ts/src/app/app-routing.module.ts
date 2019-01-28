@@ -29,7 +29,7 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 export const routeComponents = [
-  AboutComponent, 
+  AboutComponent,
   MusicComponent,
   NewsComponent,
   PhotosComponent,
@@ -37,4 +37,4 @@ export const routeComponents = [
   StoreComponent,
   UsersComponent,
   UserDetailComponent
-]
+];
