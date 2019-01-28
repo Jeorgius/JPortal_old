@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { MusicComponent } from './music/music.component';
-import { NewsComponent } from './news/news.component';
-import { PhotosComponent } from './photos/photos.component';
-import { RegisterComponent } from './register/register.component';
-import { StoreComponent } from './store/store.component';
-import { UsersComponent } from './users/users.component';
-import { UserDetailComponent } from './user-detail/user-detail.component';
+import { AboutComponent } from './content/about/about.component';
+import { MusicComponent } from './content/music/music.component';
+import { NewsComponent } from './content/news/news.component';
+import { PhotosComponent } from './content/photos/photos.component';
+import { RegisterComponent } from './content/register/register.component';
+import { StoreComponent } from './content/store/store.component';
+import { UsersComponent } from './content/users/users.component';
+import { UserDetailComponent } from './content/user-detail/user-detail.component';
 
 
 const routes: Routes = [
