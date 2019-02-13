@@ -1,7 +1,7 @@
-<div class="news" *ngFor="let News of news; index as i">
+<div class="news" *ngFor="let NewsI of news">
   <div class="newsTextBox">
-    <div class="newsTitle">{{news[news.length-1-i].newsTitle}}</div>
-    <div class="newsText">{{news[news.length-1-i].newsText}}</div>
+    <div class="newsTitle">{{NewsI.newsTitle}}</div>
+    <div class="newsText">{{NewsI.newsText}}</div>
   </div>
-  <img [src]="news[news.length-1-i].picHTML">
+  <img [src]="NewsI.picHTML">
 </div>

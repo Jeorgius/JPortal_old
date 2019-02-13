@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient} from "@angular/common/http";
 
 import  { newsList, musicList, photoList,
-          UserReg, storeList, userList } from "../interfaces/displayContent";
+          UserReg, storeList, userList } from "../app/content/interfaces/displayContent";
 
 @Injectable({
   providedIn: 'root'
@@ -28,6 +28,6 @@ export class DisplayService {
     return this.HTML.get<newsList[]>(this.dataSource+'news.json');
   }
   getPhotos(){
-    return this.HTML.get<photoList[]>(this.dataSource+'photos.json');
+    return this.HTML.get<photoList[]>(this.dataSource+'photo.json');
   }
 }

@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'music', component: MusicComponent},
   {path: 'news', component: NewsComponent},
-  {path: 'photos', component: PhotosComponent},
+  {path: 'photo', component: PhotosComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'store', component: StoreComponent},
   {path: 'users', component: UsersComponent},

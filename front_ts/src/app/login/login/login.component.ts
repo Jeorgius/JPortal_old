@@ -9,7 +9,6 @@ import {LoginService} from "../services/login.service";
 })
 export class LoginComponent implements OnInit {
 
-  //private JavaRest = 'https://localhost:8007/login/';
   public isLoggedIn: boolean;
   public userName: string;
 
@@ -20,8 +19,7 @@ export class LoginComponent implements OnInit {
   }
 
   isLogged(){
-    return this.LoginUser
-      .checkIfLogged()
+    return this.LoginUser.checkIfLogged()
       .subscribe(data => {
         if(data.name){
           this.isLoggedIn = true;
@@ -36,10 +34,6 @@ export class LoginComponent implements OnInit {
   logout(){
     this.LoginUser.logout().subscribe();
     this.isLoggedIn = false;
-  }
-
-  submitLogin(){
-      console.log("yes");
   }
 
 

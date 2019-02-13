@@ -11,14 +11,17 @@ export class UsersComponent implements OnInit {
 
   public userInfo = [];
 
-  constructor(private _userService: DisplayService, private GoToProfile: Router) { }
+  constructor(
+    private userService: DisplayService,
+    private GoToProfile: Router
+  ) { }
 
   openProfile (user){
     this.GoToProfile.navigate(['/users', user.nickname])
   }
 
   ngOnInit() {
-    this._userService.getUsers().subscribe(data => this.userInfo = data);
+    this.userService.getUsers().subscribe(data => this.userInfo = data);
   }
 
 }

@@ -6,15 +6,15 @@ import {LoggedIn} from "../interfaces/Authentication";
   providedIn: 'root'
 })
 export class LoginService {
-  private dataSource = "https://localhost:8007/login/";
+  private dataSource = "https://localhost:8007/login";
 
   constructor(private HTML: HttpClient) { }
 
   checkIfLogged(){
-    return this.HTML.get<LoggedIn>(this.dataSource+"islogged");
+    return this.HTML.get<LoggedIn>(this.dataSource+"/islogged");
   }
 
   logout(){
-    return this.HTML.post(this.dataSource+"logout",{});
+    return this.HTML.post(this.dataSource+"/logout",{});
   }
 }
