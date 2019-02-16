@@ -1,10 +1,9 @@
 <div *ngIf="isLoggedIn; else unLogged">
   <p>Hello, <span id="nicknameL">{{userName}}</span><br />
     <span id="MyProfile">My Profile</span></p>
-  <!--<form method="POST" action="{{logout()}}">-->
     <input (click)="logout()" class="Login_forms" type="button" id="LogOutButton" value="Sign Out">
-  <!--</form>-->
 </div>
+
 <ng-template #unLogged>
   <form #loginForm="ngForm">
     <div><input class="Login_forms" id="login" type="text" name="login" value="Login" ngModel/></div>

@@ -31,3 +31,9 @@
 .prodItem .pTitle, .prodItem .pn, .prodItem .price, .prodItem img, .prodItem .hotsale {
     display: block;
 }
+
+app-edit-bar{
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.prodItem:hover app-edit-bar {opacity: 1;}

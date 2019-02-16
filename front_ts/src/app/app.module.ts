@@ -17,6 +17,7 @@ import { UserDetailComponent } from './content/user-detail/user-detail.component
 import {DisplayService} from "../services/display.service";
 import {LoginModule} from "./login/login.module";
 import { LeftbarComponent } from './leftbar/leftbar.component';
+import { EditBarComponent } from './admin/edit_bar/edit-bar.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LeftbarComponent } from './leftbar/leftbar.component';
     AboutComponent,
     RegisterComponent,
     UserDetailComponent,
-    LeftbarComponent
+    LeftbarComponent,
+    EditBarComponent
   ],
   imports: [
     BrowserModule,

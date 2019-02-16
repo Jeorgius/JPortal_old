@@ -1,0 +1,28 @@
+ul, ul li {
+  list-style: none;
+  padding:0;
+}
+
+li:hover {
+  background: rgba(255, 255 ,255, 0.3);
+  cursor: pointer;
+}
+
+.editButton, .saveButton, .deleteButton{
+  margin: 5px;
+}
+
+.editButton img, .saveButton img, .deleteButton img{
+  max-width: 30px;
+  max-height:30px;
+}
+.editBar{
+  position: absolute;
+  width: 40px;
+  background-color: rgba(0,0,0,0.5);
+  right: 0;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+}
+

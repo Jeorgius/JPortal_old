@@ -28,6 +28,6 @@ export class DisplayService {
     return this.HTML.get<newsList[]>(this.dataSource+'news.json');
   }
   getPhotos(){
-    return this.HTML.get<photoList[]>(this.dataSource+'photo.json');
+    return this.HTML.get<photoList[]>(this.dataSource+'photos.json');
   }
 }

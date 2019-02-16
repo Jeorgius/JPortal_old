@@ -3,16 +3,25 @@
     height: 170px;
     padding: 5px;
     display: inline-block;
-    text-align: center;
+    //text-align: center;
     box-shadow: none;
-    /*border: 1px solid whitesmoke;*/
-}
-.photo:hover {
-    box-shadow: 0 2px 0 antiquewhite inset,
-    0 2px 0 antiquewhite;
+    position: relative;
 }
 .photo img {
-    margin-top: 10px;
+    position: absolute;
     max-width: 160px;
     max-height: 160px;
+    bottom: 10px;
+    left: 5px;
 }
+
+.photo:hover {
+  box-shadow: 0 2px 0 antiquewhite inset,
+  0 2px 0 antiquewhite;
+}
+
+app-edit-bar{
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.photo:hover app-edit-bar {opacity: 1;}
