@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
+import {CreatorDeterminatorService} from "../services/creator-determinator.service";
 
 @Component({
   selector: 'app-add-button',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddButtonComponent implements OnInit {
 
-  constructor() { }
+  constructor(private GoTo :CreatorDeterminatorService) { }
 
   ngOnInit() {
   }
 
+  createItem(){
+    this.GoTo.goToCreator();
+  }
 }

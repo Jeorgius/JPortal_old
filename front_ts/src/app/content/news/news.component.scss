@@ -27,21 +27,3 @@ app-edit-bar{
   transition: opacity 0.3s;
 }
 .news:hover app-edit-bar {opacity: 1;}
-
-.addField{
-  margin-left: 45%;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.addButton{
-  display: table-cell;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #77FF77;
-  vertical-align: middle;
-  font-weight: bold;
-  font-size: 25px;
-}
-
-.addButton:hover{ background-color: #FF7777; }
