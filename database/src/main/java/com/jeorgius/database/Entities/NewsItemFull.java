@@ -1,5 +1,7 @@
 package com.jeorgius.database.Entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 
 @Entity
@@ -9,6 +11,7 @@ public class NewsItemFull {
     private Long id;
     private String fullText;
 
+    @JsonBackReference
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private NewsItem newsItem;
 

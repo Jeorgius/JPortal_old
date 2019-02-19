@@ -1,5 +1,8 @@
 package com.jeorgius.database.Entities.Store;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 
 import java.util.List;
@@ -13,12 +16,15 @@ public class StoreItemFull {
     private String description;
     private String hero_filename;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "storeItemFull", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<StoreGalleryItem> gallery;
 
+    @JsonBackReference
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private StoreItem storeItem;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "storeItemFull", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<ItemFeature> features;
 

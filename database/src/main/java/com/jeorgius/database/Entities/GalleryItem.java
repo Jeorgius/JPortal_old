@@ -1,5 +1,7 @@
 package com.jeorgius.database.Entities;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 
 @Entity
@@ -11,6 +13,7 @@ public class GalleryItem {
     private Long id;
     private String filename;
 
+    @JsonManagedReference
     @OneToOne(fetch = FetchType.LAZY)
     private GalleryItemFull galleryItemFull;
 

@@ -16,14 +16,7 @@ export interface regUser {
   surname: string,
   city: string
 }
-export interface storeList {
-  pTitle: string,
-  sku: number,
-  pn: string,
-  price: number,
-  picHTML: string,
-  hot: number
-}
+
 export interface userList {
   id: number,
   nickname: string,

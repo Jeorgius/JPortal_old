@@ -1,5 +1,7 @@
 package com.jeorgius.database.Entities;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 
 @Entity
@@ -12,6 +14,7 @@ public class NewsItem {
     private String preText;
     private String filename;
 
+    @JsonManagedReference
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private NewsItemFull newsItemFull;
 

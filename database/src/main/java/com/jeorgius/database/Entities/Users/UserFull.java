@@ -1,5 +1,7 @@
 package com.jeorgius.database.Entities.Users;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 
 @Entity
@@ -9,6 +11,7 @@ public class UserFull {
     private Long id;
     private String description;
 
+    @JsonBackReference
     @OneToOne (cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private User user;
 

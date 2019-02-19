@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient} from "@angular/common/http";
 
 import  { newsList, musicList, photoList,
-          UserReg, storeList, userList } from "../app/content/interfaces/displayContent";
+          UserReg, userList } from "../app/content/interfaces/displayContent";
+import {storeList} from "../app/content/interfaces/store";
 
 @Injectable({
   providedIn: 'root'

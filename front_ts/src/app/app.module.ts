@@ -10,9 +10,9 @@ import { PhotosComponent } from './content/photos/photos.component';
 import { StoreComponent } from './content/store/store.component';
 import { UsersComponent } from './content/users/users.component';
 import { AboutComponent } from './content/about/about.component';
-import { RegisterComponent } from './content/register/register.component';
+import { RegisterComponent } from './content/users/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
-import { UserDetailComponent } from './content/user-detail/user-detail.component';
+import { UserDetailComponent } from './content/users/user-detail/user-detail.component';
 
 import {DisplayService} from "../services/display.service";
 import {LoginModule} from "./login/login.module";

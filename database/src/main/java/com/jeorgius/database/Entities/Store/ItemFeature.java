@@ -1,5 +1,7 @@
 package com.jeorgius.database.Entities.Store;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 
 @Entity
@@ -13,6 +15,7 @@ public class ItemFeature {
     private String media;
     private String orientation;
 
+    @JsonBackReference
     @ManyToOne (cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name="storeItemFullId")
     private StoreItemFull storeItemFull;

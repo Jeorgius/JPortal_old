@@ -1,5 +1,7 @@
 package com.jeorgius.database.Entities.Store;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 
 @Entity
@@ -10,6 +12,7 @@ public class StoreGalleryItem {
     private Long id;
     private String file_path;
 
+    @JsonBackReference
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name="storeItemFullId")
     private StoreItemFull storeItemFull;

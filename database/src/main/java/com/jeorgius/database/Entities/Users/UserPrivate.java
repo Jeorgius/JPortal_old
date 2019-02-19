@@ -1,5 +1,7 @@
 package com.jeorgius.database.Entities.Users;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 
 @Entity
@@ -11,6 +13,7 @@ public class UserPrivate {
     private String pw;
     private int rank;
 
+    @JsonBackReference
     @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private User user;
 

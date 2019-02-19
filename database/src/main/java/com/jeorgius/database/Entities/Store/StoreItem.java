@@ -1,5 +1,7 @@
 package com.jeorgius.database.Entities.Store;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 
 @Entity
@@ -15,6 +17,7 @@ public class StoreItem {
     private boolean hotsale;
     private String hero;
 
+    @JsonManagedReference
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private StoreItemFull storeItemFull;
 

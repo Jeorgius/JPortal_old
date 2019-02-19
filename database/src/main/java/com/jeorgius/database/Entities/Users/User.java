@@ -1,5 +1,7 @@
 package com.jeorgius.database.Entities.Users;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 
 @Entity
@@ -13,9 +15,11 @@ public class User {
     private String surname;
     private String avatar_path;
 
+    @JsonManagedReference
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private UserPrivate userPrivate;
 
+    @JsonManagedReference
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private UserFull userFull;
 
