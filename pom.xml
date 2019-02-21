@@ -14,5 +14,6 @@
     <module>gateway</module>
     <module>front</module>
     <module>front_ts</module>
+    <module>media_server</module>
   </modules>
 </project>

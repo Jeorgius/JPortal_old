@@ -1,3 +1,7 @@
-<p>
-  news-creator works!
-</p>
+<form #registerForm="ngForm">
+  {{newsItem | json}}
+  <div>Title:<br/><input class="Creator_forms" type="text" name="nickname" [(ngModel)]="newsItem.newsTitle" /></div>
+  <div>Text:<br/> <input class="Creator_forms" type="text" name="email" [(ngModel)]="newsItem.newsText" /></div>
+  <div>Hero image:<br/> <input class="Creator_forms" type="text" name="name" [(ngModel)]="newsItem.picHTML" /></div>
+  <button id="CreateButton" type="submit">Push it already</button>
+</form>
