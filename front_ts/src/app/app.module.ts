@@ -23,6 +23,7 @@ import { PhotoCreatorComponent } from './admin/photo-creator/photo-creator.compo
 import { ProductCreatorComponent } from './admin/product-creator/product-creator.component';
 import { MusicCreatorComponent } from './admin/music-creator/music-creator.component';
 import { AddButtonComponent } from './admin/add-button/add-button.component';
+import {FileDropModule} from "ngx-file-drop";
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { AddButtonComponent } from './admin/add-button/add-button.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    LoginModule
+    LoginModule,
+    FileDropModule
   ],
   providers: [
     DisplayService
