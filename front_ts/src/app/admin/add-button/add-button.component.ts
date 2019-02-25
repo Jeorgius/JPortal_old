@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-import {CreatorDeterminatorService} from "../services/creator-determinator.service";
+import {CreatorDeterminatorService} from "../services/creator_determinator/creator-determinator.service";
 
 @Component({
   selector: 'app-add-button',

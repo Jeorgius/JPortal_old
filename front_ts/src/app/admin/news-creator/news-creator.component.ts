@@ -23,8 +23,8 @@ export class NewsCreatorComponent implements OnInit {
 
     for(let newFile of event.files){
       let fileEntry = newFile.fileEntry as FileSystemFileEntry;
-      fileEntry.file((file :File) =>{
-        newFile.relativePath;
+      fileEntry.file((file :File) => {
+        alert(newFile.relativePath);
       })
     }
   }
