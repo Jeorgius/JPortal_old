@@ -18,11 +18,7 @@
 
 /*                                  CONTENT*/
 .content {
-    grid-column: 2;
     padding-left: 60px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
 }
 .content input {
     background: rgba(0,0,0,0);

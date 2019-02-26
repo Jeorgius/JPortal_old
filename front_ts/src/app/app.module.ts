@@ -24,6 +24,7 @@ import { ProductCreatorComponent } from './admin/product-creator/product-creator
 import { MusicCreatorComponent } from './admin/music-creator/music-creator.component';
 import { AddButtonComponent } from './admin/add-button/add-button.component';
 import {FileDropModule} from "ngx-file-drop";
+import {AdminModule} from "./admin/admin.module";
 
 @NgModule({
   declarations: [
@@ -37,20 +38,22 @@ import {FileDropModule} from "ngx-file-drop";
     RegisterComponent,
     UserDetailComponent,
     LeftbarComponent,
-    EditBarComponent,
-    NewsCreatorComponent,
-    PhotoCreatorComponent,
-    ProductCreatorComponent,
-    MusicCreatorComponent,
-    AddButtonComponent
+    // EditBarComponent,
+    // NewsCreatorComponent,
+    // PhotoCreatorComponent,
+    // ProductCreatorComponent,
+    // MusicCreatorComponent,
+    // AddButtonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    FileDropModule,
+
     LoginModule,
-    FileDropModule
+    AdminModule
   ],
   providers: [
     DisplayService
