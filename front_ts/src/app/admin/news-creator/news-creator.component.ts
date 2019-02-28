@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {newsList} from "../../content/interfaces/displayContent";
 import {NewsItem} from "../../entities/News";
 import {FileSystemFileEntry, UploadEvent, UploadFile} from "ngx-file-drop";
+import {forEach} from "@angular/router/src/utils/collection";
 
 @Component({
   selector: 'app-news-creator',
@@ -16,6 +17,7 @@ export class NewsCreatorComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.preventDefaultRerouts();
   }
 
   drag_n_drop(event :UploadEvent){
@@ -27,5 +29,22 @@ export class NewsCreatorComponent implements OnInit {
         alert(newFile.relativePath);
       })
     }
+  }
+
+  private preventDefaultRerouts(){
+    //prevent rerouts to picture view when dropping image to an ImageArea
+    let imageAreas = document.getElementsByClassName("ImageField"),
+      Events = ['dragenter', 'dragover' , 'dragleave', 'drop'];
+
+    for(let i=0; i<imageAreas.length;i++){
+      for(let event of Events){
+        imageAreas[i].addEventListener(event, (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+        })
+      }
+    }
+
+    return imageAreas;
   }
 }
