@@ -55,6 +55,7 @@ import {AdminModule} from "./admin/admin.module";
     LoginModule,
     AdminModule
   ],
+
   providers: [
     DisplayService
   ],

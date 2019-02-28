@@ -6,7 +6,8 @@ import {HttpClient} from "@angular/common/http";
 })
 export class ImageSaverService {
 
-  private MediaServer = "http://localhost:8002"
+  private MediaServer = "http://localhost:8007";
+  //private MediaServer = "http://localhost:8002";
   constructor(private Http :HttpClient) { }
 
   saveImage(newFile :File) {

@@ -10,7 +10,7 @@ import {FileSystemFileEntry, UploadEvent, UploadFile} from "ngx-file-drop";
 })
 export class NewsCreatorComponent implements OnInit {
 
-  public newsItem :newsList = new NewsItem("New Title", "URL", "Enter text here");
+  public newsItem :newsList = new NewsItem("New Title", null, "Enter text here");
   public files :UploadFile[] = [];
 
   constructor() { }
@@ -18,7 +18,7 @@ export class NewsCreatorComponent implements OnInit {
   ngOnInit() {
   }
 
-  Drag_n_drop(event :UploadEvent){
+  drag_n_drop(event :UploadEvent){
     this.files = event.files;
 
     for(let newFile of event.files){

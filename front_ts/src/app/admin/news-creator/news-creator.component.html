@@ -1,9 +1,18 @@
-<!--{{newsItem | json}}-->
+{{newsItem | json}}
 <div class="newsCreator">
   <!--<form #registerForm="ngForm">-->
-  <input class="Creator_forms title" type="text" name="Title" [(ngModel)]="newsItem.newsTitle" />
-  <textarea class="Creator_forms text" type="text" name="Text" [(ngModel)]="newsItem.newsText" ></textarea>
-  <input class="Creator_forms imageField" type="file" name="Hero" [(ngModel)]="newsItem.picHTML"/>
+  <div class="Creator_Field title">
+    <input class="Creator_forms" type="text" name="Title" [(ngModel)]="newsItem.newsTitle" />
+  </div>
+  <div class="Creator_Field text">
+    <textarea class="Creator_forms" type="text" name="Text" [(ngModel)]="newsItem.newsText" ></textarea>
+  </div>
+  <div class="Creator_Field imageField">
+    <input
+      class="Creator_forms" type="file" name="Hero" [(ngModel)]="newsItem.pic"
+      (onFileDrop)="drag_n_drop($event)"
+    />
+  </div>
   <!--</form>-->
 </div>
 <button id="CreateButton" type="submit">Save</button>
