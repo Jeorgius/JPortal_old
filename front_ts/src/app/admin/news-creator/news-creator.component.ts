@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {newsList} from "../../content/interfaces/displayContent";
 import {NewsItem} from "../../entities/News";
 import {FileSystemFileEntry, UploadEvent, UploadFile} from "ngx-file-drop";
-import {forEach} from "@angular/router/src/utils/collection";
 
 @Component({
   selector: 'app-news-creator',
@@ -12,7 +11,7 @@ import {forEach} from "@angular/router/src/utils/collection";
 export class NewsCreatorComponent implements OnInit {
 
   public newsItem :newsList = new NewsItem("New Title", null, "Enter text here");
-  public files :UploadFile[] = [];
+  public files :File[] = [];
 
   constructor() { }
 
@@ -20,14 +19,12 @@ export class NewsCreatorComponent implements OnInit {
     this.preventDefaultRerouts();
   }
 
-  drag_n_drop(event :UploadEvent){
-    this.files = event.files;
+  drag_n_drop(files :File[]){
+    alert("Yes");
+    this.files = files;
 
-    for(let newFile of event.files){
-      let fileEntry = newFile.fileEntry as FileSystemFileEntry;
-      fileEntry.file((file :File) => {
-        alert(newFile.relativePath);
-      })
+    for(let newFile of files){
+        alert(newFile.name);
     }
   }
 

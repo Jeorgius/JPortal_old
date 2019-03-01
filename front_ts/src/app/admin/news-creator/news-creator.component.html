@@ -8,10 +8,14 @@
     <textarea class="Creator_forms" type="text" name="Text" [(ngModel)]="newsItem.newsText" ></textarea>
   </div>
   <div class="Creator_Field ImageField">
-    <input
-      class="Creator_forms" type="file" name="Hero" [(ngModel)]="newsItem.pic"
-      (onFileDrop)="drag_n_drop($event)"
-    />
+    <div
+      ngfSelect
+      class="Creator_forms"
+      [(ngModel)]="newsItem.pic"
+      accept="*"
+      [(files)]="files"
+      (drop)="drag_n_drop($event)"
+    ></div>
   </div>
   <!--</form>-->
 </div>

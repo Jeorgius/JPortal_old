@@ -38,12 +38,6 @@ import {AdminModule} from "./admin/admin.module";
     RegisterComponent,
     UserDetailComponent,
     LeftbarComponent,
-    // EditBarComponent,
-    // NewsCreatorComponent,
-    // PhotoCreatorComponent,
-    // ProductCreatorComponent,
-    // MusicCreatorComponent,
-    // AddButtonComponent
   ],
   imports: [
     BrowserModule,
