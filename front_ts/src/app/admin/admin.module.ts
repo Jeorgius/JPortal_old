@@ -8,6 +8,7 @@ import {ProductCreatorComponent} from "./product-creator/product-creator.compone
 import {AddButtonComponent} from "./add-button/add-button.component";
 import {EditBarComponent} from "./edit_bar/edit-bar.component";
 import {FormsModule} from "@angular/forms";
+import { DragNDropDirective } from './news-creator/directives/drag-ndrop.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {FormsModule} from "@angular/forms";
     MusicCreatorComponent,
     NewsCreatorComponent,
     PhotoCreatorComponent,
-    ProductCreatorComponent
+    ProductCreatorComponent,
+    DragNDropDirective
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import {FormsModule} from "@angular/forms";
     MusicCreatorComponent,
     NewsCreatorComponent,
     PhotoCreatorComponent,
-    ProductCreatorComponent
+    ProductCreatorComponent,
+    DragNDropDirective
   ]
 })
 export class AdminModule { }

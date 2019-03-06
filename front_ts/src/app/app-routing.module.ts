@@ -12,6 +12,7 @@ import {NewsCreatorComponent} from "./admin/news-creator/news-creator.component"
 import {ProductCreatorComponent} from "./admin/product-creator/product-creator.component";
 import {PhotoCreatorComponent} from "./admin/photo-creator/photo-creator.component";
 import {MusicCreatorComponent} from "./admin/music-creator/music-creator.component";
+import {Model3dComponent} from "./content/model3d/model3d.component";
 
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'store', component: StoreComponent},
   {path: 'users', component: UsersComponent},
   {path: 'users/:nickname', component: UserDetailComponent},
+  {path: '3d', component: Model3dComponent},
 
   {path: 'admin/create/news', component: NewsCreatorComponent},
   {path: 'admin/create/product', component: ProductCreatorComponent},

@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   constructor(private LoginUser : LoginService) {}
 
   ngOnInit() {
-    this.isLogged();
+    //this.isLogged();
   }
 
   isLogged(){

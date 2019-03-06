@@ -24,6 +24,7 @@
     "core-js": "^2.5.4",
     "ngx-file-drop": "^5.0.5",
     "rxjs": "^6.4.0",
+    "wrld.js": "^0.1.1996",
     "zone.js": "^0.8.29"
   },
   "devDependencies": {
@@ -37,7 +38,7 @@
     "codelyzer": "~4.2.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
-    "karma": "^4.0.0",
+    "karma": "^4.0.1",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.0",
     "karma-jasmine": "~1.1.1",

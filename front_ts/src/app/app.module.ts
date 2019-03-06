@@ -17,14 +17,8 @@ import { UserDetailComponent } from './content/users/user-detail/user-detail.com
 import {DisplayService} from "../services/display.service";
 import {LoginModule} from "./login/login.module";
 import { LeftbarComponent } from './leftbar/leftbar.component';
-import { EditBarComponent } from './admin/edit_bar/edit-bar.component';
-import { NewsCreatorComponent } from './admin/news-creator/news-creator.component';
-import { PhotoCreatorComponent } from './admin/photo-creator/photo-creator.component';
-import { ProductCreatorComponent } from './admin/product-creator/product-creator.component';
-import { MusicCreatorComponent } from './admin/music-creator/music-creator.component';
-import { AddButtonComponent } from './admin/add-button/add-button.component';
-import {FileDropModule} from "ngx-file-drop";
 import {AdminModule} from "./admin/admin.module";
+import { Model3dComponent } from './content/model3d/model3d.component';
 
 @NgModule({
   declarations: [
@@ -38,13 +32,13 @@ import {AdminModule} from "./admin/admin.module";
     RegisterComponent,
     UserDetailComponent,
     LeftbarComponent,
+    Model3dComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    FileDropModule,
 
     LoginModule,
     AdminModule

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {newsList} from "../../content/interfaces/displayContent";
 import {NewsItem} from "../../entities/News";
-import {FileSystemFileEntry, UploadEvent, UploadFile} from "ngx-file-drop";
+import {of} from "rxjs/internal/observable/of";
 
 @Component({
   selector: 'app-news-creator',
@@ -10,38 +10,21 @@ import {FileSystemFileEntry, UploadEvent, UploadFile} from "ngx-file-drop";
 })
 export class NewsCreatorComponent implements OnInit {
 
-  public newsItem :newsList = new NewsItem("New Title", null, "Enter text here");
+  public newsItem = new NewsItem("New Title", "Enter text here");
   public files :File[] = [];
 
   constructor() { }
 
-  ngOnInit() {
-    this.preventDefaultRerouts();
-  }
+  ngOnInit() {}
 
   drag_n_drop(files :File[]){
-    alert("Yes");
+    //alert("Yes");
     this.files = files;
+    this.newsItem.pic = this.files[0];
 
-    for(let newFile of files){
-        alert(newFile.name);
-    }
   }
 
-  private preventDefaultRerouts(){
-    //prevent rerouts to picture view when dropping image to an ImageArea
-    let imageAreas = document.getElementsByClassName("ImageField"),
-      Events = ['dragenter', 'dragover' , 'dragleave', 'drop'];
-
-    for(let i=0; i<imageAreas.length;i++){
-      for(let event of Events){
-        imageAreas[i].addEventListener(event, (event) => {
-          event.preventDefault();
-          event.stopPropagation();
-        })
-      }
-    }
-
-    return imageAreas;
+  checkname(){
+    alert(this.newsItem.pic.name);
   }
 }
