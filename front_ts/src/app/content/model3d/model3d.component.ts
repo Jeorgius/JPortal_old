@@ -1,9 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+//import * as mapboxgl from 'mapbox-gl';
+// import * as mgl from 'ngx-mapbox-gl';
+// import {ControlComponent} from "ngx-mapbox-gl";
 
 @Component({
   selector: 'app-model3d',
   templateUrl: './model3d.component.html',
-  styleUrls: ['./model3d.component.scss']
+  styleUrls: [
+    './model3d.component.scss'
+  ]
 })
 export class Model3dComponent implements OnInit {
 
@@ -11,49 +16,27 @@ export class Model3dComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    //LEAFLET
-    // let lMap = L.map('mapid').setView([59.963848, 30.319943],13);
-    // L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token='+this.adminToken, {
-    //   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    //   maxZoom: 18,
-    //   id: 'mapbox.streets',
-    //   accessToken: 'your.mapbox.access.token'
-    // }).addTo(lMap);
-
-    //WRLD3D
-    // let eMap = L.Wrld.map('mapid', '269194e12fdedd29d1bee4767e1aee2c', {
-    //   // center: [59.963848, 30.319943],
-    //   center: [40.720347, -74.002010],
-    //   zoom: 15
-    // });
-  //   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token='+this.adminToken, {
-  //       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-  //       maxZoom: 18,
-  //       id: 'mapbox.streets',
-  //       accessToken: 'your.mapbox.access.token'
-  //     }).addTo(eMap);
-
     //Mapbox
-    mapboxgl.accessToken = 'pk.eyJ1IjoiamVvcmdpdXMiLCJhIjoiY2pzc3Y3Z3JiMTE1YzQzbzRlb3ZmNWJrdSJ9.jFPt7wpDWHkkXqzcSbwQzA';
-    let mMap = new mapboxgl.Map({
-      container: 'mapid',
-      style: 'mapbox://styles/mapbox/streets-v9',
+    //mapboxgl.accessToken = 'pk.eyJ1IjoiamVvcmdpdXMiLCJhIjoiY2pzc3Y3Z3JiMTE1YzQzbzRlb3ZmNWJrdSJ9.jFPt7wpDWHkkXqzcSbwQzA';
+    // let mMap = new mapboxgl.Map({
+    //   container: 'mapid',
+    //   style: 'mapbox://styles/mapbox/streets-v9',
+    //
+    //   //Chicago
+    //   // center: [-87.61694, 41.86625],
+    //
+    //   //Saint-Petersburg
+    //   center: [30.319943, 59.963848],
+    //
+    //   //Paris
+    //   //center: [48.856663, 2.351556],
+    //   zoom: 15.99,
+    //   pitch: 40,
+    //   bearing: 20
+    // });
+    // mMap.addControl(new mapboxgl.NavigationControl());
 
-      //Chicago
-      // center: [-87.61694, 41.86625],
-
-      //Saint-Petersburg
-      center: [30.319943, 59.963848],
-
-      //Paris
-      //center: [48.856663, 2.351556],
-      zoom: 15.99,
-      pitch: 40,
-      bearing: 20
-    });
-    mMap.addControl(new mapboxgl.NavigationControl());
-
-    mMap.on('load', function() {
+    /*mMap.on('load', function() {
       mMap.addLayer({
         'id': 'room-extrusion',
         'type': 'fill-extrusion',
@@ -80,8 +63,46 @@ export class Model3dComponent implements OnInit {
           'fill-extrusion-opacity': 0.5
         }
       })
-    });
+    });*/
 
+    //   mMap.on('load', function() {
+    //     // Insert the layer beneath any symbol layer.
+    //     let layers = mMap.getStyle().layers;
+    //
+    //     let labelLayerId;
+    //     for (let i = 0; i < layers.length; i++) {
+    //       if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+    //         labelLayerId = layers[i].id;
+    //         break;
+    //       }
+    //     }
+    //
+    //     mMap.addLayer({
+    //       'id': '3d-buildings',
+    //       'source': 'composite',
+    //       'source-layer': 'building',
+    //       'filter': ['==', 'extrude', 'true'],
+    //       'type': 'fill-extrusion',
+    //       'minzoom': 15,
+    //       'paint': {
+    //         'fill-extrusion-color': '#aaa',
+    //
+    //         // use an 'interpolate' expression to add a smooth transition effect to the
+    //         // buildings as the user zooms in
+    //         'fill-extrusion-height': [
+    //           "interpolate", ["linear"], ["zoom"],
+    //           15, 0,
+    //           15.05, ["get", "height"]
+    //         ],
+    //         'fill-extrusion-base': [
+    //           "interpolate", ["linear"], ["zoom"],
+    //           15, 0,
+    //           15.05, ["get", "min_height"]
+    //         ],
+    //         'fill-extrusion-opacity': .6
+    //       }
+    //     }, labelLayerId);
+    //   });
+    // }
   }
-
 }

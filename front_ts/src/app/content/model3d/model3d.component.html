@@ -1,2 +1,34 @@
-<div id="map_controls"></div>
-<div id="mapid"></div>
+<!--<div id="map_controls"></div>-->
+<!--<div id="mapid"></div>-->
+<mgl-map
+  [style]="'mapbox://styles/mapbox/streets-v9'"
+  [zoom]="[15.99]"
+  [center]="[30.319943, 59.963848]"
+  [pitch]="40"
+  [bearing]="20"
+>
+  <mgl-layer
+    id="3d-buildings"
+    source="composite"
+    sourceLayer="building"
+    [filter]="['==', 'extrude', 'true']"
+    type="fill-extrusion"
+    [minzoom]="15"
+    [paint]="{
+        'fill-extrusion-color': '#aaa',
+        'fill-extrusion-height': [
+          'interpolate', ['linear'], ['zoom'],
+          15, 0,
+          15.05, ['get', 'height']
+        ],
+        'fill-extrusion-base': [
+          'interpolate',
+          ['linear'], ['zoom'],
+          15, 0,
+          15.05, ['get', 'min_height']
+        ],
+        'fill-extrusion-opacity': .6
+      }"></mgl-layer>
+
+  <mgl-control mglNavigation></mgl-control>
+</mgl-map>

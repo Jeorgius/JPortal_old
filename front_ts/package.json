@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxy-config proxy.conf.json",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -22,7 +22,9 @@
     "@angular/router": "^7.2.6",
     "angular-webstorage-service": "^1.0.2",
     "core-js": "^2.5.4",
+    "mapbox-gl": "^0.52.0",
     "ngx-file-drop": "^5.0.5",
+    "ngx-mapbox-gl": "^3.0.1",
     "rxjs": "^6.4.0",
     "wrld.js": "^0.1.1996",
     "zone.js": "^0.8.29"
@@ -34,6 +36,7 @@
     "@angular/language-service": "^7.2.6",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
+    "@types/mapbox-gl": "^0.51.4",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.2.1",
     "jasmine-core": "~2.99.1",

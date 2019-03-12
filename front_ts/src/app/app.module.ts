@@ -18,7 +18,9 @@ import {DisplayService} from "../services/display.service";
 import {LoginModule} from "./login/login.module";
 import { LeftbarComponent } from './leftbar/leftbar.component';
 import {AdminModule} from "./admin/admin.module";
+
 import { Model3dComponent } from './content/model3d/model3d.component';
+import {NgxMapboxGLModule} from "ngx-mapbox-gl";
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { Model3dComponent } from './content/model3d/model3d.component';
     RegisterComponent,
     UserDetailComponent,
     LeftbarComponent,
-    Model3dComponent,
+
+    Model3dComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,11 @@ import { Model3dComponent } from './content/model3d/model3d.component';
     FormsModule,
 
     LoginModule,
-    AdminModule
+    AdminModule,
+
+    NgxMapboxGLModule.withConfig({
+      accessToken: 'pk.eyJ1IjoiamVvcmdpdXMiLCJhIjoiY2pzc3Y3Z3JiMTE1YzQzbzRlb3ZmNWJrdSJ9.jFPt7wpDWHkkXqzcSbwQzA'
+    })
   ],
 
   providers: [
