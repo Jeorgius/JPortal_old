@@ -3,10 +3,11 @@
 <mgl-map
   [style]="'mapbox://styles/mapbox/streets-v9'"
   [zoom]="[15.99]"
-  [center]="[30.319943, 59.963848]"
+  [center]="centerXY"
   [pitch]="40"
   [bearing]="20"
 >
+  <!--3d-Buildings-->
   <mgl-layer
     id="3d-buildings"
     source="composite"
@@ -29,6 +30,16 @@
         ],
         'fill-extrusion-opacity': .6
       }"></mgl-layer>
+
+  <mgl-layer
+    id="route"
+    type="line"
+    [source]="{
+      'type': 'geojson',
+      'data' : data
+    }"
+    >
+  </mgl-layer>
 
   <mgl-control mglNavigation></mgl-control>
 </mgl-map>
