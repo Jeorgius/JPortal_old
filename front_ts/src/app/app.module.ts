@@ -11,7 +11,7 @@ import { StoreComponent } from './content/store/store.component';
 import { UsersComponent } from './content/users/users.component';
 import { AboutComponent } from './content/about/about.component';
 import { RegisterComponent } from './content/users/register/register.component';
-import { HttpClientModule } from '@angular/common/http';
+import {HttpClientModule, HttpClientXsrfModule} from '@angular/common/http';
 import { UserDetailComponent } from './content/users/user-detail/user-detail.component';
 
 import {DisplayService} from "../services/display.service";
@@ -41,6 +41,7 @@ import {NgxMapboxGLModule} from "ngx-mapbox-gl";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    HttpClientXsrfModule.withOptions({cookieName:"XSRF-TOKEN",headerName:"X-CSRF-TOKEN"}),
     FormsModule,
 
     LoginModule,

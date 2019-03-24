@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {newsList} from "../../content/interfaces/displayContent";
 import {NewsItem} from "../../entities/News";
-import {of} from "rxjs/internal/observable/of";
+import {ImageSaverService} from "../services/image_saver/image-saver.service";
 
 @Component({
   selector: 'app-news-creator',
@@ -12,8 +11,11 @@ export class NewsCreatorComponent implements OnInit {
 
   public newsItem = new NewsItem("New Title", "Enter text here");
   public files :File[] = [];
+  public message :string;
 
-  constructor() { }
+  constructor(
+    private ImageSaver :ImageSaverService
+  ) { }
 
   ngOnInit() {}
 
@@ -22,9 +24,11 @@ export class NewsCreatorComponent implements OnInit {
     this.files = files;
     this.newsItem.pic = this.files[0];
 
+    this.ImageSaver.saveImage(this.files[0]).subscribe(data => this.message = data.answer);
+    alert(this.message);
   }
 
-  checkname(){
-    alert(this.newsItem.pic.name);
-  }
+  // checkname(){
+  //   alert(this.newsItem.pic.name);
+  // }
 }

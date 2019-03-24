@@ -23,6 +23,7 @@
     "angular-webstorage-service": "^1.0.2",
     "core-js": "^2.5.4",
     "mapbox-gl": "^0.52.0",
+    "ngx-cookie-service": "^2.1.0",
     "ngx-file-drop": "^5.0.5",
     "ngx-mapbox-gl": "^3.0.1",
     "rxjs": "^6.4.0",
