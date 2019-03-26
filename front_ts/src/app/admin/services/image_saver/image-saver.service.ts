@@ -17,15 +17,11 @@ export class ImageSaverService {
 
   saveImage(newFile :File) {
     let formSend = new FormData();
-    formSend.append("hero", newFile,"heroTest");
-    //alert(this.cookies.get("XSRF-TOKEN"));
+    formSend.append("hero", newFile, newFile.name);
 
     return this.Http.post<iImageSave>(
       this.MediaServer,
-      formSend,
-      {headers: new HttpHeaders({"X-CSRF-TOKEN": this.cookies.get("XSRF-TOKEN")})}
-      /*{
-        headers: new HttpHeaders({"${_csrf.headerName}": "${_csrf.token}"})
-      }*/);
+      formSend
+      );
   }
 }

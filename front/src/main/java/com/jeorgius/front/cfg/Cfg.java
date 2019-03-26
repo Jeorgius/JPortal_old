@@ -1,5 +1,7 @@
 package com.jeorgius.front.cfg;
 
+import com.jeorgius.front.cfg.security_filters.CsrfFilterCustom;
+import com.jeorgius.front.cfg.security_filters.UploadFilter;
 import com.jeorgius.front.cfg.vkSecurity.VkFilter;
 import com.jeorgius.front.cfg.vkSecurity.VkTokenService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,11 +22,16 @@ import org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilt
 import org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
+import org.springframework.security.web.context.SecurityContextPersistenceFilter;
+import org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import org.springframework.security.web.csrf.CsrfFilter;
 import org.springframework.security.web.csrf.CsrfTokenRepository;
 import org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository;
+import org.springframework.security.web.header.HeaderWriterFilter;
 import org.springframework.web.filter.CompositeFilter;
+import org.springframework.web.filter.DelegatingFilterProxy;
+import org.springframework.web.multipart.support.MultipartFilter;
 
 import javax.servlet.Filter;
 import java.util.ArrayList;
@@ -82,7 +89,7 @@ public class Cfg extends WebSecurityConfigurerAdapter {
   @Override
   protected void configure(HttpSecurity http) throws Exception {
       http
-        .addFilterAfter(new CsrfFilterCustom(), CsrfFilter.class)
+        //.addFilterAfter(new MultipartFilter(), CsrfFilterCustom.class)
         .antMatcher("/**")
         .authorizeRequests()
         .antMatchers(
@@ -91,13 +98,19 @@ public class Cfg extends WebSecurityConfigurerAdapter {
         ).permitAll()
         .antMatchers("/login/**").permitAll()
         .antMatchers("/test**").permitAll()
+        .antMatchers("/admin**").permitAll()
+        .antMatchers("/save**").permitAll()
         .antMatchers("/userinfo").authenticated()
         .anyRequest().authenticated()
 //        .antMatchers("/admin/").hasRole("ADMIN")
       .and()
+        .addFilterAfter(new CsrfFilterCustom(), CsrfFilter.class)
         .addFilterBefore(ssoRedirectFilter(), BasicAuthenticationFilter.class)
         .csrf()
-          .ignoringAntMatchers("/login/**")
+          .ignoringAntMatchers("/login/**") //opens CSRF for social login
+          .ignoringAntMatchers("/admin/**") //opens CSRF for admin adding files
+          .ignoringAntMatchers("/users/**") //opens CSRF for users adding files
+          .ignoringAntMatchers("/save_image") //test
           .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
       .and()
       .logout().logoutUrl("/login/logout")

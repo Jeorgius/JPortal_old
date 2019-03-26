@@ -19,12 +19,14 @@ export class NewsCreatorComponent implements OnInit {
 
   ngOnInit() {}
 
-  drag_n_drop(files :File[]){
-    //alert("Yes");
+  async drag_n_drop(files :File[]){
     this.files = files;
     this.newsItem.pic = this.files[0];
 
-    this.ImageSaver.saveImage(this.files[0]).subscribe(data => this.message = data.answer);
+    let message = await this.ImageSaver
+      .saveImage(this.files[0])
+      .toPromise();
+    this.message = message.answer;
     alert(this.message);
   }
 

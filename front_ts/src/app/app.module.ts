@@ -41,7 +41,7 @@ import {NgxMapboxGLModule} from "ngx-mapbox-gl";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    HttpClientXsrfModule.withOptions({cookieName:"XSRF-TOKEN",headerName:"X-CSRF-TOKEN"}),
+    //HttpClientXsrfModule.withOptions({cookieName:"XSRF-TOKEN",headerName:"X-CSRF-TOKEN"}),
     FormsModule,
 
     LoginModule,

@@ -1,4 +1,4 @@
-package com.jeorgius.front.cfg;
+package com.jeorgius.front.cfg.security_filters;
 
 import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.web.filter.OncePerRequestFilter;
