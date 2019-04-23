@@ -9,7 +9,8 @@ import java.io.*;
 public class StorageService {
     public String store(MultipartFile uploadedFile) throws IOException {
         InputStream in = uploadedFile.getInputStream();
-        OutputStream out = new FileOutputStream(new File("D:\\Programming\\files\\"+uploadedFile.getName()));
+        //@ToDo reformat and refactor service to sort files to their own folders
+        OutputStream out = new FileOutputStream(new File("D:\\Programming\\files\\"+uploadedFile.getOriginalFilename()));
 
         int read = 0;
         byte[] bytes = new byte[1024];
