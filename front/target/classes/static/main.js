@@ -59,10 +59,113 @@ var AppComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/admin/add-button/add-button.component.html":
-/*!************************************************************!*\
-  !*** ./src/app/admin/add-button/add-button.component.html ***!
-  \************************************************************/
+/***/ "./src/app/admin/admin.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/admin/admin.module.ts ***!
+  \***************************************/
+/*! exports provided: AdminModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminModule", function() { return AdminModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _creators_music_creator_music_creator_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./creators/music-creator/music-creator.component */ "./src/app/admin/creators/music-creator/music-creator.component.ts");
+/* harmony import */ var _creators_news_creator_news_creator_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./creators/news-creator/news-creator.component */ "./src/app/admin/creators/news-creator/news-creator.component.ts");
+/* harmony import */ var _creators_photo_creator_photo_creator_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./creators/photo-creator/photo-creator.component */ "./src/app/admin/creators/photo-creator/photo-creator.component.ts");
+/* harmony import */ var _creators_product_creator_product_creator_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./creators/product-creator/product-creator.component */ "./src/app/admin/creators/product-creator/product-creator.component.ts");
+/* harmony import */ var _creator_blocks_add_button_add_button_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./creator_blocks/add-button/add-button.component */ "./src/app/admin/creator_blocks/add-button/add-button.component.ts");
+/* harmony import */ var _creator_blocks_edit_bar_edit_bar_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./creator_blocks/edit_bar/edit-bar.component */ "./src/app/admin/creator_blocks/edit_bar/edit-bar.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _creators_news_creator_directives_drag_ndrop_directive__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./creators/news-creator/directives/drag-ndrop.directive */ "./src/app/admin/creators/news-creator/directives/drag-ndrop.directive.ts");
+/* harmony import */ var ngx_cookie_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ngx-cookie-service */ "./node_modules/ngx-cookie-service/index.js");
+/* harmony import */ var _creator_blocks_block_factory_text_only_text_only_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./creator_blocks/block-factory/text-only/text-only.component */ "./src/app/admin/creator_blocks/block-factory/text-only/text-only.component.ts");
+/* harmony import */ var _creator_blocks_block_factory_media_only_media_only_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./creator_blocks/block-factory/media-only/media-only.component */ "./src/app/admin/creator_blocks/block-factory/media-only/media-only.component.ts");
+/* harmony import */ var _creator_blocks_block_factory_media_left_media_left_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./creator_blocks/block-factory/media-left/media-left.component */ "./src/app/admin/creator_blocks/block-factory/media-left/media-left.component.ts");
+/* harmony import */ var _creator_blocks_block_factory_media_right_media_right_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./creator_blocks/block-factory/media-right/media-right.component */ "./src/app/admin/creator_blocks/block-factory/media-right/media-right.component.ts");
+/* harmony import */ var _creator_blocks_spriter_svg_icon_svg_icon_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./creator_blocks/spriter/svg-icon/svg-icon.component */ "./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.ts");
+/* harmony import */ var _creator_blocks_block_factory_block_factory_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./creator_blocks/block-factory/block-factory.component */ "./src/app/admin/creator_blocks/block-factory/block-factory.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AdminModule = /** @class */ (function () {
+    function AdminModule() {
+    }
+    AdminModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            declarations: [
+                _creator_blocks_add_button_add_button_component__WEBPACK_IMPORTED_MODULE_7__["AddButtonComponent"],
+                _creator_blocks_edit_bar_edit_bar_component__WEBPACK_IMPORTED_MODULE_8__["EditBarComponent"],
+                _creators_music_creator_music_creator_component__WEBPACK_IMPORTED_MODULE_3__["MusicCreatorComponent"],
+                _creators_news_creator_news_creator_component__WEBPACK_IMPORTED_MODULE_4__["NewsCreatorComponent"],
+                _creators_photo_creator_photo_creator_component__WEBPACK_IMPORTED_MODULE_5__["PhotoCreatorComponent"],
+                _creators_product_creator_product_creator_component__WEBPACK_IMPORTED_MODULE_6__["ProductCreatorComponent"],
+                _creators_news_creator_directives_drag_ndrop_directive__WEBPACK_IMPORTED_MODULE_10__["DragNDropDirective"],
+                _creator_blocks_block_factory_text_only_text_only_component__WEBPACK_IMPORTED_MODULE_12__["TextOnlyComponent"],
+                _creator_blocks_block_factory_media_only_media_only_component__WEBPACK_IMPORTED_MODULE_13__["MediaOnlyComponent"],
+                _creator_blocks_block_factory_media_left_media_left_component__WEBPACK_IMPORTED_MODULE_14__["MediaLeftComponent"],
+                _creator_blocks_block_factory_media_right_media_right_component__WEBPACK_IMPORTED_MODULE_15__["MediaRightComponent"],
+                _creator_blocks_block_factory_block_factory_component__WEBPACK_IMPORTED_MODULE_17__["BlockFactoryComponent"],
+                _creator_blocks_spriter_svg_icon_svg_icon_component__WEBPACK_IMPORTED_MODULE_16__["SvgIconComponent"]
+            ],
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientXsrfModule"].withOptions({ cookieName: "XSRF-TOKEN", headerName: "X-CSRF-TOKEN" }),
+                _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"]
+            ],
+            exports: [
+                _creator_blocks_add_button_add_button_component__WEBPACK_IMPORTED_MODULE_7__["AddButtonComponent"],
+                _creator_blocks_edit_bar_edit_bar_component__WEBPACK_IMPORTED_MODULE_8__["EditBarComponent"],
+                _creators_music_creator_music_creator_component__WEBPACK_IMPORTED_MODULE_3__["MusicCreatorComponent"],
+                _creators_news_creator_news_creator_component__WEBPACK_IMPORTED_MODULE_4__["NewsCreatorComponent"],
+                _creators_photo_creator_photo_creator_component__WEBPACK_IMPORTED_MODULE_5__["PhotoCreatorComponent"],
+                _creators_product_creator_product_creator_component__WEBPACK_IMPORTED_MODULE_6__["ProductCreatorComponent"],
+                _creators_news_creator_directives_drag_ndrop_directive__WEBPACK_IMPORTED_MODULE_10__["DragNDropDirective"],
+                _creator_blocks_block_factory_text_only_text_only_component__WEBPACK_IMPORTED_MODULE_12__["TextOnlyComponent"],
+                _creator_blocks_block_factory_media_only_media_only_component__WEBPACK_IMPORTED_MODULE_13__["MediaOnlyComponent"],
+                _creator_blocks_block_factory_media_left_media_left_component__WEBPACK_IMPORTED_MODULE_14__["MediaLeftComponent"],
+                _creator_blocks_block_factory_media_right_media_right_component__WEBPACK_IMPORTED_MODULE_15__["MediaRightComponent"]
+            ],
+            providers: [
+                ngx_cookie_service__WEBPACK_IMPORTED_MODULE_11__["CookieService"]
+            ]
+        })
+    ], AdminModule);
+    return AdminModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/add-button/add-button.component.html":
+/*!***************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/add-button/add-button.component.html ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -70,21 +173,21 @@ module.exports = "<div class=\"addField\">\r\n  <div class=\"addButton\" (click)
 
 /***/ }),
 
-/***/ "./src/app/admin/add-button/add-button.component.scss":
-/*!************************************************************!*\
-  !*** ./src/app/admin/add-button/add-button.component.scss ***!
-  \************************************************************/
+/***/ "./src/app/admin/creator_blocks/add-button/add-button.component.scss":
+/*!***************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/add-button/add-button.component.scss ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".addField {\n  width: 150px;\n  height: 170px;\n  display: inline-block;\n  position: relative;\n  pointer-events: none; }\n\n.addButton {\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  background-color: #77FF77;\n  font-weight: bold;\n  font-size: 25px;\n  text-align: center;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  margin-right: -50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  pointer-events: auto; }\n\n.addButton:hover {\n  background-color: #FF7777; }\n\n.addField:hover {\n  box-shadow: 0 2px 0 antiquewhite inset,\r 0 2px 0 antiquewhite; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4vYWRkLWJ1dHRvbi9EOlxcUHJvZ3JhbW1pbmdcXEFuZ3VsYXItSmF2YSBXZWJzaXRlXFxKQmFja2VuZFxcZnJvbnRfdHMvc3JjXFxhcHBcXGFkbWluXFxhZGQtYnV0dG9uXFxhZGQtYnV0dG9uLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hZG1pbi9hZGQtYnV0dG9uL2FkZC1idXR0b24uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDRSxZQUFZO0VBQ1osYUFBYTtFQUNiLHFCQUFxQjtFQUNyQixrQkFBa0I7RUFDbEIsb0JBQW9CLEVBQUE7O0FBRXRCO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIseUJBQXlCO0VBQ3pCLGlCQUFpQjtFQUNqQixlQUFlO0VBQ2Ysa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixRQUFRO0VBQ1IsU0FBUztFQUNULGtCQUFpQjtFQUNqQix3Q0FBK0I7VUFBL0IsZ0NBQStCO0VBQy9CLG9CQUFvQixFQUFBOztBQUd0QjtFQUFrQix5QkFBeUIsRUFBQTs7QUFDM0M7RUFDRSw2RENDbUIsRUFBRSIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2FkZC1idXR0b24vYWRkLWJ1dHRvbi5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4uYWRkRmllbGR7XHJcbiAgd2lkdGg6IDE1MHB4O1xyXG4gIGhlaWdodDogMTcwcHg7XHJcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICBwb2ludGVyLWV2ZW50czogbm9uZTtcclxufVxyXG4uYWRkQnV0dG9ue1xyXG4gIHdpZHRoOiA1MHB4O1xyXG4gIGhlaWdodDogNTBweDtcclxuICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzc3RkY3NztcclxuICBmb250LXdlaWdodDogYm9sZDtcclxuICBmb250LXNpemU6IDI1cHg7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDUwJTtcclxuICBsZWZ0OiA1MCU7XHJcbiAgbWFyZ2luLXJpZ2h0Oi01MCU7XHJcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwtNTAlKTtcclxuICBwb2ludGVyLWV2ZW50czogYXV0bztcclxufVxyXG5cclxuLmFkZEJ1dHRvbjpob3ZlcnsgYmFja2dyb3VuZC1jb2xvcjogI0ZGNzc3NzsgfVxyXG4uYWRkRmllbGQ6aG92ZXIge1xyXG4gIGJveC1zaGFkb3c6IDAgMnB4IDAgYW50aXF1ZXdoaXRlIGluc2V0LFxyXG4gIDAgMnB4IDAgYW50aXF1ZXdoaXRlO1xyXG59XHJcbiIsIi5hZGRGaWVsZCB7XG4gIHdpZHRoOiAxNTBweDtcbiAgaGVpZ2h0OiAxNzBweDtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHBvaW50ZXItZXZlbnRzOiBub25lOyB9XG5cbi5hZGRCdXR0b24ge1xuICB3aWR0aDogNTBweDtcbiAgaGVpZ2h0OiA1MHB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGJhY2tncm91bmQtY29sb3I6ICM3N0ZGNzc7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDI1cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDUwJTtcbiAgbGVmdDogNTAlO1xuICBtYXJnaW4tcmlnaHQ6IC01MCU7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICBwb2ludGVyLWV2ZW50czogYXV0bzsgfVxuXG4uYWRkQnV0dG9uOmhvdmVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI0ZGNzc3NzsgfVxuXG4uYWRkRmllbGQ6aG92ZXIge1xuICBib3gtc2hhZG93OiAwIDJweCAwIGFudGlxdWV3aGl0ZSBpbnNldCxcciAwIDJweCAwIGFudGlxdWV3aGl0ZTsgfVxuIl19 */"
+module.exports = ".addField {\n  width: 150px;\n  height: 170px;\n  display: inline-block;\n  position: relative;\n  pointer-events: none; }\n\n.addButton {\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  background-color: #77FF77;\n  font-weight: bold;\n  font-size: 25px;\n  text-align: center;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  margin-right: -50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  pointer-events: auto; }\n\n.addButton:hover {\n  background-color: #FF7777; }\n\n.addField:hover {\n  box-shadow: 0 2px 0 antiquewhite inset,\r 0 2px 0 antiquewhite; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4vY3JlYXRvcl9ibG9ja3MvYWRkLWJ1dHRvbi9EOlxcUHJvZ3JhbW1pbmdcXEFuZ3VsYXItSmF2YSBXZWJzaXRlXFxKQmFja2VuZFxcZnJvbnRfdHMvc3JjXFxhcHBcXGFkbWluXFxjcmVhdG9yX2Jsb2Nrc1xcYWRkLWJ1dHRvblxcYWRkLWJ1dHRvbi5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYWRtaW4vY3JlYXRvcl9ibG9ja3MvYWRkLWJ1dHRvbi9hZGQtYnV0dG9uLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0UsWUFBWTtFQUNaLGFBQWE7RUFDYixxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLG9CQUFvQixFQUFBOztBQUV0QjtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLHlCQUF5QjtFQUN6QixpQkFBaUI7RUFDakIsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFNBQVM7RUFDVCxrQkFBaUI7RUFDakIsd0NBQStCO1VBQS9CLGdDQUErQjtFQUMvQixvQkFBb0IsRUFBQTs7QUFHdEI7RUFBa0IseUJBQXlCLEVBQUE7O0FBQzNDO0VBQ0UsNkRDQ21CLEVBQUUiLCJmaWxlIjoic3JjL2FwcC9hZG1pbi9jcmVhdG9yX2Jsb2Nrcy9hZGQtYnV0dG9uL2FkZC1idXR0b24uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuLmFkZEZpZWxke1xyXG4gIHdpZHRoOiAxNTBweDtcclxuICBoZWlnaHQ6IDE3MHB4O1xyXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XHJcbn1cclxuLmFkZEJ1dHRvbntcclxuICB3aWR0aDogNTBweDtcclxuICBoZWlnaHQ6IDUwcHg7XHJcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM3N0ZGNzc7XHJcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgZm9udC1zaXplOiAyNXB4O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiA1MCU7XHJcbiAgbGVmdDogNTAlO1xyXG4gIG1hcmdpbi1yaWdodDotNTAlO1xyXG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsLTUwJSk7XHJcbiAgcG9pbnRlci1ldmVudHM6IGF1dG87XHJcbn1cclxuXHJcbi5hZGRCdXR0b246aG92ZXJ7IGJhY2tncm91bmQtY29sb3I6ICNGRjc3Nzc7IH1cclxuLmFkZEZpZWxkOmhvdmVyIHtcclxuICBib3gtc2hhZG93OiAwIDJweCAwIGFudGlxdWV3aGl0ZSBpbnNldCxcclxuICAwIDJweCAwIGFudGlxdWV3aGl0ZTtcclxufVxyXG4iLCIuYWRkRmllbGQge1xuICB3aWR0aDogMTUwcHg7XG4gIGhlaWdodDogMTcwcHg7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBwb2ludGVyLWV2ZW50czogbm9uZTsgfVxuXG4uYWRkQnV0dG9uIHtcbiAgd2lkdGg6IDUwcHg7XG4gIGhlaWdodDogNTBweDtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNzdGRjc3O1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgZm9udC1zaXplOiAyNXB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA1MCU7XG4gIGxlZnQ6IDUwJTtcbiAgbWFyZ2luLXJpZ2h0OiAtNTAlO1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgcG9pbnRlci1ldmVudHM6IGF1dG87IH1cblxuLmFkZEJ1dHRvbjpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNGRjc3Nzc7IH1cblxuLmFkZEZpZWxkOmhvdmVyIHtcbiAgYm94LXNoYWRvdzogMCAycHggMCBhbnRpcXVld2hpdGUgaW5zZXQsXHIgMCAycHggMCBhbnRpcXVld2hpdGU7IH1cbiJdfQ== */"
 
 /***/ }),
 
-/***/ "./src/app/admin/add-button/add-button.component.ts":
-/*!**********************************************************!*\
-  !*** ./src/app/admin/add-button/add-button.component.ts ***!
-  \**********************************************************/
+/***/ "./src/app/admin/creator_blocks/add-button/add-button.component.ts":
+/*!*************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/add-button/add-button.component.ts ***!
+  \*************************************************************************/
 /*! exports provided: AddButtonComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -92,7 +195,7 @@ module.exports = ".addField {\n  width: 150px;\n  height: 170px;\n  display: inl
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddButtonComponent", function() { return AddButtonComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _services_creator_determinator_creator_determinator_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/creator_determinator/creator-determinator.service */ "./src/app/admin/services/creator_determinator/creator-determinator.service.ts");
+/* harmony import */ var _services_creator_determinator_creator_determinator_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/creator_determinator/creator-determinator.service */ "./src/app/admin/services/creator_determinator/creator-determinator.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -116,8 +219,8 @@ var AddButtonComponent = /** @class */ (function () {
     AddButtonComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-add-button',
-            template: __webpack_require__(/*! ./add-button.component.html */ "./src/app/admin/add-button/add-button.component.html"),
-            styles: [__webpack_require__(/*! ./add-button.component.scss */ "./src/app/admin/add-button/add-button.component.scss")]
+            template: __webpack_require__(/*! ./add-button.component.html */ "./src/app/admin/creator_blocks/add-button/add-button.component.html"),
+            styles: [__webpack_require__(/*! ./add-button.component.scss */ "./src/app/admin/creator_blocks/add-button/add-button.component.scss")]
         }),
         __metadata("design:paramtypes", [_services_creator_determinator_creator_determinator_service__WEBPACK_IMPORTED_MODULE_1__["CreatorDeterminatorService"]])
     ], AddButtonComponent);
@@ -128,113 +231,347 @@ var AddButtonComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/admin/admin.module.ts":
-/*!***************************************!*\
-  !*** ./src/app/admin/admin.module.ts ***!
-  \***************************************/
-/*! exports provided: AdminModule */
+/***/ "./src/app/admin/creator_blocks/block-factory/block-factory.component.html":
+/*!*********************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-factory/block-factory.component.html ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  block-factory works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-factory/block-factory.component.scss":
+/*!*********************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-factory/block-factory.component.scss ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2NyZWF0b3JfYmxvY2tzL2Jsb2NrLWZhY3RvcnkvYmxvY2stZmFjdG9yeS5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-factory/block-factory.component.ts":
+/*!*******************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-factory/block-factory.component.ts ***!
+  \*******************************************************************************/
+/*! exports provided: BlockFactoryComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminModule", function() { return AdminModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockFactoryComponent", function() { return BlockFactoryComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _music_creator_music_creator_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./music-creator/music-creator.component */ "./src/app/admin/music-creator/music-creator.component.ts");
-/* harmony import */ var _news_creator_news_creator_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./news-creator/news-creator.component */ "./src/app/admin/news-creator/news-creator.component.ts");
-/* harmony import */ var _photo_creator_photo_creator_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./photo-creator/photo-creator.component */ "./src/app/admin/photo-creator/photo-creator.component.ts");
-/* harmony import */ var _product_creator_product_creator_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./product-creator/product-creator.component */ "./src/app/admin/product-creator/product-creator.component.ts");
-/* harmony import */ var _add_button_add_button_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./add-button/add-button.component */ "./src/app/admin/add-button/add-button.component.ts");
-/* harmony import */ var _edit_bar_edit_bar_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./edit_bar/edit-bar.component */ "./src/app/admin/edit_bar/edit-bar.component.ts");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _news_creator_directives_drag_ndrop_directive__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./news-creator/directives/drag-ndrop.directive */ "./src/app/admin/news-creator/directives/drag-ndrop.directive.ts");
-/* harmony import */ var ngx_cookie_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ngx-cookie-service */ "./node_modules/ngx-cookie-service/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
-
-
-
-
-
-
-
-
-
-
-
-var AdminModule = /** @class */ (function () {
-    function AdminModule() {
+var BlockFactoryComponent = /** @class */ (function () {
+    function BlockFactoryComponent() {
     }
-    AdminModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            declarations: [
-                _add_button_add_button_component__WEBPACK_IMPORTED_MODULE_7__["AddButtonComponent"],
-                _edit_bar_edit_bar_component__WEBPACK_IMPORTED_MODULE_8__["EditBarComponent"],
-                _music_creator_music_creator_component__WEBPACK_IMPORTED_MODULE_3__["MusicCreatorComponent"],
-                _news_creator_news_creator_component__WEBPACK_IMPORTED_MODULE_4__["NewsCreatorComponent"],
-                _photo_creator_photo_creator_component__WEBPACK_IMPORTED_MODULE_5__["PhotoCreatorComponent"],
-                _product_creator_product_creator_component__WEBPACK_IMPORTED_MODULE_6__["ProductCreatorComponent"],
-                _news_creator_directives_drag_ndrop_directive__WEBPACK_IMPORTED_MODULE_10__["DragNDropDirective"]
-            ],
-            imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientXsrfModule"].withOptions({ cookieName: "XSRF-TOKEN", headerName: "X-CSRF-TOKEN" }),
-                _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"]
-            ],
-            exports: [
-                _add_button_add_button_component__WEBPACK_IMPORTED_MODULE_7__["AddButtonComponent"],
-                _edit_bar_edit_bar_component__WEBPACK_IMPORTED_MODULE_8__["EditBarComponent"],
-                _music_creator_music_creator_component__WEBPACK_IMPORTED_MODULE_3__["MusicCreatorComponent"],
-                _news_creator_news_creator_component__WEBPACK_IMPORTED_MODULE_4__["NewsCreatorComponent"],
-                _photo_creator_photo_creator_component__WEBPACK_IMPORTED_MODULE_5__["PhotoCreatorComponent"],
-                _product_creator_product_creator_component__WEBPACK_IMPORTED_MODULE_6__["ProductCreatorComponent"],
-                _news_creator_directives_drag_ndrop_directive__WEBPACK_IMPORTED_MODULE_10__["DragNDropDirective"]
-            ],
-            providers: [
-                ngx_cookie_service__WEBPACK_IMPORTED_MODULE_11__["CookieService"]
-            ]
-        })
-    ], AdminModule);
-    return AdminModule;
+    BlockFactoryComponent.prototype.ngOnInit = function () {
+    };
+    BlockFactoryComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-block-factory',
+            template: __webpack_require__(/*! ./block-factory.component.html */ "./src/app/admin/creator_blocks/block-factory/block-factory.component.html"),
+            styles: [__webpack_require__(/*! ./block-factory.component.scss */ "./src/app/admin/creator_blocks/block-factory/block-factory.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], BlockFactoryComponent);
+    return BlockFactoryComponent;
 }());
 
 
 
 /***/ }),
 
-/***/ "./src/app/admin/edit_bar/edit-bar.component.html":
-/*!********************************************************!*\
-  !*** ./src/app/admin/edit_bar/edit-bar.component.html ***!
-  \********************************************************/
+/***/ "./src/app/admin/creator_blocks/block-factory/media-left/media-left.component.html":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-factory/media-left/media-left.component.html ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"editBar\">\r\n  <ul>\r\n    <li class=\"editButton\"><img src=\"../../../assets/data/icons/edit.png\" /></li>\r\n    <li class=\"saveButton\"><img src=\"../../../assets/data/icons/apply.png\"/></li>\r\n    <li class=\"deleteButton\"><img src=\"../../../assets/data/icons/cancel.png\" /></li>\r\n  </ul>\r\n</div>\r\n"
+module.exports = "<p>\n  media-left works!\n</p>\n"
 
 /***/ }),
 
-/***/ "./src/app/admin/edit_bar/edit-bar.component.scss":
-/*!********************************************************!*\
-  !*** ./src/app/admin/edit_bar/edit-bar.component.scss ***!
-  \********************************************************/
+/***/ "./src/app/admin/creator_blocks/block-factory/media-left/media-left.component.scss":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-factory/media-left/media-left.component.scss ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "ul, ul li {\n  list-style: none;\n  padding: 0; }\n\nli:hover {\n  background: rgba(255, 255, 255, 0.3);\n  cursor: pointer; }\n\n.editButton, .saveButton, .deleteButton {\n  margin: 5px; }\n\n.editButton img, .saveButton img, .deleteButton img {\n  max-width: 30px;\n  max-height: 30px; }\n\n.editBar {\n  position: absolute;\n  width: 40px;\n  background-color: rgba(0, 0, 0, 0.5);\n  right: 0;\n  top: 0;\n  z-index: 1;\n  text-align: center; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4vZWRpdF9iYXIvRDpcXFByb2dyYW1taW5nXFxBbmd1bGFyLUphdmEgV2Vic2l0ZVxcSkJhY2tlbmRcXGZyb250X3RzL3NyY1xcYXBwXFxhZG1pblxcZWRpdF9iYXJcXGVkaXQtYmFyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQWdCO0VBQ2hCLFVBQVMsRUFBQTs7QUFHWDtFQUNFLG9DQUFvQztFQUNwQyxlQUFlLEVBQUE7O0FBR2pCO0VBQ0UsV0FBVyxFQUFBOztBQUdiO0VBQ0UsZUFBZTtFQUNmLGdCQUFlLEVBQUE7O0FBRWpCO0VBQ0Usa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxvQ0FBaUM7RUFDakMsUUFBUTtFQUNSLE1BQU07RUFDTixVQUFVO0VBQ1Ysa0JBQWtCLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9hZG1pbi9lZGl0X2Jhci9lZGl0LWJhci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbInVsLCB1bCBsaSB7XHJcbiAgbGlzdC1zdHlsZTogbm9uZTtcclxuICBwYWRkaW5nOjA7XHJcbn1cclxuXHJcbmxpOmhvdmVyIHtcclxuICBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwgMjU1ICwyNTUsIDAuMyk7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG59XHJcblxyXG4uZWRpdEJ1dHRvbiwgLnNhdmVCdXR0b24sIC5kZWxldGVCdXR0b257XHJcbiAgbWFyZ2luOiA1cHg7XHJcbn1cclxuXHJcbi5lZGl0QnV0dG9uIGltZywgLnNhdmVCdXR0b24gaW1nLCAuZGVsZXRlQnV0dG9uIGltZ3tcclxuICBtYXgtd2lkdGg6IDMwcHg7XHJcbiAgbWF4LWhlaWdodDozMHB4O1xyXG59XHJcbi5lZGl0QmFye1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB3aWR0aDogNDBweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsMCwwLDAuNSk7XHJcbiAgcmlnaHQ6IDA7XHJcbiAgdG9wOiAwO1xyXG4gIHotaW5kZXg6IDE7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4iXX0= */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2NyZWF0b3JfYmxvY2tzL2Jsb2NrLWZhY3RvcnkvbWVkaWEtbGVmdC9tZWRpYS1sZWZ0LmNvbXBvbmVudC5zY3NzIn0= */"
 
 /***/ }),
 
-/***/ "./src/app/admin/edit_bar/edit-bar.component.ts":
-/*!******************************************************!*\
-  !*** ./src/app/admin/edit_bar/edit-bar.component.ts ***!
-  \******************************************************/
+/***/ "./src/app/admin/creator_blocks/block-factory/media-left/media-left.component.ts":
+/*!***************************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-factory/media-left/media-left.component.ts ***!
+  \***************************************************************************************/
+/*! exports provided: MediaLeftComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MediaLeftComponent", function() { return MediaLeftComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MediaLeftComponent = /** @class */ (function () {
+    function MediaLeftComponent() {
+    }
+    MediaLeftComponent.prototype.ngOnInit = function () {
+    };
+    MediaLeftComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-media-left',
+            template: __webpack_require__(/*! ./media-left.component.html */ "./src/app/admin/creator_blocks/block-factory/media-left/media-left.component.html"),
+            styles: [__webpack_require__(/*! ./media-left.component.scss */ "./src/app/admin/creator_blocks/block-factory/media-left/media-left.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], MediaLeftComponent);
+    return MediaLeftComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-factory/media-only/media-only.component.html":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-factory/media-only/media-only.component.html ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  media-only works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-factory/media-only/media-only.component.scss":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-factory/media-only/media-only.component.scss ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2NyZWF0b3JfYmxvY2tzL2Jsb2NrLWZhY3RvcnkvbWVkaWEtb25seS9tZWRpYS1vbmx5LmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-factory/media-only/media-only.component.ts":
+/*!***************************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-factory/media-only/media-only.component.ts ***!
+  \***************************************************************************************/
+/*! exports provided: MediaOnlyComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MediaOnlyComponent", function() { return MediaOnlyComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MediaOnlyComponent = /** @class */ (function () {
+    function MediaOnlyComponent() {
+    }
+    MediaOnlyComponent.prototype.ngOnInit = function () {
+    };
+    MediaOnlyComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-media-only',
+            template: __webpack_require__(/*! ./media-only.component.html */ "./src/app/admin/creator_blocks/block-factory/media-only/media-only.component.html"),
+            styles: [__webpack_require__(/*! ./media-only.component.scss */ "./src/app/admin/creator_blocks/block-factory/media-only/media-only.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], MediaOnlyComponent);
+    return MediaOnlyComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-factory/media-right/media-right.component.html":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-factory/media-right/media-right.component.html ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  media-right works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-factory/media-right/media-right.component.scss":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-factory/media-right/media-right.component.scss ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2NyZWF0b3JfYmxvY2tzL2Jsb2NrLWZhY3RvcnkvbWVkaWEtcmlnaHQvbWVkaWEtcmlnaHQuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-factory/media-right/media-right.component.ts":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-factory/media-right/media-right.component.ts ***!
+  \*****************************************************************************************/
+/*! exports provided: MediaRightComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MediaRightComponent", function() { return MediaRightComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MediaRightComponent = /** @class */ (function () {
+    function MediaRightComponent() {
+    }
+    MediaRightComponent.prototype.ngOnInit = function () {
+    };
+    MediaRightComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-media-right',
+            template: __webpack_require__(/*! ./media-right.component.html */ "./src/app/admin/creator_blocks/block-factory/media-right/media-right.component.html"),
+            styles: [__webpack_require__(/*! ./media-right.component.scss */ "./src/app/admin/creator_blocks/block-factory/media-right/media-right.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], MediaRightComponent);
+    return MediaRightComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-factory/text-only/text-only.component.html":
+/*!***************************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-factory/text-only/text-only.component.html ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  text-only works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-factory/text-only/text-only.component.scss":
+/*!***************************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-factory/text-only/text-only.component.scss ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2NyZWF0b3JfYmxvY2tzL2Jsb2NrLWZhY3RvcnkvdGV4dC1vbmx5L3RleHQtb25seS5jb21wb25lbnQuc2NzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-factory/text-only/text-only.component.ts":
+/*!*************************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-factory/text-only/text-only.component.ts ***!
+  \*************************************************************************************/
+/*! exports provided: TextOnlyComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TextOnlyComponent", function() { return TextOnlyComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TextOnlyComponent = /** @class */ (function () {
+    function TextOnlyComponent() {
+    }
+    TextOnlyComponent.prototype.ngOnInit = function () {
+    };
+    TextOnlyComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-text-only',
+            template: __webpack_require__(/*! ./text-only.component.html */ "./src/app/admin/creator_blocks/block-factory/text-only/text-only.component.html"),
+            styles: [__webpack_require__(/*! ./text-only.component.scss */ "./src/app/admin/creator_blocks/block-factory/text-only/text-only.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], TextOnlyComponent);
+    return TextOnlyComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/edit_bar/edit-bar.component.html":
+/*!***********************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/edit_bar/edit-bar.component.html ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"editBar\">\r\n  <ul>\r\n    <li class=\"editButton\"><img src=\"../../../../assets/data/icons/edit.png\" /></li>\r\n    <li class=\"saveButton\"><img src=\"../../../../assets/data/icons/apply.png\"/></li>\r\n    <li class=\"deleteButton\"><img src=\"../../../../assets/data/icons/cancel.png\" /></li>\r\n  </ul>\r\n</div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/edit_bar/edit-bar.component.scss":
+/*!***********************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/edit_bar/edit-bar.component.scss ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "ul, ul li {\n  list-style: none;\n  padding: 0; }\n\nli:hover {\n  background: rgba(255, 255, 255, 0.3);\n  cursor: pointer; }\n\n.editButton, .saveButton, .deleteButton {\n  margin: 5px; }\n\n.editButton img, .saveButton img, .deleteButton img {\n  max-width: 30px;\n  max-height: 30px; }\n\n.editBar {\n  position: absolute;\n  width: 40px;\n  background-color: rgba(0, 0, 0, 0.5);\n  right: 0;\n  top: 0;\n  z-index: 1;\n  text-align: center; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4vY3JlYXRvcl9ibG9ja3MvZWRpdF9iYXIvRDpcXFByb2dyYW1taW5nXFxBbmd1bGFyLUphdmEgV2Vic2l0ZVxcSkJhY2tlbmRcXGZyb250X3RzL3NyY1xcYXBwXFxhZG1pblxcY3JlYXRvcl9ibG9ja3NcXGVkaXRfYmFyXFxlZGl0LWJhci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFnQjtFQUNoQixVQUFTLEVBQUE7O0FBR1g7RUFDRSxvQ0FBb0M7RUFDcEMsZUFBZSxFQUFBOztBQUdqQjtFQUNFLFdBQVcsRUFBQTs7QUFHYjtFQUNFLGVBQWU7RUFDZixnQkFBZSxFQUFBOztBQUVqQjtFQUNFLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsb0NBQWlDO0VBQ2pDLFFBQVE7RUFDUixNQUFNO0VBQ04sVUFBVTtFQUNWLGtCQUFrQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvYWRtaW4vY3JlYXRvcl9ibG9ja3MvZWRpdF9iYXIvZWRpdC1iYXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJ1bCwgdWwgbGkge1xyXG4gIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbiAgcGFkZGluZzowO1xyXG59XHJcblxyXG5saTpob3ZlciB7XHJcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDI1NSAsMjU1LCAwLjMpO1xyXG4gIGN1cnNvcjogcG9pbnRlcjtcclxufVxyXG5cclxuLmVkaXRCdXR0b24sIC5zYXZlQnV0dG9uLCAuZGVsZXRlQnV0dG9ue1xyXG4gIG1hcmdpbjogNXB4O1xyXG59XHJcblxyXG4uZWRpdEJ1dHRvbiBpbWcsIC5zYXZlQnV0dG9uIGltZywgLmRlbGV0ZUJ1dHRvbiBpbWd7XHJcbiAgbWF4LXdpZHRoOiAzMHB4O1xyXG4gIG1heC1oZWlnaHQ6MzBweDtcclxufVxyXG4uZWRpdEJhcntcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgd2lkdGg6IDQwcHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLDAsMCwwLjUpO1xyXG4gIHJpZ2h0OiAwO1xyXG4gIHRvcDogMDtcclxuICB6LWluZGV4OiAxO1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuIl19 */"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/edit_bar/edit-bar.component.ts":
+/*!*********************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/edit_bar/edit-bar.component.ts ***!
+  \*********************************************************************/
 /*! exports provided: EditBarComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -260,8 +597,8 @@ var EditBarComponent = /** @class */ (function () {
     EditBarComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-edit-bar',
-            template: __webpack_require__(/*! ./edit-bar.component.html */ "./src/app/admin/edit_bar/edit-bar.component.html"),
-            styles: [__webpack_require__(/*! ./edit-bar.component.scss */ "./src/app/admin/edit_bar/edit-bar.component.scss")]
+            template: __webpack_require__(/*! ./edit-bar.component.html */ "./src/app/admin/creator_blocks/edit_bar/edit-bar.component.html"),
+            styles: [__webpack_require__(/*! ./edit-bar.component.scss */ "./src/app/admin/creator_blocks/edit_bar/edit-bar.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], EditBarComponent);
@@ -272,10 +609,77 @@ var EditBarComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/admin/music-creator/music-creator.component.html":
-/*!******************************************************************!*\
-  !*** ./src/app/admin/music-creator/music-creator.component.html ***!
-  \******************************************************************/
+/***/ "./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.html":
+/*!*******************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.html ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <use attr.xlink:href=\"/assets/data/icons/creator.svg#{{icon}}\" class=\"icon\"\n    width=\"50px\"\n    height=\"50px\"\n  />\n</svg>\n"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.scss":
+/*!*******************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.scss ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".icon {\n  width: 50px;\n  height: 50px;\n  fill: white; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4vY3JlYXRvcl9ibG9ja3Mvc3ByaXRlci9zdmctaWNvbi9EOlxcUHJvZ3JhbW1pbmdcXEFuZ3VsYXItSmF2YSBXZWJzaXRlXFxKQmFja2VuZFxcZnJvbnRfdHMvc3JjXFxhcHBcXGFkbWluXFxjcmVhdG9yX2Jsb2Nrc1xcc3ByaXRlclxcc3ZnLWljb25cXHN2Zy1pY29uLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixXQUFXLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9hZG1pbi9jcmVhdG9yX2Jsb2Nrcy9zcHJpdGVyL3N2Zy1pY29uL3N2Zy1pY29uLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmljb24ge1xyXG4gIHdpZHRoOiA1MHB4O1xyXG4gIGhlaWdodDogNTBweDtcclxuICBmaWxsOiB3aGl0ZTtcclxufVxyXG4iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.ts":
+/*!*****************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.ts ***!
+  \*****************************************************************************/
+/*! exports provided: SvgIconComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SvgIconComponent", function() { return SvgIconComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+// import svg from './creator.svg';
+var SvgIconComponent = /** @class */ (function () {
+    function SvgIconComponent() {
+    }
+    SvgIconComponent.prototype.ngOnInit = function () { };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], SvgIconComponent.prototype, "icon", void 0);
+    SvgIconComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'svg-icon',
+            template: __webpack_require__(/*! ./svg-icon.component.html */ "./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.html"),
+            styles: [__webpack_require__(/*! ./svg-icon.component.scss */ "./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], SvgIconComponent);
+    return SvgIconComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/admin/creators/music-creator/music-creator.component.html":
+/*!***************************************************************************!*\
+  !*** ./src/app/admin/creators/music-creator/music-creator.component.html ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -283,21 +687,21 @@ module.exports = "<p>\r\n  music-creator works!\r\n</p>\r\n"
 
 /***/ }),
 
-/***/ "./src/app/admin/music-creator/music-creator.component.scss":
-/*!******************************************************************!*\
-  !*** ./src/app/admin/music-creator/music-creator.component.scss ***!
-  \******************************************************************/
+/***/ "./src/app/admin/creators/music-creator/music-creator.component.scss":
+/*!***************************************************************************!*\
+  !*** ./src/app/admin/creators/music-creator/music-creator.component.scss ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL211c2ljLWNyZWF0b3IvbXVzaWMtY3JlYXRvci5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2NyZWF0b3JzL211c2ljLWNyZWF0b3IvbXVzaWMtY3JlYXRvci5jb21wb25lbnQuc2NzcyJ9 */"
 
 /***/ }),
 
-/***/ "./src/app/admin/music-creator/music-creator.component.ts":
-/*!****************************************************************!*\
-  !*** ./src/app/admin/music-creator/music-creator.component.ts ***!
-  \****************************************************************/
+/***/ "./src/app/admin/creators/music-creator/music-creator.component.ts":
+/*!*************************************************************************!*\
+  !*** ./src/app/admin/creators/music-creator/music-creator.component.ts ***!
+  \*************************************************************************/
 /*! exports provided: MusicCreatorComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -323,8 +727,8 @@ var MusicCreatorComponent = /** @class */ (function () {
     MusicCreatorComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-music-creator',
-            template: __webpack_require__(/*! ./music-creator.component.html */ "./src/app/admin/music-creator/music-creator.component.html"),
-            styles: [__webpack_require__(/*! ./music-creator.component.scss */ "./src/app/admin/music-creator/music-creator.component.scss")]
+            template: __webpack_require__(/*! ./music-creator.component.html */ "./src/app/admin/creators/music-creator/music-creator.component.html"),
+            styles: [__webpack_require__(/*! ./music-creator.component.scss */ "./src/app/admin/creators/music-creator/music-creator.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], MusicCreatorComponent);
@@ -335,10 +739,10 @@ var MusicCreatorComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/admin/news-creator/directives/drag-ndrop.directive.ts":
-/*!***********************************************************************!*\
-  !*** ./src/app/admin/news-creator/directives/drag-ndrop.directive.ts ***!
-  \***********************************************************************/
+/***/ "./src/app/admin/creators/news-creator/directives/drag-ndrop.directive.ts":
+/*!********************************************************************************!*\
+  !*** ./src/app/admin/creators/news-creator/directives/drag-ndrop.directive.ts ***!
+  \********************************************************************************/
 /*! exports provided: DragNDropDirective */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -431,32 +835,32 @@ var DragNDropDirective = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/admin/news-creator/news-creator.component.html":
-/*!****************************************************************!*\
-  !*** ./src/app/admin/news-creator/news-creator.component.html ***!
-  \****************************************************************/
+/***/ "./src/app/admin/creators/news-creator/news-creator.component.html":
+/*!*************************************************************************!*\
+  !*** ./src/app/admin/creators/news-creator/news-creator.component.html ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "{{newsItem | json}}\r\n<!--<form #registerForm=\"ngForm\">-->\r\n<div class=\"NewsCreator\">\r\n  <div class=\"Creator_Field title\">\r\n    <input class=\"Creator_forms\" type=\"text\" name=\"Title\" />\r\n  </div>\r\n  <div class=\"Creator_Field text\">\r\n    <textarea class=\"Creator_forms\" type=\"text\" name=\"Text\" ></textarea>\r\n  </div>\r\n  <div class=\"Creator_Field ImageDropField\"\r\n    Drag-n-Drop\r\n    (fileDropped)=\"drag_n_drop($event)\"\r\n  >\r\n  </div>\r\n</div>\r\n<!--</form>-->\r\n<button id=\"CreateButton\" type=\"submit\">Save</button>\r\n<button id=\"CreateButton\" type=\"button\" (click)=\"checkname()\">Check picture</button>\r\n"
+module.exports = "{{newsItem | json}}\r\n<!--<form #registerForm=\"ngForm\">-->\r\n<div class=\"NewsCreator\">\r\n  <div class=\"Creator_Field title\">\r\n    <input class=\"Creator_forms\" type=\"text\" name=\"Title\" />\r\n  </div>\r\n  <div class=\"Creator_Field text\">\r\n    <textarea class=\"Creator_forms\" type=\"text\" name=\"Text\" ></textarea>\r\n  </div>\r\n  <div class=\"Creator_Field ImageDropField\"\r\n    Drag-n-Drop\r\n    (fileDropped)=\"drag_n_drop($event)\"\r\n  >\r\n    <img src=\"https://localhost:8007/files/tmp/news/hero\" />\r\n  </div>\r\n</div>\r\n<template #AddBlock></template>\r\n<!--</form>-->\r\n<button id=\"CreateButton\" type=\"submit\">Save</button>\r\n<button id=\"CreateButton\" type=\"button\" (click)=\"checkname()\">Check picture</button>\r\n<svg-icon icon=\"media\"></svg-icon>\r\n"
 
 /***/ }),
 
-/***/ "./src/app/admin/news-creator/news-creator.component.scss":
-/*!****************************************************************!*\
-  !*** ./src/app/admin/news-creator/news-creator.component.scss ***!
-  \****************************************************************/
+/***/ "./src/app/admin/creators/news-creator/news-creator.component.scss":
+/*!*************************************************************************!*\
+  !*** ./src/app/admin/creators/news-creator/news-creator.component.scss ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".Creator_forms {\n  width: 60%;\n  background: transparent;\n  border-color: whitesmoke;\n  border-radius: 5px;\n  padding-left: inherit;\n  margin-top: 5px; }\n\n#CreateButton {\n  background-color: #77FF77;\n  margin-top: 10px;\n  outline: none;\n  border-radius: 5px; }\n\n.Creator_Field {\n  position: relative; }\n\n.Creator_Field > input {\n  position: absolute;\n  width: 100%; }\n\n.Creator_Field > textarea {\n  position: absolute;\n  width: 100%;\n  resize: none;\n  height: 66px; }\n\ninput, textarea {\n  outline: none;\n  text-indent: 5px; }\n\n.NewsCreator {\n  padding: 5px;\n  display: grid;\n  grid-gap: 5px;\n  grid-template: \"title image\" 20px\r \"text image\" 1fr\r / 1fr 180px;\n  background: antiquewhite;\n  color: black;\n  --minWidth: 150px; }\n\n.title {\n  grid-area: title;\n  min-width: var(--minWidth); }\n\n.text {\n  grid-area: text;\n  min-width: var(--minWidth); }\n\n.ImageDropField {\n  grid-area: image;\n  width: 160px;\n  min-height: 100px;\n  font-size: inherit;\n  border: black solid 1px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4vbmV3cy1jcmVhdG9yL0Q6XFxQcm9ncmFtbWluZ1xcQW5ndWxhci1KYXZhIFdlYnNpdGVcXEpCYWNrZW5kXFxmcm9udF90cy9zcmNcXGFwcFxcYWRtaW5cXG5ld3MtY3JlYXRvclxcbmV3cy1jcmVhdG9yLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hZG1pbi9uZXdzLWNyZWF0b3IvbmV3cy1jcmVhdG9yLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsVUFBVTtFQUVWLHVCQUF1QjtFQUN2Qix3QkFBd0I7RUFDeEIsa0JBQWtCO0VBQ2xCLHFCQUFxQjtFQUNyQixlQUFlLEVBQUE7O0FBR2pCO0VBQ0UseUJBQXlCO0VBQ3pCLGdCQUFnQjtFQUNoQixhQUFhO0VBQ2Isa0JBQWtCLEVBQUE7O0FBR3BCO0VBQ0Usa0JBQWtCLEVBQUE7O0FBR3BCO0VBQ0Usa0JBQWlCO0VBQ2pCLFdBQ0YsRUFBQTs7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTtFQUNaLFlBQVksRUFBQTs7QUFHZDtFQUNFLGFBQWE7RUFDYixnQkFBZ0IsRUFBQTs7QUFHbEI7RUFDRSxZQUFZO0VBQ1osYUFBYTtFQUNiLGFBQWE7RUFDYixnRUFLTztFQUNQLHdCQUNEO0VDVEMsWUFBWTtFRFdkLGlCQUFNLEVBQUE7O0FDUk47RUFDRSxnQkFBZ0I7RURZbEIsMEJBQUssRUFBQTs7QUNUTDtFQUNFLGVBQWU7RURhakIsMEJBQWUsRUFBQTs7QUNWZjtFRGNFLGdCQUFZO0VBQ1osWUFBVztFQUNYLGlCQUFRO0VDWlIsa0JBQWtCO0VBQ2xCLHVCQUF1QixFQUFFIiwiZmlsZSI6InNyYy9hcHAvYWRtaW4vbmV3cy1jcmVhdG9yL25ld3MtY3JlYXRvci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5DcmVhdG9yX2Zvcm1zIHtcclxuICB3aWR0aDogNjAlO1xyXG4gIC8vY29sb3I6aW5oZXJpdDtcclxuICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcclxuICBib3JkZXItY29sb3I6IHdoaXRlc21va2U7XHJcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG4gIHBhZGRpbmctbGVmdDogaW5oZXJpdDtcclxuICBtYXJnaW4tdG9wOiA1cHg7XHJcbiAgLy9mb250LXNpemU6IDI1cHg7XHJcbn1cclxuI0NyZWF0ZUJ1dHRvbiB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzc3RkY3NztcclxuICBtYXJnaW4tdG9wOiAxMHB4O1xyXG4gIG91dGxpbmU6IG5vbmU7XHJcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG59XHJcblxyXG4uQ3JlYXRvcl9GaWVsZHtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbn1cclxuXHJcbi5DcmVhdG9yX0ZpZWxkID4gaW5wdXQge1xyXG4gIHBvc2l0aW9uOmFic29sdXRlO1xyXG4gIHdpZHRoOiAxMDAlXHJcbn1cclxuLkNyZWF0b3JfRmllbGQgPiB0ZXh0YXJlYSB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIHJlc2l6ZTogbm9uZTtcclxuICBoZWlnaHQ6IDY2cHg7XHJcbn1cclxuXHJcbmlucHV0LCB0ZXh0YXJlYSB7XHJcbiAgb3V0bGluZTogbm9uZTtcclxuICB0ZXh0LWluZGVudDogNXB4O1xyXG59XHJcblxyXG4uTmV3c0NyZWF0b3J7XHJcbiAgcGFkZGluZzogNXB4O1xyXG4gIGRpc3BsYXk6IGdyaWQ7XHJcbiAgZ3JpZC1nYXA6IDVweDtcclxuICBncmlkLXRlbXBsYXRlOiBcInRpdGxlIGltYWdlXCIgMjBweFxyXG4gICAgICAgICAgICAgICAgIFwidGV4dCBpbWFnZVwiIDFmclxyXG4gICAgICAgICAgICAgICAgICAvIDFmciAxODBweDtcclxuXHJcbiAgYmFja2dyb3VuZDogYW50aXF1ZXdoaXRlO1xyXG4gIGNvbG9yOiBibGFjaztcclxuICAtLW1pbldpZHRoOiAxNTBweDtcclxufVxyXG5cclxuLnRpdGxle1xyXG4gIGdyaWQtYXJlYTogdGl0bGU7XHJcbiAgbWluLXdpZHRoOiB2YXIoLS1taW5XaWR0aCk7XHJcbn1cclxuXHJcbi50ZXh0e1xyXG4gIGdyaWQtYXJlYTogdGV4dDtcclxuICBtaW4td2lkdGg6IHZhcigtLW1pbldpZHRoKTtcclxufVxyXG5cclxuLkltYWdlRHJvcEZpZWxke1xyXG4gIGdyaWQtYXJlYTogaW1hZ2U7XHJcblxyXG4gIHdpZHRoOiAxNjBweDtcclxuICBtaW4taGVpZ2h0OiAxMDBweDtcclxuICBmb250LXNpemU6IGluaGVyaXQ7XHJcbiAgYm9yZGVyOiBibGFjayBzb2xpZCAxcHg7XHJcbn1cclxuXHJcblxyXG4iLCIuQ3JlYXRvcl9mb3JtcyB7XG4gIHdpZHRoOiA2MCU7XG4gIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xuICBib3JkZXItY29sb3I6IHdoaXRlc21va2U7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgcGFkZGluZy1sZWZ0OiBpbmhlcml0O1xuICBtYXJnaW4tdG9wOiA1cHg7IH1cblxuI0NyZWF0ZUJ1dHRvbiB7XG4gIGJhY2tncm91bmQtY29sb3I6ICM3N0ZGNzc7XG4gIG1hcmdpbi10b3A6IDEwcHg7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJvcmRlci1yYWRpdXM6IDVweDsgfVxuXG4uQ3JlYXRvcl9GaWVsZCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTsgfVxuXG4uQ3JlYXRvcl9GaWVsZCA+IGlucHV0IHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB3aWR0aDogMTAwJTsgfVxuXG4uQ3JlYXRvcl9GaWVsZCA+IHRleHRhcmVhIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB3aWR0aDogMTAwJTtcbiAgcmVzaXplOiBub25lO1xuICBoZWlnaHQ6IDY2cHg7IH1cblxuaW5wdXQsIHRleHRhcmVhIHtcbiAgb3V0bGluZTogbm9uZTtcbiAgdGV4dC1pbmRlbnQ6IDVweDsgfVxuXG4uTmV3c0NyZWF0b3Ige1xuICBwYWRkaW5nOiA1cHg7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtZ2FwOiA1cHg7XG4gIGdyaWQtdGVtcGxhdGU6IFwidGl0bGUgaW1hZ2VcIiAyMHB4XHIgXCJ0ZXh0IGltYWdlXCIgMWZyXHIgLyAxZnIgMTgwcHg7XG4gIGJhY2tncm91bmQ6IGFudGlxdWV3aGl0ZTtcbiAgY29sb3I6IGJsYWNrO1xuICAtLW1pbldpZHRoOiAxNTBweDsgfVxuXG4udGl0bGUge1xuICBncmlkLWFyZWE6IHRpdGxlO1xuICBtaW4td2lkdGg6IHZhcigtLW1pbldpZHRoKTsgfVxuXG4udGV4dCB7XG4gIGdyaWQtYXJlYTogdGV4dDtcbiAgbWluLXdpZHRoOiB2YXIoLS1taW5XaWR0aCk7IH1cblxuLkltYWdlRHJvcEZpZWxkIHtcbiAgZ3JpZC1hcmVhOiBpbWFnZTtcbiAgd2lkdGg6IDE2MHB4O1xuICBtaW4taGVpZ2h0OiAxMDBweDtcbiAgZm9udC1zaXplOiBpbmhlcml0O1xuICBib3JkZXI6IGJsYWNrIHNvbGlkIDFweDsgfVxuIl19 */"
+module.exports = ".Creator_forms {\n  width: 60%;\n  background: transparent;\n  border-color: whitesmoke;\n  border-radius: 5px;\n  padding-left: inherit;\n  margin-top: 5px; }\n\n#CreateButton {\n  background-color: #77FF77;\n  margin-top: 10px;\n  outline: none;\n  border-radius: 5px; }\n\n.Creator_Field {\n  position: relative; }\n\n.Creator_Field > input {\n  position: absolute;\n  width: 100%; }\n\n.Creator_Field > textarea {\n  position: absolute;\n  width: 100%;\n  resize: none;\n  height: 66px; }\n\ninput, textarea {\n  outline: none;\n  text-indent: 5px; }\n\n.NewsCreator {\n  padding: 5px;\n  display: grid;\n  grid-gap: 5px;\n  grid-template: \"title image\" 20px\r \"text image\" 1fr\r / 1fr 180px;\n  background: antiquewhite;\n  color: black;\n  --minWidth: 150px; }\n\n.title {\n  grid-area: title;\n  min-width: var(--minWidth); }\n\n.text {\n  grid-area: text;\n  min-width: var(--minWidth); }\n\n.ImageDropField {\n  grid-area: image;\n  width: 160px;\n  min-height: 100px;\n  font-size: inherit;\n  border: black solid 1px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4vY3JlYXRvcnMvbmV3cy1jcmVhdG9yL0Q6XFxQcm9ncmFtbWluZ1xcQW5ndWxhci1KYXZhIFdlYnNpdGVcXEpCYWNrZW5kXFxmcm9udF90cy9zcmNcXGFwcFxcYWRtaW5cXGNyZWF0b3JzXFxuZXdzLWNyZWF0b3JcXG5ld3MtY3JlYXRvci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYWRtaW4vY3JlYXRvcnMvbmV3cy1jcmVhdG9yL25ld3MtY3JlYXRvci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFVBQVU7RUFFVix1QkFBdUI7RUFDdkIsd0JBQXdCO0VBQ3hCLGtCQUFrQjtFQUNsQixxQkFBcUI7RUFDckIsZUFBZSxFQUFBOztBQUdqQjtFQUNFLHlCQUF5QjtFQUN6QixnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLGtCQUFrQixFQUFBOztBQUdwQjtFQUNFLGtCQUFrQixFQUFBOztBQUdwQjtFQUNFLGtCQUFpQjtFQUNqQixXQUNGLEVBQUE7O0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsV0FBVztFQUNYLFlBQVk7RUFDWixZQUFZLEVBQUE7O0FBR2Q7RUFDRSxhQUFhO0VBQ2IsZ0JBQWdCLEVBQUE7O0FBR2xCO0VBQ0UsWUFBWTtFQUNaLGFBQWE7RUFDYixhQUFhO0VBQ2IsZ0VBS087RUFDUCx3QkFDRDtFQ1RDLFlBQVk7RURXZCxpQkFBTSxFQUFBOztBQ1JOO0VBQ0UsZ0JBQWdCO0VEWWxCLDBCQUFLLEVBQUE7O0FDVEw7RUFDRSxlQUFlO0VEYWpCLDBCQUFlLEVBQUE7O0FDVmY7RURjRSxnQkFBWTtFQUNaLFlBQVc7RUFDWCxpQkFBUTtFQ1pSLGtCQUFrQjtFQUNsQix1QkFBdUIsRUFBRSIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2NyZWF0b3JzL25ld3MtY3JlYXRvci9uZXdzLWNyZWF0b3IuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuQ3JlYXRvcl9mb3JtcyB7XHJcbiAgd2lkdGg6IDYwJTtcclxuICAvL2NvbG9yOmluaGVyaXQ7XHJcbiAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XHJcbiAgYm9yZGVyLWNvbG9yOiB3aGl0ZXNtb2tlO1xyXG4gIGJvcmRlci1yYWRpdXM6IDVweDtcclxuICBwYWRkaW5nLWxlZnQ6IGluaGVyaXQ7XHJcbiAgbWFyZ2luLXRvcDogNXB4O1xyXG4gIC8vZm9udC1zaXplOiAyNXB4O1xyXG59XHJcbiNDcmVhdGVCdXR0b24ge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM3N0ZGNzc7XHJcbiAgbWFyZ2luLXRvcDogMTBweDtcclxuICBvdXRsaW5lOiBub25lO1xyXG4gIGJvcmRlci1yYWRpdXM6IDVweDtcclxufVxyXG5cclxuLkNyZWF0b3JfRmllbGR7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG59XHJcblxyXG4uQ3JlYXRvcl9GaWVsZCA+IGlucHV0IHtcclxuICBwb3NpdGlvbjphYnNvbHV0ZTtcclxuICB3aWR0aDogMTAwJVxyXG59XHJcbi5DcmVhdG9yX0ZpZWxkID4gdGV4dGFyZWEge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB3aWR0aDogMTAwJTtcclxuICByZXNpemU6IG5vbmU7XHJcbiAgaGVpZ2h0OiA2NnB4O1xyXG59XHJcblxyXG5pbnB1dCwgdGV4dGFyZWEge1xyXG4gIG91dGxpbmU6IG5vbmU7XHJcbiAgdGV4dC1pbmRlbnQ6IDVweDtcclxufVxyXG5cclxuLk5ld3NDcmVhdG9ye1xyXG4gIHBhZGRpbmc6IDVweDtcclxuICBkaXNwbGF5OiBncmlkO1xyXG4gIGdyaWQtZ2FwOiA1cHg7XHJcbiAgZ3JpZC10ZW1wbGF0ZTogXCJ0aXRsZSBpbWFnZVwiIDIwcHhcclxuICAgICAgICAgICAgICAgICBcInRleHQgaW1hZ2VcIiAxZnJcclxuICAgICAgICAgICAgICAgICAgLyAxZnIgMTgwcHg7XHJcblxyXG4gIGJhY2tncm91bmQ6IGFudGlxdWV3aGl0ZTtcclxuICBjb2xvcjogYmxhY2s7XHJcbiAgLS1taW5XaWR0aDogMTUwcHg7XHJcbn1cclxuXHJcbi50aXRsZXtcclxuICBncmlkLWFyZWE6IHRpdGxlO1xyXG4gIG1pbi13aWR0aDogdmFyKC0tbWluV2lkdGgpO1xyXG59XHJcblxyXG4udGV4dHtcclxuICBncmlkLWFyZWE6IHRleHQ7XHJcbiAgbWluLXdpZHRoOiB2YXIoLS1taW5XaWR0aCk7XHJcbn1cclxuXHJcbi5JbWFnZURyb3BGaWVsZHtcclxuICBncmlkLWFyZWE6IGltYWdlO1xyXG5cclxuICB3aWR0aDogMTYwcHg7XHJcbiAgbWluLWhlaWdodDogMTAwcHg7XHJcbiAgZm9udC1zaXplOiBpbmhlcml0O1xyXG4gIGJvcmRlcjogYmxhY2sgc29saWQgMXB4O1xyXG59XHJcblxyXG5cclxuIiwiLkNyZWF0b3JfZm9ybXMge1xuICB3aWR0aDogNjAlO1xuICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbiAgYm9yZGVyLWNvbG9yOiB3aGl0ZXNtb2tlO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIHBhZGRpbmctbGVmdDogaW5oZXJpdDtcbiAgbWFyZ2luLXRvcDogNXB4OyB9XG5cbiNDcmVhdGVCdXR0b24ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNzdGRjc3O1xuICBtYXJnaW4tdG9wOiAxMHB4O1xuICBvdXRsaW5lOiBub25lO1xuICBib3JkZXItcmFkaXVzOiA1cHg7IH1cblxuLkNyZWF0b3JfRmllbGQge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7IH1cblxuLkNyZWF0b3JfRmllbGQgPiBpbnB1dCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDEwMCU7IH1cblxuLkNyZWF0b3JfRmllbGQgPiB0ZXh0YXJlYSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDEwMCU7XG4gIHJlc2l6ZTogbm9uZTtcbiAgaGVpZ2h0OiA2NnB4OyB9XG5cbmlucHV0LCB0ZXh0YXJlYSB7XG4gIG91dGxpbmU6IG5vbmU7XG4gIHRleHQtaW5kZW50OiA1cHg7IH1cblxuLk5ld3NDcmVhdG9yIHtcbiAgcGFkZGluZzogNXB4O1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLWdhcDogNXB4O1xuICBncmlkLXRlbXBsYXRlOiBcInRpdGxlIGltYWdlXCIgMjBweFxyIFwidGV4dCBpbWFnZVwiIDFmclxyIC8gMWZyIDE4MHB4O1xuICBiYWNrZ3JvdW5kOiBhbnRpcXVld2hpdGU7XG4gIGNvbG9yOiBibGFjaztcbiAgLS1taW5XaWR0aDogMTUwcHg7IH1cblxuLnRpdGxlIHtcbiAgZ3JpZC1hcmVhOiB0aXRsZTtcbiAgbWluLXdpZHRoOiB2YXIoLS1taW5XaWR0aCk7IH1cblxuLnRleHQge1xuICBncmlkLWFyZWE6IHRleHQ7XG4gIG1pbi13aWR0aDogdmFyKC0tbWluV2lkdGgpOyB9XG5cbi5JbWFnZURyb3BGaWVsZCB7XG4gIGdyaWQtYXJlYTogaW1hZ2U7XG4gIHdpZHRoOiAxNjBweDtcbiAgbWluLWhlaWdodDogMTAwcHg7XG4gIGZvbnQtc2l6ZTogaW5oZXJpdDtcbiAgYm9yZGVyOiBibGFjayBzb2xpZCAxcHg7IH1cbiJdfQ== */"
 
 /***/ }),
 
-/***/ "./src/app/admin/news-creator/news-creator.component.ts":
-/*!**************************************************************!*\
-  !*** ./src/app/admin/news-creator/news-creator.component.ts ***!
-  \**************************************************************/
+/***/ "./src/app/admin/creators/news-creator/news-creator.component.ts":
+/*!***********************************************************************!*\
+  !*** ./src/app/admin/creators/news-creator/news-creator.component.ts ***!
+  \***********************************************************************/
 /*! exports provided: NewsCreatorComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -464,8 +868,8 @@ module.exports = ".Creator_forms {\n  width: 60%;\n  background: transparent;\n 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewsCreatorComponent", function() { return NewsCreatorComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _entities_News__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../entities/News */ "./src/app/entities/News.ts");
-/* harmony import */ var _services_image_saver_image_saver_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/image_saver/image-saver.service */ "./src/app/admin/services/image_saver/image-saver.service.ts");
+/* harmony import */ var _entities_News__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../entities/News */ "./src/app/entities/News.ts");
+/* harmony import */ var _services_image_saver_image_saver_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/image_saver/image-saver.service */ "./src/app/admin/services/image_saver/image-saver.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -522,28 +926,18 @@ var NewsCreatorComponent = /** @class */ (function () {
     NewsCreatorComponent.prototype.ngOnInit = function () { };
     NewsCreatorComponent.prototype.drag_n_drop = function (files) {
         return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
+            var message;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         this.files = files;
                         this.newsItem.pic = this.files[0];
-                        // let message = await this.ImageSaver
-                        //   .saveImage(this.files[0])
-                        //   .toPromise();
-                        // this.message = message.answer;
-                        // alert(this.message);
                         return [4 /*yield*/, this.ImageSaver
                                 .saveImage(this.files[0])
-                                .subscribe(function (data) { return _this.message = data.answer; }, function (error) { return _this.message = error; })];
+                                .toPromise()];
                     case 1:
-                        // let message = await this.ImageSaver
-                        //   .saveImage(this.files[0])
-                        //   .toPromise();
-                        // this.message = message.answer;
-                        // alert(this.message);
-                        _a.sent();
-                        alert(this.message);
+                        message = _a.sent();
+                        this.message = message.answer;
                         return [2 /*return*/];
                 }
             });
@@ -552,8 +946,8 @@ var NewsCreatorComponent = /** @class */ (function () {
     NewsCreatorComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-news-creator',
-            template: __webpack_require__(/*! ./news-creator.component.html */ "./src/app/admin/news-creator/news-creator.component.html"),
-            styles: [__webpack_require__(/*! ./news-creator.component.scss */ "./src/app/admin/news-creator/news-creator.component.scss")]
+            template: __webpack_require__(/*! ./news-creator.component.html */ "./src/app/admin/creators/news-creator/news-creator.component.html"),
+            styles: [__webpack_require__(/*! ./news-creator.component.scss */ "./src/app/admin/creators/news-creator/news-creator.component.scss")]
         }),
         __metadata("design:paramtypes", [_services_image_saver_image_saver_service__WEBPACK_IMPORTED_MODULE_2__["ImageSaverService"]])
     ], NewsCreatorComponent);
@@ -564,10 +958,10 @@ var NewsCreatorComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/admin/photo-creator/photo-creator.component.html":
-/*!******************************************************************!*\
-  !*** ./src/app/admin/photo-creator/photo-creator.component.html ***!
-  \******************************************************************/
+/***/ "./src/app/admin/creators/photo-creator/photo-creator.component.html":
+/*!***************************************************************************!*\
+  !*** ./src/app/admin/creators/photo-creator/photo-creator.component.html ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -575,21 +969,21 @@ module.exports = "<p>\r\n  photo-creator works!\r\n</p>\r\n"
 
 /***/ }),
 
-/***/ "./src/app/admin/photo-creator/photo-creator.component.scss":
-/*!******************************************************************!*\
-  !*** ./src/app/admin/photo-creator/photo-creator.component.scss ***!
-  \******************************************************************/
+/***/ "./src/app/admin/creators/photo-creator/photo-creator.component.scss":
+/*!***************************************************************************!*\
+  !*** ./src/app/admin/creators/photo-creator/photo-creator.component.scss ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL3Bob3RvLWNyZWF0b3IvcGhvdG8tY3JlYXRvci5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2NyZWF0b3JzL3Bob3RvLWNyZWF0b3IvcGhvdG8tY3JlYXRvci5jb21wb25lbnQuc2NzcyJ9 */"
 
 /***/ }),
 
-/***/ "./src/app/admin/photo-creator/photo-creator.component.ts":
-/*!****************************************************************!*\
-  !*** ./src/app/admin/photo-creator/photo-creator.component.ts ***!
-  \****************************************************************/
+/***/ "./src/app/admin/creators/photo-creator/photo-creator.component.ts":
+/*!*************************************************************************!*\
+  !*** ./src/app/admin/creators/photo-creator/photo-creator.component.ts ***!
+  \*************************************************************************/
 /*! exports provided: PhotoCreatorComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -615,8 +1009,8 @@ var PhotoCreatorComponent = /** @class */ (function () {
     PhotoCreatorComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-photo-creator',
-            template: __webpack_require__(/*! ./photo-creator.component.html */ "./src/app/admin/photo-creator/photo-creator.component.html"),
-            styles: [__webpack_require__(/*! ./photo-creator.component.scss */ "./src/app/admin/photo-creator/photo-creator.component.scss")]
+            template: __webpack_require__(/*! ./photo-creator.component.html */ "./src/app/admin/creators/photo-creator/photo-creator.component.html"),
+            styles: [__webpack_require__(/*! ./photo-creator.component.scss */ "./src/app/admin/creators/photo-creator/photo-creator.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], PhotoCreatorComponent);
@@ -627,10 +1021,10 @@ var PhotoCreatorComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/admin/product-creator/product-creator.component.html":
-/*!**********************************************************************!*\
-  !*** ./src/app/admin/product-creator/product-creator.component.html ***!
-  \**********************************************************************/
+/***/ "./src/app/admin/creators/product-creator/product-creator.component.html":
+/*!*******************************************************************************!*\
+  !*** ./src/app/admin/creators/product-creator/product-creator.component.html ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -638,21 +1032,21 @@ module.exports = "<p>\r\n  product-creator works!\r\n</p>\r\n"
 
 /***/ }),
 
-/***/ "./src/app/admin/product-creator/product-creator.component.scss":
-/*!**********************************************************************!*\
-  !*** ./src/app/admin/product-creator/product-creator.component.scss ***!
-  \**********************************************************************/
+/***/ "./src/app/admin/creators/product-creator/product-creator.component.scss":
+/*!*******************************************************************************!*\
+  !*** ./src/app/admin/creators/product-creator/product-creator.component.scss ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL3Byb2R1Y3QtY3JlYXRvci9wcm9kdWN0LWNyZWF0b3IuY29tcG9uZW50LnNjc3MifQ== */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2NyZWF0b3JzL3Byb2R1Y3QtY3JlYXRvci9wcm9kdWN0LWNyZWF0b3IuY29tcG9uZW50LnNjc3MifQ== */"
 
 /***/ }),
 
-/***/ "./src/app/admin/product-creator/product-creator.component.ts":
-/*!********************************************************************!*\
-  !*** ./src/app/admin/product-creator/product-creator.component.ts ***!
-  \********************************************************************/
+/***/ "./src/app/admin/creators/product-creator/product-creator.component.ts":
+/*!*****************************************************************************!*\
+  !*** ./src/app/admin/creators/product-creator/product-creator.component.ts ***!
+  \*****************************************************************************/
 /*! exports provided: ProductCreatorComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -678,8 +1072,8 @@ var ProductCreatorComponent = /** @class */ (function () {
     ProductCreatorComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-product-creator',
-            template: __webpack_require__(/*! ./product-creator.component.html */ "./src/app/admin/product-creator/product-creator.component.html"),
-            styles: [__webpack_require__(/*! ./product-creator.component.scss */ "./src/app/admin/product-creator/product-creator.component.scss")]
+            template: __webpack_require__(/*! ./product-creator.component.html */ "./src/app/admin/creators/product-creator/product-creator.component.html"),
+            styles: [__webpack_require__(/*! ./product-creator.component.scss */ "./src/app/admin/creators/product-creator/product-creator.component.scss")]
         }),
         __metadata("design:paramtypes", [])
     ], ProductCreatorComponent);
@@ -776,7 +1170,7 @@ var ImageSaverService = /** @class */ (function () {
     function ImageSaverService(Http, cookies) {
         this.Http = Http;
         this.cookies = cookies;
-        this.MediaServer = "https://localhost:8007/save_image";
+        this.MediaServer = "https://localhost:8007/admin/save_image";
     }
     ImageSaverService.prototype.saveImage = function (newFile) {
         var formSend = new FormData();
@@ -818,10 +1212,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _content_store_store_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./content/store/store.component */ "./src/app/content/store/store.component.ts");
 /* harmony import */ var _content_users_users_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./content/users/users.component */ "./src/app/content/users/users.component.ts");
 /* harmony import */ var _content_users_user_detail_user_detail_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./content/users/user-detail/user-detail.component */ "./src/app/content/users/user-detail/user-detail.component.ts");
-/* harmony import */ var _admin_news_creator_news_creator_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./admin/news-creator/news-creator.component */ "./src/app/admin/news-creator/news-creator.component.ts");
-/* harmony import */ var _admin_product_creator_product_creator_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./admin/product-creator/product-creator.component */ "./src/app/admin/product-creator/product-creator.component.ts");
-/* harmony import */ var _admin_photo_creator_photo_creator_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./admin/photo-creator/photo-creator.component */ "./src/app/admin/photo-creator/photo-creator.component.ts");
-/* harmony import */ var _admin_music_creator_music_creator_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./admin/music-creator/music-creator.component */ "./src/app/admin/music-creator/music-creator.component.ts");
+/* harmony import */ var _admin_creators_news_creator_news_creator_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./admin/creators/news-creator/news-creator.component */ "./src/app/admin/creators/news-creator/news-creator.component.ts");
+/* harmony import */ var _admin_creators_product_creator_product_creator_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./admin/creators/product-creator/product-creator.component */ "./src/app/admin/creators/product-creator/product-creator.component.ts");
+/* harmony import */ var _admin_creators_photo_creator_photo_creator_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./admin/creators/photo-creator/photo-creator.component */ "./src/app/admin/creators/photo-creator/photo-creator.component.ts");
+/* harmony import */ var _admin_creators_music_creator_music_creator_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./admin/creators/music-creator/music-creator.component */ "./src/app/admin/creators/music-creator/music-creator.component.ts");
 /* harmony import */ var _content_model3d_model3d_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./content/model3d/model3d.component */ "./src/app/content/model3d/model3d.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -855,10 +1249,10 @@ var routes = [
     { path: 'users', component: _content_users_users_component__WEBPACK_IMPORTED_MODULE_8__["UsersComponent"] },
     { path: 'users/:nickname', component: _content_users_user_detail_user_detail_component__WEBPACK_IMPORTED_MODULE_9__["UserDetailComponent"] },
     { path: '3d', component: _content_model3d_model3d_component__WEBPACK_IMPORTED_MODULE_14__["Model3dComponent"] },
-    { path: 'admin/create/news', component: _admin_news_creator_news_creator_component__WEBPACK_IMPORTED_MODULE_10__["NewsCreatorComponent"] },
-    { path: 'admin/create/product', component: _admin_product_creator_product_creator_component__WEBPACK_IMPORTED_MODULE_11__["ProductCreatorComponent"] },
-    { path: 'admin/create/photo', component: _admin_photo_creator_photo_creator_component__WEBPACK_IMPORTED_MODULE_12__["PhotoCreatorComponent"] },
-    { path: 'admin/create/music', component: _admin_music_creator_music_creator_component__WEBPACK_IMPORTED_MODULE_13__["MusicCreatorComponent"] }
+    { path: 'admin/create/news', component: _admin_creators_news_creator_news_creator_component__WEBPACK_IMPORTED_MODULE_10__["NewsCreatorComponent"] },
+    { path: 'admin/create/product', component: _admin_creators_product_creator_product_creator_component__WEBPACK_IMPORTED_MODULE_11__["ProductCreatorComponent"] },
+    { path: 'admin/create/photo', component: _admin_creators_photo_creator_photo_creator_component__WEBPACK_IMPORTED_MODULE_12__["PhotoCreatorComponent"] },
+    { path: 'admin/create/music', component: _admin_creators_music_creator_music_creator_component__WEBPACK_IMPORTED_MODULE_13__["MusicCreatorComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -1716,7 +2110,7 @@ var UserReg = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div (click)=\"openProfile(user)\" class=\"user\" *ngFor=\"let user of userInfo\">\r\n    <div class=\"nickname\">{{user.nickname}}</div>\r\n    \r\n    <img *ngIf=\"user.picHTML; else blankPic\" [src]=\"user.picHTML\">\r\n    <ng-template #blankPic>\r\n        <img src=\"../../assets/data/users/userpic.jpg\">\r\n    </ng-template>\r\n    \r\n    <div class=\"name\">{{user.name}}</div>\r\n    <div class=\"surname\">{{user.surname}}</div>\r\n</div>"
+module.exports = "<div (click)=\"openProfile(user)\" class=\"user\" *ngFor=\"let user of userInfo\">\r\n    <div class=\"nickname\">{{user.nickname}}</div>\r\n\r\n    <img *ngIf=\"user.picHTML; else blankPic\" [src]=\"user.picHTML\">\r\n    <ng-template #blankPic>\r\n        <img src=\"../../../assets/data/users/userpic.jpg\">\r\n    </ng-template>\r\n\r\n    <div class=\"name\">{{user.name}}</div>\r\n    <div class=\"surname\">{{user.surname}}</div>\r\n</div>\r\n"
 
 /***/ }),
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {NewsItem} from "../../entities/News";
-import {ImageSaverService} from "../services/image_saver/image-saver.service";
+import {NewsItem} from "../../../entities/News";
+import {ImageSaverService} from "../../services/image_saver/image-saver.service";
 
 @Component({
   selector: 'app-news-creator',
@@ -27,7 +27,6 @@ export class NewsCreatorComponent implements OnInit {
       .saveImage(this.files[0])
       .toPromise();
     this.message = message.answer;
-    alert(this.message);
   }
 
   // checkname(){

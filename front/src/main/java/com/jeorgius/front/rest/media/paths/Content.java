@@ -1,4 +1,10 @@
 package com.jeorgius.front.rest.media.paths;
 
-public class Content {
+public enum Content {
+    NEWS,
+    PHOTOS,
+    STORE,
+    USERS,
+    MUSIC,
+    ABOUT
 }

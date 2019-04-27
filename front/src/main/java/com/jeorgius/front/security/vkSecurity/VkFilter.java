@@ -1,4 +1,4 @@
-package com.jeorgius.front.cfg.vkSecurity;
+package com.jeorgius.front.security.vkSecurity;
 
 import org.springframework.context.ApplicationEvent;
 import org.springframework.security.authentication.BadCredentialsException;

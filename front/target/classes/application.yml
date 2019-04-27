@@ -1,3 +1,7 @@
+#ToDo change to Media Server
+media:
+  path: 'D:\Programming\files\'
+
 server:
   port: 8007
   ssl:

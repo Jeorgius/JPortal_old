@@ -8,10 +8,10 @@ import { RegisterComponent } from './content/users/register/register.component';
 import { StoreComponent } from './content/store/store.component';
 import { UsersComponent } from './content/users/users.component';
 import { UserDetailComponent } from './content/users/user-detail/user-detail.component';
-import {NewsCreatorComponent} from "./admin/news-creator/news-creator.component";
-import {ProductCreatorComponent} from "./admin/product-creator/product-creator.component";
-import {PhotoCreatorComponent} from "./admin/photo-creator/photo-creator.component";
-import {MusicCreatorComponent} from "./admin/music-creator/music-creator.component";
+import {NewsCreatorComponent} from "./admin/creators/news-creator/news-creator.component";
+import {ProductCreatorComponent} from "./admin/creators/product-creator/product-creator.component";
+import {PhotoCreatorComponent} from "./admin/creators/photo-creator/photo-creator.component";
+import {MusicCreatorComponent} from "./admin/creators/music-creator/music-creator.component";
 import {Model3dComponent} from "./content/model3d/model3d.component";
 
 

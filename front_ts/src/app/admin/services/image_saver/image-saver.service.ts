@@ -9,7 +9,7 @@ import {CookieService} from "ngx-cookie-service";
 })
 export class ImageSaverService {
 
-  private MediaServer = "https://localhost:8007/save_image";
+  private MediaServer = "https://localhost:8007/admin/save_image";
   //private MediaServer = "http://localhost:8002";
   constructor(
     private Http :HttpClient,
@@ -24,4 +24,7 @@ export class ImageSaverService {
       formSend
       );
   }
+
+  // displayLastImage(){
+  // }
 }

@@ -12,7 +12,7 @@
     <artifactId>front_ts</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>front_ts</name>
-    <description>TypeScript module with build path to front/src/resource</description>
+    <description>TypeScript module with build root to front/src/resource</description>
 
     <properties>
         <java.version>1.8</java.version>

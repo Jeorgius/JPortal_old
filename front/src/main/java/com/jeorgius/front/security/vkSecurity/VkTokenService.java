@@ -1,4 +1,4 @@
-package com.jeorgius.front.cfg.vkSecurity;
+package com.jeorgius.front.security.vkSecurity;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
