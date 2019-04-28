@@ -1,0 +1,7 @@
+<div class="block_adder">
+  <svg-icon
+    *ngFor="let icon of toDisplay"
+    icon="{{icon}}"
+    (click)="emitBlockType(icon)"
+  ></svg-icon>
+</div>
