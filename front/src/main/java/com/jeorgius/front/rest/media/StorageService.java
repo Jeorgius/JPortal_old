@@ -29,8 +29,8 @@ public class StorageService {
         return "Success: file has been uploaded";
     }
 
-    public File getFile(String filePath){
+    public File getFile(String filePath, String index){
         return new File(filePath)
-            .listFiles((FileFilter) new WildcardFileFilter(".*"))[0];
+            .listFiles((FileFilter) new WildcardFileFilter(index+".*"))[0];
     }
 }

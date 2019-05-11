@@ -40,7 +40,7 @@ public class FilePath {
 
     public String build(){
         return root
-            + (TMP? "tmp\\" : "")
+            + (TMP? "tmp" : "")
             + userId
             + "\\" + content.name().toLowerCase()
             + id

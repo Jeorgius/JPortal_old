@@ -79,20 +79,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _creator_blocks_add_button_add_button_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./creator_blocks/add-button/add-button.component */ "./src/app/admin/creator_blocks/add-button/add-button.component.ts");
 /* harmony import */ var _creator_blocks_edit_bar_edit_bar_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./creator_blocks/edit_bar/edit-bar.component */ "./src/app/admin/creator_blocks/edit_bar/edit-bar.component.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _creators_news_creator_directives_drag_ndrop_directive__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./creators/news-creator/directives/drag-ndrop.directive */ "./src/app/admin/creators/news-creator/directives/drag-ndrop.directive.ts");
+/* harmony import */ var _directives_drag_ndrop_directive__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./directives/drag-ndrop.directive */ "./src/app/admin/directives/drag-ndrop.directive.ts");
 /* harmony import */ var ngx_cookie_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ngx-cookie-service */ "./node_modules/ngx-cookie-service/index.js");
 /* harmony import */ var _creator_blocks_block_factory_text_only_text_only_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./creator_blocks/block-factory/text-only/text-only.component */ "./src/app/admin/creator_blocks/block-factory/text-only/text-only.component.ts");
 /* harmony import */ var _creator_blocks_block_factory_media_only_media_only_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./creator_blocks/block-factory/media-only/media-only.component */ "./src/app/admin/creator_blocks/block-factory/media-only/media-only.component.ts");
 /* harmony import */ var _creator_blocks_block_factory_media_left_media_left_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./creator_blocks/block-factory/media-left/media-left.component */ "./src/app/admin/creator_blocks/block-factory/media-left/media-left.component.ts");
 /* harmony import */ var _creator_blocks_block_factory_media_right_media_right_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./creator_blocks/block-factory/media-right/media-right.component */ "./src/app/admin/creator_blocks/block-factory/media-right/media-right.component.ts");
-/* harmony import */ var _creator_blocks_spriter_svg_icon_svg_icon_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./creator_blocks/spriter/svg-icon/svg-icon.component */ "./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.ts");
+/* harmony import */ var _creator_blocks_block_adder_spriter_svg_icon_svg_icon_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./creator_blocks/block-adder/spriter/svg-icon/svg-icon.component */ "./src/app/admin/creator_blocks/block-adder/spriter/svg-icon/svg-icon.component.ts");
 /* harmony import */ var _creator_blocks_block_factory_block_factory_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./creator_blocks/block-factory/block-factory.component */ "./src/app/admin/creator_blocks/block-factory/block-factory.component.ts");
+/* harmony import */ var _creator_blocks_block_adder_block_adder_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./creator_blocks/block-adder/block-adder.component */ "./src/app/admin/creator_blocks/block-adder/block-adder.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -123,13 +125,14 @@ var AdminModule = /** @class */ (function () {
                 _creators_news_creator_news_creator_component__WEBPACK_IMPORTED_MODULE_4__["NewsCreatorComponent"],
                 _creators_photo_creator_photo_creator_component__WEBPACK_IMPORTED_MODULE_5__["PhotoCreatorComponent"],
                 _creators_product_creator_product_creator_component__WEBPACK_IMPORTED_MODULE_6__["ProductCreatorComponent"],
-                _creators_news_creator_directives_drag_ndrop_directive__WEBPACK_IMPORTED_MODULE_10__["DragNDropDirective"],
+                _directives_drag_ndrop_directive__WEBPACK_IMPORTED_MODULE_10__["DragNDropDirective"],
                 _creator_blocks_block_factory_text_only_text_only_component__WEBPACK_IMPORTED_MODULE_12__["TextOnlyComponent"],
                 _creator_blocks_block_factory_media_only_media_only_component__WEBPACK_IMPORTED_MODULE_13__["MediaOnlyComponent"],
                 _creator_blocks_block_factory_media_left_media_left_component__WEBPACK_IMPORTED_MODULE_14__["MediaLeftComponent"],
                 _creator_blocks_block_factory_media_right_media_right_component__WEBPACK_IMPORTED_MODULE_15__["MediaRightComponent"],
                 _creator_blocks_block_factory_block_factory_component__WEBPACK_IMPORTED_MODULE_17__["BlockFactoryComponent"],
-                _creator_blocks_spriter_svg_icon_svg_icon_component__WEBPACK_IMPORTED_MODULE_16__["SvgIconComponent"]
+                _creator_blocks_block_adder_spriter_svg_icon_svg_icon_component__WEBPACK_IMPORTED_MODULE_16__["SvgIconComponent"],
+                _creator_blocks_block_adder_block_adder_component__WEBPACK_IMPORTED_MODULE_18__["BlockAdderComponent"]
             ],
             imports: [
                 _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
@@ -144,7 +147,7 @@ var AdminModule = /** @class */ (function () {
                 _creators_news_creator_news_creator_component__WEBPACK_IMPORTED_MODULE_4__["NewsCreatorComponent"],
                 _creators_photo_creator_photo_creator_component__WEBPACK_IMPORTED_MODULE_5__["PhotoCreatorComponent"],
                 _creators_product_creator_product_creator_component__WEBPACK_IMPORTED_MODULE_6__["ProductCreatorComponent"],
-                _creators_news_creator_directives_drag_ndrop_directive__WEBPACK_IMPORTED_MODULE_10__["DragNDropDirective"],
+                _directives_drag_ndrop_directive__WEBPACK_IMPORTED_MODULE_10__["DragNDropDirective"],
                 _creator_blocks_block_factory_text_only_text_only_component__WEBPACK_IMPORTED_MODULE_12__["TextOnlyComponent"],
                 _creator_blocks_block_factory_media_only_media_only_component__WEBPACK_IMPORTED_MODULE_13__["MediaOnlyComponent"],
                 _creator_blocks_block_factory_media_left_media_left_component__WEBPACK_IMPORTED_MODULE_14__["MediaLeftComponent"],
@@ -152,6 +155,12 @@ var AdminModule = /** @class */ (function () {
             ],
             providers: [
                 ngx_cookie_service__WEBPACK_IMPORTED_MODULE_11__["CookieService"]
+            ],
+            entryComponents: [
+                _creator_blocks_block_factory_text_only_text_only_component__WEBPACK_IMPORTED_MODULE_12__["TextOnlyComponent"],
+                _creator_blocks_block_factory_media_only_media_only_component__WEBPACK_IMPORTED_MODULE_13__["MediaOnlyComponent"],
+                _creator_blocks_block_factory_media_left_media_left_component__WEBPACK_IMPORTED_MODULE_14__["MediaLeftComponent"],
+                _creator_blocks_block_factory_media_right_media_right_component__WEBPACK_IMPORTED_MODULE_15__["MediaRightComponent"]
             ]
         })
     ], AdminModule);
@@ -231,6 +240,163 @@ var AddButtonComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/admin/creator_blocks/block-adder/block-adder.component.html":
+/*!*****************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-adder/block-adder.component.html ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"block_adder\">\n  <svg-icon\n    *ngFor=\"let icon of toDisplay\"\n    icon=\"{{icon}}\"\n    (click)=\"emitBlockType(icon)\"\n  ></svg-icon>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-adder/block-adder.component.scss":
+/*!*****************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-adder/block-adder.component.scss ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "svg-icon {\n  margin-right: 5px;\n  display: inline-block; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4vY3JlYXRvcl9ibG9ja3MvYmxvY2stYWRkZXIvRDpcXFByb2dyYW1taW5nXFxBbmd1bGFyLUphdmEgV2Vic2l0ZVxcSkJhY2tlbmRcXGZyb250X3RzL3NyY1xcYXBwXFxhZG1pblxcY3JlYXRvcl9ibG9ja3NcXGJsb2NrLWFkZGVyXFxibG9jay1hZGRlci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGlCQUFpQjtFQUNqQixxQkFBcUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2NyZWF0b3JfYmxvY2tzL2Jsb2NrLWFkZGVyL2Jsb2NrLWFkZGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsic3ZnLWljb257XHJcbiAgbWFyZ2luLXJpZ2h0OiA1cHg7XHJcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG59XHJcbiJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-adder/block-adder.component.ts":
+/*!***************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-adder/block-adder.component.ts ***!
+  \***************************************************************************/
+/*! exports provided: BlockAdderComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockAdderComponent", function() { return BlockAdderComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BlockAdderComponent = /** @class */ (function () {
+    function BlockAdderComponent() {
+        /**
+         * Default array of svg's to display
+         * To display own set of svg components, set array as input and
+         * fill it with elements from assets/data/creator.svg
+         */
+        this.toDisplay = [
+            "mediaOnly",
+            "textOnly",
+            "mediaLeft",
+            "mediaRight"
+        ];
+        this.blockType = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+    }
+    BlockAdderComponent.prototype.ngOnInit = function () { };
+    /**
+     * Click on svg-block
+     * @param blockType - name of icon that user clicked on
+     * emits string with icon name to be transformed into component name
+     */
+    BlockAdderComponent.prototype.emitBlockType = function (blockType) {
+        this.blockType.emit(blockType);
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Array)
+    ], BlockAdderComponent.prototype, "toDisplay", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"])
+    ], BlockAdderComponent.prototype, "blockType", void 0);
+    BlockAdderComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'block-adder',
+            template: __webpack_require__(/*! ./block-adder.component.html */ "./src/app/admin/creator_blocks/block-adder/block-adder.component.html"),
+            styles: [__webpack_require__(/*! ./block-adder.component.scss */ "./src/app/admin/creator_blocks/block-adder/block-adder.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], BlockAdderComponent);
+    return BlockAdderComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-adder/spriter/svg-icon/svg-icon.component.html":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-adder/spriter/svg-icon/svg-icon.component.html ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <use attr.xlink:href=\"/assets/data/icons/creator.svg#{{icon}}\" class=\"icon\"\n    width=\"50px\"\n    height=\"50px\"\n  />\n</svg>\n"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-adder/spriter/svg-icon/svg-icon.component.scss":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-adder/spriter/svg-icon/svg-icon.component.scss ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".icon, svg {\n  width: 50px;\n  height: 50px;\n  fill: white;\n  margin-top: 5px;\n  display: inline-block; }\n\n.icon:hover {\n  fill: #77FF77; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4vY3JlYXRvcl9ibG9ja3MvYmxvY2stYWRkZXIvc3ByaXRlci9zdmctaWNvbi9EOlxcUHJvZ3JhbW1pbmdcXEFuZ3VsYXItSmF2YSBXZWJzaXRlXFxKQmFja2VuZFxcZnJvbnRfdHMvc3JjXFxhcHBcXGFkbWluXFxjcmVhdG9yX2Jsb2Nrc1xcYmxvY2stYWRkZXJcXHNwcml0ZXJcXHN2Zy1pY29uXFxzdmctaWNvbi5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osV0FBVztFQUNYLGVBQWU7RUFDZixxQkFBcUIsRUFBQTs7QUFHdkI7RUFDRSxhQUFhLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9hZG1pbi9jcmVhdG9yX2Jsb2Nrcy9ibG9jay1hZGRlci9zcHJpdGVyL3N2Zy1pY29uL3N2Zy1pY29uLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmljb24sIHN2ZyB7XHJcbiAgd2lkdGg6IDUwcHg7XHJcbiAgaGVpZ2h0OiA1MHB4O1xyXG4gIGZpbGw6IHdoaXRlO1xyXG4gIG1hcmdpbi10b3A6IDVweDtcclxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbn1cclxuXHJcbi5pY29uOmhvdmVye1xyXG4gIGZpbGw6ICM3N0ZGNzc7XHJcbn1cclxuIl19 */"
+
+/***/ }),
+
+/***/ "./src/app/admin/creator_blocks/block-adder/spriter/svg-icon/svg-icon.component.ts":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/admin/creator_blocks/block-adder/spriter/svg-icon/svg-icon.component.ts ***!
+  \*****************************************************************************************/
+/*! exports provided: SvgIconComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SvgIconComponent", function() { return SvgIconComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+// import svg from './creator.svg';
+var SvgIconComponent = /** @class */ (function () {
+    function SvgIconComponent() {
+    }
+    SvgIconComponent.prototype.ngOnInit = function () { };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], SvgIconComponent.prototype, "icon", void 0);
+    SvgIconComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'svg-icon',
+            template: __webpack_require__(/*! ./svg-icon.component.html */ "./src/app/admin/creator_blocks/block-adder/spriter/svg-icon/svg-icon.component.html"),
+            styles: [__webpack_require__(/*! ./svg-icon.component.scss */ "./src/app/admin/creator_blocks/block-adder/spriter/svg-icon/svg-icon.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], SvgIconComponent);
+    return SvgIconComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/admin/creator_blocks/block-factory/block-factory.component.html":
 /*!*********************************************************************************!*\
   !*** ./src/app/admin/creator_blocks/block-factory/block-factory.component.html ***!
@@ -238,7 +404,7 @@ var AddButtonComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  block-factory works!\n</p>\n"
+module.exports = "<template #AddBlock></template>\n"
 
 /***/ }),
 
@@ -275,17 +441,57 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 var BlockFactoryComponent = /** @class */ (function () {
-    function BlockFactoryComponent() {
+    function BlockFactoryComponent(resolver) {
+        this.resolver = resolver;
+        //<editor-fold defaultstate="collapsed" desc="Name of the block. Incoming parameter">
+        //</editor-fold>
+        this._blockType = "";
     }
-    BlockFactoryComponent.prototype.ngOnInit = function () {
-    };
+    BlockFactoryComponent.prototype.ngOnInit = function () { };
+    Object.defineProperty(BlockFactoryComponent.prototype, "blockType", {
+        get: function () {
+            return this._blockType;
+        },
+        /**
+         * Generate component based on block type
+         * @param value - block type as string. Set as an input that is caught from svg-element
+         */
+        set: function (value) {
+            this._blockType = value;
+            if (!this._blockType)
+                return;
+            //if(this.newBlock) this.newBlock.clear();
+            /**
+             * Get proper component
+             * Get array of factories from ComponentFactoryResolver
+             * Find a component that matches svg name, for instance,
+             * textOnly gets transformed into TextOnlyComponent
+             */
+            this.newBlock.createComponent(this.resolver.resolveComponentFactory((Array
+                .from(this.resolver["_factories"].keys()))
+                .find(function (component) {
+                return component.name === value.charAt(0).toUpperCase() + value.slice(1) + "Component";
+            })));
+        },
+        enumerable: true,
+        configurable: true
+    });
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('AddBlock', { read: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"] }),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"])
+    ], BlockFactoryComponent.prototype, "newBlock", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String),
+        __metadata("design:paramtypes", [String])
+    ], BlockFactoryComponent.prototype, "blockType", null);
     BlockFactoryComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-block-factory',
+            selector: 'block-factory',
             template: __webpack_require__(/*! ./block-factory.component.html */ "./src/app/admin/creator_blocks/block-factory/block-factory.component.html"),
             styles: [__webpack_require__(/*! ./block-factory.component.scss */ "./src/app/admin/creator_blocks/block-factory/block-factory.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"]])
     ], BlockFactoryComponent);
     return BlockFactoryComponent;
 }());
@@ -609,67 +815,29 @@ var EditBarComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.html":
-/*!*******************************************************************************!*\
-  !*** ./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.html ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<svg xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n  <use attr.xlink:href=\"/assets/data/icons/creator.svg#{{icon}}\" class=\"icon\"\n    width=\"50px\"\n    height=\"50px\"\n  />\n</svg>\n"
-
-/***/ }),
-
-/***/ "./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.scss":
-/*!*******************************************************************************!*\
-  !*** ./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.scss ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".icon, svg {\n  width: 50px;\n  height: 50px;\n  fill: white; }\n\n.icon:hover {\n  fill: #77FF77; }\n\nsvg {\n  display: inline-block; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4vY3JlYXRvcl9ibG9ja3Mvc3ByaXRlci9zdmctaWNvbi9EOlxcUHJvZ3JhbW1pbmdcXEFuZ3VsYXItSmF2YSBXZWJzaXRlXFxKQmFja2VuZFxcZnJvbnRfdHMvc3JjXFxhcHBcXGFkbWluXFxjcmVhdG9yX2Jsb2Nrc1xcc3ByaXRlclxcc3ZnLWljb25cXHN2Zy1pY29uLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixXQUFXLEVBQUE7O0FBR2I7RUFDRSxhQUFhLEVBQUE7O0FBR2Y7RUFDRSxxQkFBcUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2NyZWF0b3JfYmxvY2tzL3Nwcml0ZXIvc3ZnLWljb24vc3ZnLWljb24uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaWNvbiwgc3ZnIHtcclxuICB3aWR0aDogNTBweDtcclxuICBoZWlnaHQ6IDUwcHg7XHJcbiAgZmlsbDogd2hpdGU7XHJcbn1cclxuXHJcbi5pY29uOmhvdmVye1xyXG4gIGZpbGw6ICM3N0ZGNzc7XHJcbn1cclxuXHJcbnN2Z3tcclxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbn1cclxuIl19 */"
-
-/***/ }),
-
-/***/ "./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.ts":
-/*!*****************************************************************************!*\
-  !*** ./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.ts ***!
-  \*****************************************************************************/
-/*! exports provided: SvgIconComponent */
+/***/ "./src/app/admin/creators/Creator.ts":
+/*!*******************************************!*\
+  !*** ./src/app/admin/creators/Creator.ts ***!
+  \*******************************************/
+/*! exports provided: Creator */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SvgIconComponent", function() { return SvgIconComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-// import svg from './creator.svg';
-var SvgIconComponent = /** @class */ (function () {
-    function SvgIconComponent() {
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Creator", function() { return Creator; });
+/**
+ * Base class for Creators
+ * Introduced as a layer for Sibling-Parent-Sibling component interaction
+ * Basicly, from BlockAdder-Creator-BlockFactory
+ */
+var Creator = /** @class */ (function () {
+    function Creator() {
+        this.blockType = "";
     }
-    SvgIconComponent.prototype.ngOnInit = function () { };
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
-        __metadata("design:type", String)
-    ], SvgIconComponent.prototype, "icon", void 0);
-    SvgIconComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'svg-icon',
-            template: __webpack_require__(/*! ./svg-icon.component.html */ "./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.html"),
-            styles: [__webpack_require__(/*! ./svg-icon.component.scss */ "./src/app/admin/creator_blocks/spriter/svg-icon/svg-icon.component.scss")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], SvgIconComponent);
-    return SvgIconComponent;
+    Creator.prototype.receiveBlockType = function (blockType) {
+        this.blockType = blockType;
+    };
+    return Creator;
 }());
 
 
@@ -739,102 +907,6 @@ var MusicCreatorComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/admin/creators/news-creator/directives/drag-ndrop.directive.ts":
-/*!********************************************************************************!*\
-  !*** ./src/app/admin/creators/news-creator/directives/drag-ndrop.directive.ts ***!
-  \********************************************************************************/
-/*! exports provided: DragNDropDirective */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DragNDropDirective", function() { return DragNDropDirective; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var DragNDropDirective = /** @class */ (function () {
-    function DragNDropDirective() {
-        this.allowed_extensions = [];
-        this.fileDropped = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
-        this.background = "antiquewhite";
-    }
-    DragNDropDirective.prototype.onDrop = function (event) {
-        this.preventDefaultRerouts(event);
-        var files = event.dataTransfer.files;
-        this.fileDropped.emit(files);
-    };
-    DragNDropDirective.prototype.dragOver = function (event) {
-        this.preventDefaultRerouts(event);
-        this.background = "#777";
-    };
-    DragNDropDirective.prototype.dragEnter = function (event) {
-        this.preventDefaultRerouts(event);
-    };
-    DragNDropDirective.prototype.dragLeave = function (event) {
-        this.preventDefaultRerouts(event);
-        this.background = "antiquewhite";
-    };
-    DragNDropDirective.prototype.preventDefaultRerouts = function (event) {
-        //prevent rerouts to picture view when dropping image to an ImageArea
-        event.preventDefault();
-        event.stopPropagation();
-    };
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
-        __metadata("design:type", Array)
-    ], DragNDropDirective.prototype, "allowed_extensions", void 0);
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
-        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"])
-    ], DragNDropDirective.prototype, "fileDropped", void 0);
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostBinding"])('style.background'),
-        __metadata("design:type", Object)
-    ], DragNDropDirective.prototype, "background", void 0);
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"])('drop', ['$event']),
-        __metadata("design:type", Function),
-        __metadata("design:paramtypes", [Object]),
-        __metadata("design:returntype", void 0)
-    ], DragNDropDirective.prototype, "onDrop", null);
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"])('dragover', ['$event']),
-        __metadata("design:type", Function),
-        __metadata("design:paramtypes", [Object]),
-        __metadata("design:returntype", void 0)
-    ], DragNDropDirective.prototype, "dragOver", null);
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"])('dragenter', ['$event']),
-        __metadata("design:type", Function),
-        __metadata("design:paramtypes", [Object]),
-        __metadata("design:returntype", void 0)
-    ], DragNDropDirective.prototype, "dragEnter", null);
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"])('dragleave', ['$event']),
-        __metadata("design:type", Function),
-        __metadata("design:paramtypes", [Object]),
-        __metadata("design:returntype", void 0)
-    ], DragNDropDirective.prototype, "dragLeave", null);
-    DragNDropDirective = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"])({
-            selector: '[Drag-n-Drop]'
-        })
-    ], DragNDropDirective);
-    return DragNDropDirective;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/admin/creators/news-creator/news-creator.component.html":
 /*!*************************************************************************!*\
   !*** ./src/app/admin/creators/news-creator/news-creator.component.html ***!
@@ -842,7 +914,7 @@ var DragNDropDirective = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "{{newsItem | json}}\r\n<!--<form #registerForm=\"ngForm\">-->\r\n<div class=\"NewsCreator\">\r\n  <div class=\"Creator_Field title\">\r\n    <input class=\"Creator_forms\" type=\"text\" name=\"Title\" />\r\n  </div>\r\n  <div class=\"Creator_Field text\">\r\n    <textarea class=\"Creator_forms\" type=\"text\" name=\"Text\" ></textarea>\r\n  </div>\r\n  <div class=\"Creator_Field ImageDropField\"\r\n    Drag-n-Drop\r\n    (fileDropped)=\"drag_n_drop($event)\"\r\n  >\r\n    <img src=\"https://localhost:8007/files/tmp/news/hero\" />\r\n  </div>\r\n</div>\r\n<template #AddBlock></template>\r\n<!--</form>-->\r\n<svg-icon icon=\"media\"></svg-icon>\r\n<svg-icon icon=\"text\"></svg-icon>\r\n<svg-icon icon=\"media-left\"></svg-icon>\r\n<svg-icon icon=\"media-right\"></svg-icon>\r\n\r\n<button id=\"CreateButton\" type=\"submit\">Save</button>\r\n<button id=\"CreateButton\" type=\"button\" (click)=\"checkname()\">Check picture</button>\r\n\r\n"
+module.exports = "{{newsItem | json}}\r\n<!--<form #registerForm=\"ngForm\">-->\r\n<div class=\"NewsCreator\">\r\n  <div class=\"Creator_Field title\">\r\n    <input class=\"Creator_forms\" type=\"text\" name=\"Title\" />\r\n  </div>\r\n  <div class=\"Creator_Field text\">\r\n    <textarea class=\"Creator_forms\" type=\"text\" name=\"Text\" ></textarea>\r\n  </div>\r\n  <div class=\"Creator_Field ImageDropField\"\r\n    Drag-n-Drop\r\n    (fileDropped)=\"drag_n_drop($event)\"\r\n  >\r\n    <img src=\"https://localhost:8007/files/tmp/news/\" />\r\n  </div>\r\n</div>\r\n<block-factory [blockType]=\"blockType\"></block-factory>\r\n<block-adder (blockType)=\"receiveBlockType($event)\"></block-adder>\r\n\r\n<button id=\"CreateButton\" type=\"submit\">Save</button>\r\n\r\n"
 
 /***/ }),
 
@@ -870,6 +942,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _entities_News__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../entities/News */ "./src/app/entities/News.ts");
 /* harmony import */ var _services_image_saver_image_saver_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/image_saver/image-saver.service */ "./src/app/admin/services/image_saver/image-saver.service.ts");
+/* harmony import */ var _Creator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Creator */ "./src/app/admin/creators/Creator.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -917,11 +1003,15 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
-var NewsCreatorComponent = /** @class */ (function () {
+
+var NewsCreatorComponent = /** @class */ (function (_super) {
+    __extends(NewsCreatorComponent, _super);
     function NewsCreatorComponent(ImageSaver) {
-        this.ImageSaver = ImageSaver;
-        this.newsItem = new _entities_News__WEBPACK_IMPORTED_MODULE_1__["NewsItem"]("New Title", "Enter text here");
-        this.files = [];
+        var _this = _super.call(this) || this;
+        _this.ImageSaver = ImageSaver;
+        _this.newsItem = new _entities_News__WEBPACK_IMPORTED_MODULE_1__["NewsItem"]("New Title", "Enter text here");
+        _this.files = [];
+        return _this;
     }
     NewsCreatorComponent.prototype.ngOnInit = function () { };
     NewsCreatorComponent.prototype.drag_n_drop = function (files) {
@@ -952,7 +1042,7 @@ var NewsCreatorComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_services_image_saver_image_saver_service__WEBPACK_IMPORTED_MODULE_2__["ImageSaverService"]])
     ], NewsCreatorComponent);
     return NewsCreatorComponent;
-}());
+}(_Creator__WEBPACK_IMPORTED_MODULE_3__["Creator"]));
 
 
 
@@ -1078,6 +1168,102 @@ var ProductCreatorComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ProductCreatorComponent);
     return ProductCreatorComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/admin/directives/drag-ndrop.directive.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/admin/directives/drag-ndrop.directive.ts ***!
+  \**********************************************************/
+/*! exports provided: DragNDropDirective */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DragNDropDirective", function() { return DragNDropDirective; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var DragNDropDirective = /** @class */ (function () {
+    function DragNDropDirective() {
+        this.allowed_extensions = [];
+        this.fileDropped = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.background = "antiquewhite";
+    }
+    DragNDropDirective.prototype.onDrop = function (event) {
+        this.preventDefaultRerouts(event);
+        var files = event.dataTransfer.files;
+        this.fileDropped.emit(files);
+    };
+    DragNDropDirective.prototype.dragOver = function (event) {
+        this.preventDefaultRerouts(event);
+        this.background = "#777";
+    };
+    DragNDropDirective.prototype.dragEnter = function (event) {
+        this.preventDefaultRerouts(event);
+    };
+    DragNDropDirective.prototype.dragLeave = function (event) {
+        this.preventDefaultRerouts(event);
+        this.background = "antiquewhite";
+    };
+    DragNDropDirective.prototype.preventDefaultRerouts = function (event) {
+        //prevent rerouts to picture view when dropping image to an ImageArea
+        event.preventDefault();
+        event.stopPropagation();
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Array)
+    ], DragNDropDirective.prototype, "allowed_extensions", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"])
+    ], DragNDropDirective.prototype, "fileDropped", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostBinding"])('style.background'),
+        __metadata("design:type", Object)
+    ], DragNDropDirective.prototype, "background", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"])('drop', ['$event']),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Object]),
+        __metadata("design:returntype", void 0)
+    ], DragNDropDirective.prototype, "onDrop", null);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"])('dragover', ['$event']),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Object]),
+        __metadata("design:returntype", void 0)
+    ], DragNDropDirective.prototype, "dragOver", null);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"])('dragenter', ['$event']),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Object]),
+        __metadata("design:returntype", void 0)
+    ], DragNDropDirective.prototype, "dragEnter", null);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"])('dragleave', ['$event']),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Object]),
+        __metadata("design:returntype", void 0)
+    ], DragNDropDirective.prototype, "dragLeave", null);
+    DragNDropDirective = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"])({
+            selector: '[Drag-n-Drop]'
+        })
+    ], DragNDropDirective);
+    return DragNDropDirective;
 }());
 
 

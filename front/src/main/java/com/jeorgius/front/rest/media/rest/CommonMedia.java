@@ -38,10 +38,11 @@ public class CommonMedia {
             IOUtils.toByteArray(new FileInputStream(
                 storageService.getFile(new FilePath(this.root)
                     .setContent(Content.PHOTOS)
-                    .setIndex(index)
                     //.setUserId()
                     .setId(id)
-                    .build())
+                    .build()
+                    ,index
+                )
             )),
             new HttpHeaders(),
             HttpStatus.OK
@@ -57,10 +58,11 @@ public class CommonMedia {
             IOUtils.toByteArray(new FileInputStream(
                 storageService.getFile(new FilePath(this.root)
                     .setContent(Content.NEWS)
-                    .setIndex(index)
                     //.setUserId()
                     .setId(id)
-                    .build())
+                    .build()
+                    ,index
+                )
             )),
             new HttpHeaders(),
             HttpStatus.OK
@@ -76,10 +78,11 @@ public class CommonMedia {
             IOUtils.toByteArray(new FileInputStream(
                 storageService.getFile(new FilePath(this.root)
                     .setContent(Content.STORE)
-                    .setIndex(index)
                     //.setUserId()
                     .setId(id)
-                    .build())
+                    .build()
+                    ,index
+                )
             )),
             new HttpHeaders(),
             HttpStatus.OK
@@ -95,10 +98,11 @@ public class CommonMedia {
             IOUtils.toByteArray(new FileInputStream(
                 storageService.getFile(new FilePath(this.root)
                     .setContent(Content.STORE)
-                    .setIndex(index)
                     //.setUserId()
                     .setId(id)
-                    .build())
+                    .build()
+                    ,index
+                )
             )),
             new HttpHeaders(),
             HttpStatus.OK
@@ -114,10 +118,10 @@ public class CommonMedia {
             IOUtils.toByteArray(new FileInputStream(
                 storageService.getFile(new FilePath(this.root)
                     .setContent(Content.STORE)
-                    .setIndex(index)
                     //.setUserId()
                     .setId(id)
-                    .build())
+                    .build()
+                    ,index)
             )),
             new HttpHeaders(),
             HttpStatus.OK

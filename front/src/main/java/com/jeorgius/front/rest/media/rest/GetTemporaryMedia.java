@@ -4,7 +4,6 @@ import com.jeorgius.front.rest.media.StorageService;
 import com.jeorgius.front.rest.media.paths.Content;
 import com.jeorgius.front.rest.media.paths.FilePath;
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.io.filefilter.WildcardFileFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
@@ -14,8 +13,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.io.File;
-import java.io.FileFilter;
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -41,10 +38,11 @@ public class GetTemporaryMedia {
                 storageService.getFile(new FilePath(this.root)
                     .setContent(Content.NEWS)
                     .setTMP(true)
-                    .setIndex(index)
                     //.setUserId()
-                    //.setId()
-                    .build())
+                    //.setId(id)
+                    .build(),
+                    index
+                )
             )),
             new HttpHeaders(),
             HttpStatus.OK
@@ -59,10 +57,11 @@ public class GetTemporaryMedia {
                 storageService.getFile(new FilePath(this.root)
                     .setContent(Content.MUSIC)
                     .setTMP(true)
-                    .setIndex(index)
                     //.setUserId()
                     //.setId()
-                    .build())
+                    .build(),
+                    index
+                )
             )),
             new HttpHeaders(),
             HttpStatus.OK
@@ -77,10 +76,11 @@ public class GetTemporaryMedia {
                 storageService.getFile(new FilePath(this.root)
                     .setContent(Content.PHOTOS)
                     .setTMP(true)
-                    .setIndex(index)
                     //.setUserId()
                     //.setId()
-                    .build())
+                    .build(),
+                    index
+                )
             )),
             new HttpHeaders(),
             HttpStatus.OK
@@ -95,10 +95,11 @@ public class GetTemporaryMedia {
                 storageService.getFile(new FilePath(this.root)
                     .setContent(Content.STORE)
                     .setTMP(true)
-                    .setIndex(index)
                     //.setUserId()
                     //.setId()
-                    .build())
+                    .build(),
+                    index
+                )
             )),
             new HttpHeaders(),
             HttpStatus.OK
@@ -113,10 +114,11 @@ public class GetTemporaryMedia {
                 storageService.getFile(new FilePath(this.root)
                     .setContent(Content.ABOUT)
                     .setTMP(true)
-                    .setIndex(index)
                     //.setUserId()
                     //.setId()
-                    .build())
+                    .build(),
+                    index
+                )
             )),
             new HttpHeaders(),
             HttpStatus.OK

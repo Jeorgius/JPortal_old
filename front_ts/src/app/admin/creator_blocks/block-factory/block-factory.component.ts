@@ -45,7 +45,7 @@ export class BlockFactoryComponent implements OnInit {
     this._blockType = value;
 
     if(!this._blockType) return;
-    if(this.newBlock) this.newBlock.clear();
+    //if(this.newBlock) this.newBlock.clear();
 
     /**
      * Get proper component
