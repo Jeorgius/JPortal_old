@@ -2,16 +2,13 @@ package com.jeorgius.front.rest.media.paths;
 
 public class FilePath {
 
-    private String root;
     private Content content;
     private boolean TMP = false;
     private String userId = "";
     private String id = "";
     private String index = "";
 
-    public FilePath(String root) {
-        this.root = root;
-    }
+    public FilePath(){}
 
     public FilePath setContent(Content content) {
         this.content = content;
@@ -39,8 +36,7 @@ public class FilePath {
     }
 
     public String build(){
-        return root
-            + (TMP? "tmp" : "")
+        return (TMP? "tmp" : "")
             + userId
             + "\\" + content.name().toLowerCase()
             + id

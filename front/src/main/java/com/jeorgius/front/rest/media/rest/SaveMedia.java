@@ -4,7 +4,6 @@ import com.jeorgius.front.rest.media.StorageService;
 import com.jeorgius.front.rest.media.paths.Content;
 import com.jeorgius.front.rest.media.paths.FilePath;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,20 +18,17 @@ import java.util.Map;
 public class SaveMedia {
 
     private StorageService storageService;
-    private String root; //'D:\Programming\files\'
     public SaveMedia(){}
 
     @Autowired
-    public SaveMedia(StorageService storageService,
-                     @Value("${media.path}") String root) {
+    public SaveMedia(StorageService storageService) {
         this.storageService = storageService;
-        this.root = root;
     }
 
     @PostMapping(value = "/admin/news/save_image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public Map newsImage(@RequestParam("hero") MultipartFile newImage) throws IOException {
         storageService.store(newImage,
-            new FilePath(root)
+            new FilePath()
                 .setContent(Content.NEWS)
                 .setTMP(true)
                 //.setUserId()
@@ -48,7 +44,7 @@ public class SaveMedia {
 
     @PostMapping(value = "/admin/music/save_image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public Map musicImage(@RequestParam("hero") MultipartFile newImage) throws IOException {
-        storageService.store(newImage, new FilePath(root)
+        storageService.store(newImage, new FilePath()
             .setContent(Content.MUSIC)
             .setTMP(true)
             //.setUserId()
@@ -63,7 +59,7 @@ public class SaveMedia {
 
     @PostMapping(value = "/admin/photos/save_image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public Map photosImage(@RequestParam("hero") MultipartFile newImage) throws IOException {
-        storageService.store(newImage, new FilePath(root)
+        storageService.store(newImage, new FilePath()
             .setContent(Content.NEWS)
             .setTMP(true)
             //.setUserId()
@@ -78,7 +74,7 @@ public class SaveMedia {
 
     @PostMapping(value = "/admin/store/save_image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public Map storeImage(@RequestParam("hero") MultipartFile newImage) throws IOException {
-        storageService.store(newImage, new FilePath(root)
+        storageService.store(newImage, new FilePath()
             .setContent(Content.STORE)
             .setTMP(true)
             //.setUserId()
@@ -93,7 +89,7 @@ public class SaveMedia {
 
     @PostMapping(value = "/users/save_image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public Map usersImage(@RequestParam("hero") MultipartFile newImage) throws IOException {
-        storageService.store(newImage, new FilePath(root)
+        storageService.store(newImage, new FilePath()
             .setContent(Content.USERS)
             .setTMP(true)
             //.setUserId()
@@ -108,7 +104,7 @@ public class SaveMedia {
 
     @PostMapping(value = "/admin/about/save_image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public Map aboutImage(@RequestParam("hero") MultipartFile newImage) throws IOException {
-        storageService.store(newImage, new FilePath(root)
+        storageService.store(newImage, new FilePath()
             .setContent(Content.ABOUT)
             .setTMP(true)
             //.setUserId()

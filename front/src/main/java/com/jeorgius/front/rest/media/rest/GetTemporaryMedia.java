@@ -5,7 +5,6 @@ import com.jeorgius.front.rest.media.paths.Content;
 import com.jeorgius.front.rest.media.paths.FilePath;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,14 +19,11 @@ import java.io.IOException;
 public class GetTemporaryMedia {
 
     private StorageService storageService;
-    private String root; //'D:\Programming\files\'
     public GetTemporaryMedia(){}
 
     @Autowired
-    public GetTemporaryMedia(StorageService storageService,
-                     @Value("${media.path}") String root) {
+    public GetTemporaryMedia(StorageService storageService) {
         this.storageService = storageService;
-        this.root = root;
     }
 
     @GetMapping("/files/tmp/news/{index}")
@@ -35,7 +31,7 @@ public class GetTemporaryMedia {
         return new ResponseEntity<>(
             IOUtils.toByteArray(new FileInputStream(
                 //@ToDo use directory with adminID
-                storageService.getFile(new FilePath(this.root)
+                storageService.getFile(new FilePath()
                     .setContent(Content.NEWS)
                     .setTMP(true)
                     //.setUserId()
@@ -54,7 +50,7 @@ public class GetTemporaryMedia {
         return new ResponseEntity<>(
             IOUtils.toByteArray(new FileInputStream(
                 //@ToDo use directory with adminID
-                storageService.getFile(new FilePath(this.root)
+                storageService.getFile(new FilePath()
                     .setContent(Content.MUSIC)
                     .setTMP(true)
                     //.setUserId()
@@ -73,7 +69,7 @@ public class GetTemporaryMedia {
         return new ResponseEntity<>(
             IOUtils.toByteArray(new FileInputStream(
                 //@ToDo use directory with adminID
-                storageService.getFile(new FilePath(this.root)
+                storageService.getFile(new FilePath()
                     .setContent(Content.PHOTOS)
                     .setTMP(true)
                     //.setUserId()
@@ -92,7 +88,7 @@ public class GetTemporaryMedia {
         return new ResponseEntity<>(
             IOUtils.toByteArray(new FileInputStream(
                 //@ToDo use directory with adminID
-                storageService.getFile(new FilePath(this.root)
+                storageService.getFile(new FilePath()
                     .setContent(Content.STORE)
                     .setTMP(true)
                     //.setUserId()
@@ -111,7 +107,7 @@ public class GetTemporaryMedia {
         return new ResponseEntity<>(
             IOUtils.toByteArray(new FileInputStream(
                 //@ToDo use directory with adminID
-                storageService.getFile(new FilePath(this.root)
+                storageService.getFile(new FilePath()
                     .setContent(Content.ABOUT)
                     .setTMP(true)
                     //.setUserId()

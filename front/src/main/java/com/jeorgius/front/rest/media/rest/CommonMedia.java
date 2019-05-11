@@ -5,7 +5,6 @@ import com.jeorgius.front.rest.media.paths.Content;
 import com.jeorgius.front.rest.media.paths.FilePath;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,13 +19,10 @@ import java.io.IOException;
 public class CommonMedia {
 
     private StorageService storageService;
-    private String root;
 
     @Autowired
-    public CommonMedia(StorageService storageService,
-                       @Value("${media.path}") String root) {
+    public CommonMedia(StorageService storageService) {
         this.storageService = storageService;
-        this.root = root;
     }
 
     @GetMapping("/files/photos/{id}/{index}")
@@ -36,7 +32,7 @@ public class CommonMedia {
     ) throws IOException {
         return new ResponseEntity<>(
             IOUtils.toByteArray(new FileInputStream(
-                storageService.getFile(new FilePath(this.root)
+                storageService.getFile(new FilePath()
                     .setContent(Content.PHOTOS)
                     //.setUserId()
                     .setId(id)
@@ -56,7 +52,7 @@ public class CommonMedia {
     ) throws IOException {
         return new ResponseEntity<>(
             IOUtils.toByteArray(new FileInputStream(
-                storageService.getFile(new FilePath(this.root)
+                storageService.getFile(new FilePath()
                     .setContent(Content.NEWS)
                     //.setUserId()
                     .setId(id)
@@ -76,7 +72,7 @@ public class CommonMedia {
     ) throws IOException {
         return new ResponseEntity<>(
             IOUtils.toByteArray(new FileInputStream(
-                storageService.getFile(new FilePath(this.root)
+                storageService.getFile(new FilePath()
                     .setContent(Content.STORE)
                     //.setUserId()
                     .setId(id)
@@ -96,7 +92,7 @@ public class CommonMedia {
     ) throws IOException {
         return new ResponseEntity<>(
             IOUtils.toByteArray(new FileInputStream(
-                storageService.getFile(new FilePath(this.root)
+                storageService.getFile(new FilePath()
                     .setContent(Content.STORE)
                     //.setUserId()
                     .setId(id)
@@ -116,7 +112,7 @@ public class CommonMedia {
     ) throws IOException {
         return new ResponseEntity<>(
             IOUtils.toByteArray(new FileInputStream(
-                storageService.getFile(new FilePath(this.root)
+                storageService.getFile(new FilePath()
                     .setContent(Content.STORE)
                     //.setUserId()
                     .setId(id)
