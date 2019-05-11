@@ -14,10 +14,8 @@
     <img src="https://localhost:8007/files/tmp/news/hero" />
   </div>
 </div>
-<template #AddBlock></template>
-<!--</form>-->
-<block-adder></block-adder>
+<block-factory [blockType]="blockType"></block-factory>
+<block-adder (blockType)="receiveBlockType($event)"></block-adder>
 
 <button id="CreateButton" type="submit">Save</button>
-<button id="CreateButton" type="button" (click)="checkname()">Check picture</button>
 

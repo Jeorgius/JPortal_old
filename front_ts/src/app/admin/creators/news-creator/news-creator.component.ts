@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import {NewsItem} from "../../../entities/News";
 import {ImageSaverService} from "../../services/image_saver/image-saver.service";
+import {Creator} from "../Creator";
 
 @Component({
   selector: 'app-news-creator',
   templateUrl: './news-creator.component.html',
   styleUrls: ['./news-creator.component.scss']
 })
-export class NewsCreatorComponent implements OnInit {
+export class NewsCreatorComponent extends Creator implements OnInit {
 
   public newsItem = new NewsItem("New Title", "Enter text here");
   public files :File[] = [];
@@ -15,7 +16,7 @@ export class NewsCreatorComponent implements OnInit {
 
   constructor(
     private ImageSaver :ImageSaverService
-  ) { }
+  ) {super();}
 
   ngOnInit() {}
 
@@ -29,7 +30,4 @@ export class NewsCreatorComponent implements OnInit {
     this.message = message.answer;
   }
 
-  // checkname(){
-  //   alert(this.newsItem.pic.name);
-  // }
 }

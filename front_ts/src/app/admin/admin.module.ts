@@ -59,6 +59,12 @@ import { BlockAdderComponent } from './creator_blocks/block-adder/block-adder.co
   ],
   providers: [
     CookieService
+  ],
+  entryComponents: [
+    TextOnlyComponent,
+    MediaOnlyComponent,
+    MediaLeftComponent,
+    MediaRightComponent
   ]
 })
 export class AdminModule { }

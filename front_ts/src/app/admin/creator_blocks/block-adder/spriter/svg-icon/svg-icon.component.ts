@@ -8,6 +8,10 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class SvgIconComponent implements OnInit {
 
+  /**
+   * Display SVG-icon based on icon name
+   * ("id" in assets/data/creator.svg)
+   */
   @Input() icon :string;
 
   constructor() {}
