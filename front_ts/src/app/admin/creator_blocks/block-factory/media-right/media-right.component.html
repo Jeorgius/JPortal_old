@@ -1,3 +1,14 @@
-<p>
-  media-right works!
-</p>
+<div [id]="index" class="MediaRight">
+  <div class="Creator_Field title">
+    <input class="Creator_forms" type="text" name="Title" />
+  </div>
+  <div class="Creator_Field text">
+    <textarea class="Creator_forms" type="text" name="Text" ></textarea>
+  </div>
+  <div class="Creator_Field ImageDropField"
+       Drag-n-Drop
+       [index]="'fRight'+index"
+  >
+    <img src="https://localhost:8007/files/tmp/news/" />
+  </div>
+</div>

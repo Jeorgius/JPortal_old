@@ -5,9 +5,10 @@ import {
   Input,
   OnInit,
   ViewChild,
-  ViewContainerRef
+  ViewContainerRef, ViewRef
 } from '@angular/core';
 import {Type} from "@angular/core/src/type";
+import {Block} from "./block";
 
 @Component({
   selector: 'block-factory',
@@ -27,7 +28,7 @@ export class BlockFactoryComponent implements OnInit {
    * 1 - string, 'Addblock' - HTML container element
    * 2 - ViewContainerRef - where to put it
    */
-  @ViewChild('AddBlock',{read: ViewContainerRef}) newBlock :ViewContainerRef;
+  @ViewChild('AddBlock',{read: ViewContainerRef}) blockContainer :ViewContainerRef;
   constructor(private resolver :ComponentFactoryResolver) { }
   ngOnInit() {}
 
@@ -38,30 +39,34 @@ export class BlockFactoryComponent implements OnInit {
 
   /**
    * Generate component based on block type
-   * @param value - block type as string. Set as an input that is caught from svg-element
+   * @param blockType - block type as string. Set as an input that is caught from svg-element
    */
   @Input()
-  set blockType(value: string) {
-    this._blockType = value;
+  set blockType(blockType: string) {
+    this._blockType = blockType;
 
     if(!this._blockType) return;
-    //if(this.newBlock) this.newBlock.clear();
 
     /**
      * Get proper component
      * Get array of factories from ComponentFactoryResolver
-     * Find a component that matches svg name, for instance,
+     * Find a component that matches svg name, for example,
      * textOnly gets transformed into TextOnlyComponent
      */
-    this.newBlock.createComponent(
+    let newBlock = this.blockContainer.createComponent(
       this.resolver.resolveComponentFactory(
         <Type<any>>(Array
           .from(this.resolver["_factories"].keys()))
           .find((component:any) =>
-              component.name === value.charAt(0).toUpperCase()+value.slice(1)+"Component"
+              component.name === blockType.charAt(0).toUpperCase()+blockType.slice(1)+"Component"
           )
       )
     );
+    /**
+     * Set an id of component as id = component+index
+     * for example, fRight1
+     */
+    newBlock.instance.index = this.blockContainer.indexOf(<ViewRef><unknown>newBlock);
   }
 
 }

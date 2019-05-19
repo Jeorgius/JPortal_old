@@ -26,7 +26,7 @@ public class SaveMedia {
     }
 
     @PostMapping(value = "/admin/news/save_image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public Map newsImage(@RequestParam("hero") MultipartFile newImage) throws IOException {
+    public Map newsImage(@RequestParam("index") MultipartFile newImage) throws IOException {
         storageService.store(newImage,
             new FilePath()
                 .setContent(Content.NEWS)
@@ -43,7 +43,7 @@ public class SaveMedia {
     }
 
     @PostMapping(value = "/admin/music/save_image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public Map musicImage(@RequestParam("hero") MultipartFile newImage) throws IOException {
+    public Map musicImage(@RequestParam("index") MultipartFile newImage) throws IOException {
         storageService.store(newImage, new FilePath()
             .setContent(Content.MUSIC)
             .setTMP(true)
@@ -58,7 +58,7 @@ public class SaveMedia {
     }
 
     @PostMapping(value = "/admin/photos/save_image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public Map photosImage(@RequestParam("hero") MultipartFile newImage) throws IOException {
+    public Map photosImage(@RequestParam("index") MultipartFile newImage) throws IOException {
         storageService.store(newImage, new FilePath()
             .setContent(Content.NEWS)
             .setTMP(true)
@@ -73,7 +73,7 @@ public class SaveMedia {
     }
 
     @PostMapping(value = "/admin/store/save_image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public Map storeImage(@RequestParam("hero") MultipartFile newImage) throws IOException {
+    public Map storeImage(@RequestParam("index") MultipartFile newImage) throws IOException {
         storageService.store(newImage, new FilePath()
             .setContent(Content.STORE)
             .setTMP(true)
@@ -88,7 +88,7 @@ public class SaveMedia {
     }
 
     @PostMapping(value = "/users/save_image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public Map usersImage(@RequestParam("hero") MultipartFile newImage) throws IOException {
+    public Map usersImage(@RequestParam("index") MultipartFile newImage) throws IOException {
         storageService.store(newImage, new FilePath()
             .setContent(Content.USERS)
             .setTMP(true)
@@ -103,7 +103,7 @@ public class SaveMedia {
     }
 
     @PostMapping(value = "/admin/about/save_image", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public Map aboutImage(@RequestParam("hero") MultipartFile newImage) throws IOException {
+    public Map aboutImage(@RequestParam("index") MultipartFile newImage) throws IOException {
         storageService.store(newImage, new FilePath()
             .setContent(Content.ABOUT)
             .setTMP(true)

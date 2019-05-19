@@ -1,0 +1,68 @@
+.Creator_forms {
+  width: 60%;
+  //color:inherit;
+  background: transparent;
+  border-color: whitesmoke;
+  border-radius: 5px;
+  padding-left: inherit;
+  margin-top: 5px;
+  //font-size: 25px;
+}
+#CreateButton {
+  background-color: #77FF77;
+  margin-top: 10px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.Creator_Field{
+  position: relative;
+}
+
+.Creator_Field > input {
+  position:absolute;
+  width: 100%
+}
+.Creator_Field > textarea {
+  position: absolute;
+  width: 100%;
+  resize: none;
+  height: 66px;
+}
+
+input, textarea {
+  outline: none;
+  text-indent: 5px;
+}
+
+.MediaRight{
+  padding: 5px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template: "title image" 20px
+  "text image" 1fr
+                  / 1fr 180px;
+
+  background: antiquewhite;
+  color: black;
+  --minWidth: 150px;
+}
+
+.title{
+  grid-area: title;
+  min-width: var(--minWidth);
+}
+
+.text{
+  grid-area: text;
+  min-width: var(--minWidth);
+}
+
+.ImageDropField{
+  grid-area: image;
+
+  width: 160px;
+  min-height: 100px;
+  font-size: inherit;
+  border: black solid 1px;
+}

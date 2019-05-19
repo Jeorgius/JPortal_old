@@ -13,18 +13,16 @@ export class ImageSaverService {
   //private MediaServer = "http://localhost:8002";
   constructor(
     private Http :HttpClient,
-    private cookies :CookieService) { }
+    private cookies :CookieService
+  ) { }
 
   saveImage(newFile :File) {
     let formSend = new FormData();
-    formSend.append("hero", newFile, newFile.name);
+    formSend.append("index", newFile, newFile.name);
 
     return this.Http.post<iImageSave>(
       this.MediaServer,
       formSend
       );
   }
-
-  // displayLastImage(){
-  // }
 }
