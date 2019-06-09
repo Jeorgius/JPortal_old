@@ -1,6 +1,6 @@
 #ToDo change to Media Server
 media:
-  path: 'D:\Programming\files\'
+  path: 'D:\files\'
 
 server:
   port: 8007

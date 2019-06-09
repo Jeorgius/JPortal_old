@@ -1,7 +1,7 @@
-package com.jeorgius.database.Repos;
+package com.jeorgius.database.repos;
 
 
-import com.jeorgius.database.Entities.NewsItem;
+import com.jeorgius.database.entities.NewsItem;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.transaction.Transactional;

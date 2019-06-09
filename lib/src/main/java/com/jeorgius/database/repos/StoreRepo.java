@@ -1,6 +1,6 @@
-package com.jeorgius.database.Repos;
+package com.jeorgius.database.repos;
 
-import com.jeorgius.database.Entities.Store.StoreItem;
+import com.jeorgius.database.entities.Store.StoreItem;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.transaction.Transactional;

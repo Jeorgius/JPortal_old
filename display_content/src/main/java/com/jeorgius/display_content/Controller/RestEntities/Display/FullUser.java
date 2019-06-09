@@ -1,8 +1,8 @@
 package com.jeorgius.display_content.Controller.RestEntities.Display;
 
-import com.jeorgius.database.Entities.Users.User;
-import com.jeorgius.database.Entities.Users.UserFull;
-import com.jeorgius.database.Entities.Users.UserPrivate;
+import com.jeorgius.database.entities.Users.User;
+import com.jeorgius.database.entities.Users.UserFull;
+import com.jeorgius.database.entities.Users.UserPrivate;
 
 public class FullUser {
     private Long id;

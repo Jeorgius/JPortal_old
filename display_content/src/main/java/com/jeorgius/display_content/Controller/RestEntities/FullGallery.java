@@ -1,7 +1,7 @@
 package com.jeorgius.display_content.Controller.RestEntities;
 
-import com.jeorgius.database.Entities.GalleryItem;
-import com.jeorgius.database.Entities.GalleryItemFull;
+import com.jeorgius.database.entities.GalleryItem;
+import com.jeorgius.database.entities.GalleryItemFull;
 
 public class FullGallery {
     private Long id;

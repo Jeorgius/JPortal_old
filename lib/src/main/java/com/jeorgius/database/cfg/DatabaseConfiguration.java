@@ -1,4 +1,4 @@
-package com.jeorgius.database.Configuration;
+package com.jeorgius.database.cfg;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
@@ -9,7 +9,7 @@ import org.springframework.util.ResourceUtils;
 
 @Configuration
 @ComponentScan(basePackages = "com.jeorgius.database")
-@EnableJpaRepositories(basePackages = "com.jeorgius.database.Repos")
+@EnableJpaRepositories(basePackages = "com.jeorgius.database.repos")
 @EntityScan(basePackages = "com.jeorgius.database.Entities")
 @PropertySource(ResourceUtils.CLASSPATH_URL_PREFIX + "database.properties")
 public class DatabaseConfiguration {

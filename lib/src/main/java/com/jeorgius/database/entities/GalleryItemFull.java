@@ -1,25 +1,21 @@
-package com.jeorgius.database.Entities.Users;
+package com.jeorgius.database.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name="user_full", schema = "users")
-public class UserFull {
+@Table(name = "gallery_items", schema = "common")
+public class GalleryItemFull {
+
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String title;
     private String description;
 
     @JsonBackReference
-    @OneToOne (cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private User user;
-
-    public UserFull(){}
-
-    public UserFull(String description) {
-        this.description = description;
-    }
+    @OneToOne(fetch = FetchType.LAZY)
+    private GalleryItem galleryItem;
 
     public Long getId() {
         return id;
@@ -37,11 +33,19 @@ public class UserFull {
         this.description = description;
     }
 
-    public User getUser() {
-        return user;
+    public GalleryItem getGalleryItem() {
+        return galleryItem;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setGalleryItem(GalleryItem galleryItem) {
+        this.galleryItem = galleryItem;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

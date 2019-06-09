@@ -1,11 +1,11 @@
 package com.jeorgius.display_content;
 
 
-import com.jeorgius.database.Configuration.DatabaseConfiguration;
-import com.jeorgius.database.Entities.Users.User;
-import com.jeorgius.database.Entities.Users.UserFull;
-import com.jeorgius.database.Entities.Users.UserPrivate;
-import com.jeorgius.database.Repos.UserRepo;
+import com.jeorgius.database.cfg.DatabaseConfiguration;
+import com.jeorgius.database.entities.Users.User;
+import com.jeorgius.database.entities.Users.UserFull;
+import com.jeorgius.database.entities.Users.UserPrivate;
+import com.jeorgius.database.repos.UserRepo;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,14 +1,7 @@
 package com.jeorgius.security_oauth.rest;
 
-import com.jeorgius.database.Entities.Users.User;
-import com.jeorgius.database.Entities.Users.UserFull;
-import com.jeorgius.database.Entities.Users.UserPrivate;
-import com.jeorgius.database.Repos.UserRepo;
-import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
-import org.springframework.boot.autoconfigure.security.oauth2.resource.PrincipalExtractor;
 import org.springframework.core.annotation.Order;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

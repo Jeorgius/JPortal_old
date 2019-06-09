@@ -1,9 +1,9 @@
 package com.jeorgius.display_content.Controller.RestEntities.Display;
 
-import com.jeorgius.database.Entities.Store.ItemFeature;
-import com.jeorgius.database.Entities.Store.StoreGalleryItem;
-import com.jeorgius.database.Entities.Store.StoreItem;
-import com.jeorgius.database.Entities.Store.StoreItemFull;
+import com.jeorgius.database.entities.Store.ItemFeature;
+import com.jeorgius.database.entities.Store.StoreGalleryItem;
+import com.jeorgius.database.entities.Store.StoreItem;
+import com.jeorgius.database.entities.Store.StoreItemFull;
 
 import java.util.List;
 

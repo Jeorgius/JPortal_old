@@ -1,10 +1,10 @@
 package com.jeorgius.display_content.Controller.Logic;
 
-import com.jeorgius.database.Entities.Users.User;
-import com.jeorgius.database.Entities.Users.UserFull;
-import com.jeorgius.database.Entities.Users.UserPrivate;
-import com.jeorgius.database.Repos.UserPrivateRepo;
-import com.jeorgius.database.Repos.UserRepo;
+import com.jeorgius.database.entities.Users.User;
+import com.jeorgius.database.entities.Users.UserFull;
+import com.jeorgius.database.entities.Users.UserPrivate;
+import com.jeorgius.database.repos.UserPrivateRepo;
+import com.jeorgius.database.repos.UserRepo;
 import com.jeorgius.display_content.Controller.RestEntities.Change.LoginUser;
 import com.jeorgius.display_content.Controller.RestEntities.Change.RegisterUser;
 import com.jeorgius.display_content.Controller.RestEntities.Change.Status.Logged;

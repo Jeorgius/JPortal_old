@@ -1,4 +1,4 @@
-package com.jeorgius.database.Entities.Users;
+package com.jeorgius.database.entities.Users;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 

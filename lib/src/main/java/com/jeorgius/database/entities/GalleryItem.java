@@ -1,4 +1,4 @@
-package com.jeorgius.database.Entities;
+package com.jeorgius.database.entities;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 

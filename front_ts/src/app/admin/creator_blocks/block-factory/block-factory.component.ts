@@ -53,15 +53,13 @@ export class BlockFactoryComponent implements OnInit {
      * Find a component that matches svg name, for example,
      * textOnly gets transformed into TextOnlyComponent
      */
-    let newBlock = this.blockContainer.createComponent(
-      this.resolver.resolveComponentFactory(
-        <Type<any>>(Array
-          .from(this.resolver["_factories"].keys()))
-          .find((component:any) =>
-              component.name === blockType.charAt(0).toUpperCase()+blockType.slice(1)+"Component"
-          )
-      )
-    );
+    const componentName:string = blockType.charAt(0).toUpperCase()+blockType.slice(1)+"Component";
+    let block = <Type<any>>(Array
+      .from(this.resolver["_factories"].keys()))
+      .find((component:any) => component.name === componentName);
+
+    let componentFactory = this.resolver.resolveComponentFactory(block);
+    let newBlock = this.blockContainer.createComponent(componentFactory);
     /**
      * Set an id of component as id = component+index
      * for example, fRight1

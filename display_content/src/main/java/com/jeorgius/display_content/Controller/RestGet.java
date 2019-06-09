@@ -5,14 +5,14 @@ import com.jeorgius.display_content.Controller.RestEntities.Display.FullGallery;
 import com.jeorgius.display_content.Controller.RestEntities.Display.FullNews;
 import com.jeorgius.display_content.Controller.RestEntities.Display.FullStoreItem;
 import com.jeorgius.display_content.Controller.RestEntities.Display.FullUser;
-import com.jeorgius.database.Entities.GalleryItem;
-import com.jeorgius.database.Entities.NewsItem;
-import com.jeorgius.database.Entities.Store.StoreItem;
-import com.jeorgius.database.Entities.Users.User;
-import com.jeorgius.database.Repos.GalleryRepo;
-import com.jeorgius.database.Repos.NewsRepo;
-import com.jeorgius.database.Repos.StoreRepo;
-import com.jeorgius.database.Repos.UserRepo;
+import com.jeorgius.database.entities.GalleryItem;
+import com.jeorgius.database.entities.NewsItem;
+import com.jeorgius.database.entities.Store.StoreItem;
+import com.jeorgius.database.entities.Users.User;
+import com.jeorgius.database.repos.GalleryRepo;
+import com.jeorgius.database.repos.NewsRepo;
+import com.jeorgius.database.repos.StoreRepo;
+import com.jeorgius.database.repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -33,7 +33,11 @@ public class RestGet {
     public RestGet() {}
 
     @Autowired
-    public RestGet(NewsRepo newsRepo, GalleryRepo galleryRepo, UserRepo userRepo, StoreRepo storeRepo, FullInfoDisplay fullInfoDisplay) {
+    public RestGet(NewsRepo newsRepo,
+                   GalleryRepo galleryRepo,
+                   UserRepo userRepo,
+                   StoreRepo storeRepo,
+                   FullInfoDisplay fullInfoDisplay) {
         this.newsRepo = newsRepo;
         this.galleryRepo = galleryRepo;
         this.userRepo = userRepo;
