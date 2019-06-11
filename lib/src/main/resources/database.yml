@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/jeorgius
+    username: postgres
+    password: 123
+  jpa:
+    hibernate:
+      ddlAuto: update
+    generateDdl: true
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: true
+        new_generator_mappings: true
+        jdbc.lob.non_contextual_creation: true
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect

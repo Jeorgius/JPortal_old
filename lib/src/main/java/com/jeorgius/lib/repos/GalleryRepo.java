@@ -1,7 +1,7 @@
-package com.jeorgius.database.repos;
+package com.jeorgius.lib.repos;
 
 
-import com.jeorgius.database.entities.GalleryItem;
+import com.jeorgius.lib.entities.GalleryItem;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.transaction.Transactional;

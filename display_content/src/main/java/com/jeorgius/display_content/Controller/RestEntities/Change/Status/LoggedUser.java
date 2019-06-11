@@ -1,6 +1,6 @@
 package com.jeorgius.display_content.Controller.RestEntities.Change.Status;
 
-import com.jeorgius.database.entities.Users.User;
+import com.jeorgius.lib.entities.Users.User;
 
 public class LoggedUser extends Logged {
 

@@ -1,9 +1,9 @@
 package com.jeorgius.display_content;
 
-import com.jeorgius.database.cfg.DatabaseConfiguration;
-import com.jeorgius.database.entities.NewsItem;
-import com.jeorgius.database.entities.NewsItemFull;
-import com.jeorgius.database.repos.NewsRepo;
+import com.jeorgius.lib.cfg.DatabaseConfiguration;
+import com.jeorgius.lib.entities.NewsItem;
+import com.jeorgius.lib.entities.NewsItemFull;
+import com.jeorgius.lib.repos.NewsRepo;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

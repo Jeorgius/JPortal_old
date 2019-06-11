@@ -1,7 +1,7 @@
 package com.jeorgius.display_content.Controller.RestEntities.Display;
 
-import com.jeorgius.database.entities.NewsItem;
-import com.jeorgius.database.entities.NewsItemFull;
+import com.jeorgius.lib.entities.NewsItem;
+import com.jeorgius.lib.entities.NewsItemFull;
 
 public class FullNews {
     private Long id;

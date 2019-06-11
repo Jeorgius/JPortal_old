@@ -1,4 +1,4 @@
-package com.jeorgius.database.dto;
+package com.jeorgius.lib.dto;
 
 import java.util.List;
 

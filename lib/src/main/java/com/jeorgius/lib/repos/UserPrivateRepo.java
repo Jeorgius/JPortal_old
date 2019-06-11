@@ -1,7 +1,7 @@
-package com.jeorgius.database.repos;
+package com.jeorgius.lib.repos;
 
 
-import com.jeorgius.database.entities.Users.UserPrivate;
+import com.jeorgius.lib.entities.Users.UserPrivate;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.transaction.Transactional;

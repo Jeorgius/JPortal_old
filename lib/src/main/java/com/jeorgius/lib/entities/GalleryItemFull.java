@@ -1,4 +1,4 @@
-package com.jeorgius.database.entities;
+package com.jeorgius.lib.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 

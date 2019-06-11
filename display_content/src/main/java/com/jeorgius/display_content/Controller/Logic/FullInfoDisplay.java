@@ -1,13 +1,13 @@
 package com.jeorgius.display_content.Controller.Logic;
 
-import com.jeorgius.database.entities.GalleryItem;
-import com.jeorgius.database.entities.NewsItem;
-import com.jeorgius.database.entities.Store.StoreItem;
-import com.jeorgius.database.entities.Users.User;
-import com.jeorgius.database.repos.GalleryRepo;
-import com.jeorgius.database.repos.NewsRepo;
-import com.jeorgius.database.repos.StoreRepo;
-import com.jeorgius.database.repos.UserRepo;
+import com.jeorgius.lib.entities.GalleryItem;
+import com.jeorgius.lib.entities.NewsItem;
+import com.jeorgius.lib.entities.Store.StoreItem;
+import com.jeorgius.lib.entities.Users.User;
+import com.jeorgius.lib.repos.GalleryRepo;
+import com.jeorgius.lib.repos.NewsRepo;
+import com.jeorgius.lib.repos.StoreRepo;
+import com.jeorgius.lib.repos.UserRepo;
 import com.jeorgius.display_content.Controller.RestEntities.Display.FullGallery;
 import com.jeorgius.display_content.Controller.RestEntities.Display.FullNews;
 import com.jeorgius.display_content.Controller.RestEntities.Display.FullStoreItem;
