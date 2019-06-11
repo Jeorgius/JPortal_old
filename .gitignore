@@ -1,3 +1,4 @@
 /.idea/*
 *.iml
 /.front_ts/node_modules
+/Microservices_configs/*
